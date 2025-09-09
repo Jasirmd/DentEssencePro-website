@@ -1,5 +1,5 @@
 # System Requirements
-Node.js >= 18.0.0
+Node.js = 16.20.0
 npm >= 9.0.0
 
 # Development Tools
