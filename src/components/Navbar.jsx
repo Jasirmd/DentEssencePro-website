@@ -4,7 +4,7 @@ import logoUrl from '../assets/images/logo.png'
 
 export default function Navbar({ onBookAppointment }){
   const { pathname } = useLocation()
-  const videoPagesWithHero = ['/gallery', '/blog', '/contact', '/services']
+  const videoPagesWithHero = ['/gallery', '/blog', '/contact', '/services', '/dental-tourism']
   const hasVideoHero = videoPagesWithHero.includes(pathname)
   const [scrolled, setScrolled] = useState(pathname !== '/' && !hasVideoHero)
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
@@ -35,6 +35,7 @@ export default function Navbar({ onBookAppointment }){
           <NavLink to="/" end className={({isActive})=> isActive? 'active' : undefined}>Home</NavLink>
           <NavLink to="/services" className={({isActive})=> isActive? 'active' : undefined}>Services</NavLink>
           <NavLink to="/gallery" className={({isActive})=> isActive? 'active' : undefined}>Gallery</NavLink>
+          <NavLink to="/dental-tourism" className={({isActive})=> isActive? 'active' : undefined}>Dental Tourism</NavLink>
           <NavLink to="/blog" className={({isActive})=> isActive? 'active' : undefined}>Blog</NavLink>
           <NavLink to="/contact" className={({isActive})=> isActive? 'active' : undefined}>Contact</NavLink>
         </div>
@@ -78,15 +79,22 @@ export default function Navbar({ onBookAppointment }){
             >
               Services
             </NavLink>
-            <NavLink 
-              to="/gallery" 
+            <NavLink
+              to="/gallery"
               className={({isActive})=> isActive? 'active' : undefined}
               onClick={() => setMobileMenuOpen(false)}
             >
               Gallery
             </NavLink>
-            <NavLink 
-              to="/blog" 
+            <NavLink
+              to="/dental-tourism"
+              className={({isActive})=> isActive? 'active' : undefined}
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              Dental Tourism
+            </NavLink>
+            <NavLink
+              to="/blog"
               className={({isActive})=> isActive? 'active' : undefined}
               onClick={() => setMobileMenuOpen(false)}
             >

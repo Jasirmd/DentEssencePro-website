@@ -7,6 +7,7 @@ import Gallery from './pages/Gallery'
 import Blog from './pages/Blog'
 import BlogPost from './pages/BlogPost'
 import Contact from './pages/Contact'
+import DentalTourism from './pages/DentalTourism'
 import NotFound from './pages/NotFound'
 import AppointmentModal from './components/AppointmentModal'
 import { useAppointmentModal } from './hooks/useAppointmentModal'
@@ -37,6 +38,7 @@ function App() {
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/blog/:slug" element={<BlogPost />} />
+        <Route path="/dental-tourism" element={<DentalTourism />} />
         <Route path="/contact" element={<Contact onBookAppointment={openModal} />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
