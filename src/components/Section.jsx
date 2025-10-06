@@ -1,6 +1,6 @@
 export default function Section({ eyebrow, title, intro, actions, children, id, className = '' }){
   return (
-    <section id={id} className={className}>
+    <section id={id} className={className} style={{paddingTop: '20px'}}>
       <div className="container">
         {(eyebrow || title || intro) && (
           <header className="reveal" style={{marginBottom: 22}}>

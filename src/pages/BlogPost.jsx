@@ -1,4 +1,4 @@
-import { useParams, Link } from 'react-router-dom'
+import { useParams, Link, useNavigate } from 'react-router-dom'
 import Section from '../components/Section'
 import { posts } from '../data/blog'
 
@@ -6,12 +6,41 @@ const fallback = 'https://images.unsplash.com/photo-1612531386531-29cf3a160680?q
 
 export default function BlogPost(){
   const { slug } = useParams()
+  const navigate = useNavigate()
   const post = posts.find(p=> p.slug === slug)
-  if(!post) return <Section title="Not found"><p>We couldn’t find that article. <Link to="/blog">Back to blog</Link></p></Section>
+
+  const handleBackClick = () => {
+    sessionStorage.setItem('blogScrollPosition', window.scrollY.toString())
+    navigate('/blog')
+  }
+
+  if(!post) return <Section title="Not found"><p>We couldn't find that article. <Link to="/blog">Back to blog</Link></p></Section>
+
   return (
-    <Section eyebrow="Blog" title={post.title}>
-      <img src={post.cover || fallback} alt="" style={{width:'100%', maxHeight:420, objectFit:'cover', borderRadius:16, marginBottom:16}}/>
-      <p style={{whiteSpace:'pre-wrap'}}>{post.content}</p>
-    </Section>
+    <>
+      <div style={{ paddingTop: '80px', paddingLeft: '20px' }}>
+        <button
+          onClick={handleBackClick}
+          style={{
+            display: 'flex',
+            alignItems: 'center',
+            gap: '8px',
+            background: 'none',
+            border: 'none',
+            color: 'var(--accent, #0066cc)',
+            cursor: 'pointer',
+            fontSize: '16px',
+            padding: '8px 0',
+            fontWeight: '500'
+          }}
+        >
+          ← Back to Blogs
+        </button>
+      </div>
+      <Section eyebrow="Blog" title={post.title}>
+        <img src={post.cover || fallback} alt="" style={{width:'60%', maxHeight:350, objectFit:'cover', borderRadius:16, marginBottom:16, display:'block'}}/>
+        <p style={{whiteSpace:'pre-wrap'}}>{post.content}</p>
+      </Section>
+    </>
   )
 }
