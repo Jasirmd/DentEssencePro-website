@@ -42,29 +42,6 @@ const TRAVEL_EXPERIENCE = [
   'Dedicated international patient coordinators for every step'
 ]
 
-const SKIN_HAIR_HIGHLIGHTS = [
-  { title: 'Expert Team', text: 'Dermatology and trichology specialists trained in advanced aesthetic medicine.' },
-  { title: 'Advanced Technology', text: 'PRP, microneedling, clinical peels, and energy-based devices of global standards.' },
-  { title: 'Personalised Care', text: 'Programs customised to suit your skin type, age, and restoration goals.' },
-  { title: 'Safety First', text: 'Strict hygiene and sterilisation protocols for comfortable, painless sessions.' },
-  { title: 'Affordable Luxury', text: 'World-class aesthetic outcomes with transparent Indian pricing.' }
-]
-
-const SKIN_TREATMENTS = [
-  'Anti-ageing and wrinkle reduction therapies',
-  'Skin brightening and pigmentation correction',
-  'Acne, scar, and texture refinement programs',
-  'Medical facials and chemical peels'
-]
-
-const HAIR_TREATMENTS = [
-  'Hair loss prevention and growth boosters',
-  'PRP (Platelet-Rich Plasma) hair regeneration',
-  'Microneedling to improve scalp density',
-  'Advanced hair transplant techniques',
-  'Dandruff and scalp health management'
-]
-
 const IMPLANT_HIGHLIGHTS = [
   'World-renowned expertise with over two decades in advanced implantology and prosthodontics',
   'Comprehensive solutions from single-tooth restorations to full mouth rehabilitation',
@@ -150,12 +127,18 @@ export default function DentalTourism() {
         </div>
       </section>
 
-      <section className="tourism-section">
+      <section className="tourism-section why-choose">
         <div className="section-shell">
-          <h2 className="section-title">Why Choose Us?</h2>
+          <div className="section-header-block">
+            <span className="section-badge">Our Advantages</span>
+            <h2 className="section-title">Why Choose Us?</h2>
+          </div>
           <div className="card-grid card-grid--five">
-            {WHY_CHOOSE.map((item) => (
-              <div key={item.title} className="info-card">
+            {WHY_CHOOSE.map((item, index) => (
+              <div key={item.title} className="info-card elevated">
+                <div className="card-icon">
+                  <span className="icon-number">{String(index + 1).padStart(2, '0')}</span>
+                </div>
                 <h3>{item.title}</h3>
                 <p>{item.description}</p>
               </div>
@@ -166,10 +149,14 @@ export default function DentalTourism() {
 
       <section className="tourism-section soft">
         <div className="section-shell">
-          <h2 className="section-title">Popular Dental Treatments for International Patients</h2>
+          <div className="section-header-block centered">
+            <span className="section-badge">Our Specialties</span>
+            <h2 className="section-title">Popular Dental Treatments for International Patients</h2>
+          </div>
           <div className="pill-grid">
-            {POPULAR_TREATMENTS.map((item) => (
-              <div key={item} className="pill-card">
+            {POPULAR_TREATMENTS.map((item, index) => (
+              <div key={item} className="pill-card premium">
+                <div className="pill-icon">✓</div>
                 <span>{item}</span>
               </div>
             ))}
@@ -180,6 +167,7 @@ export default function DentalTourism() {
       <section className="tourism-section travel">
         <div className="section-shell travel-shell">
           <div className="travel-copy">
+            <span className="section-badge light">Experience</span>
             <h2>Dental Care + Travel Experience</h2>
             <p>
               Combine your treatment with a curated holiday in India&apos;s Garden City. Our team balances premium dental
@@ -187,8 +175,13 @@ export default function DentalTourism() {
             </p>
           </div>
           <div className="travel-list">
-            {TRAVEL_EXPERIENCE.map((item) => (
-              <div key={item} className="travel-item">
+            {TRAVEL_EXPERIENCE.map((item, index) => (
+              <div key={item} className="travel-item enhanced">
+                <div className="travel-icon">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path d="M16.666 5L7.49935 14.1667L3.33268 10" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  </svg>
+                </div>
                 <span>{item}</span>
               </div>
             ))}
@@ -196,90 +189,54 @@ export default function DentalTourism() {
         </div>
       </section>
 
-      <section className="tourism-section skin">
-        <div className="section-shell">
-          <div className="section-heading">
-            <h2>Skin &amp; Hair Aesthetics in Bangalore</h2>
-            <h3>Advanced Cosmetic Solutions at DentEssencePRO</h3>
-            <p>
-              At DentEssencePRO, we do more than craft beautiful smiles &mdash; we elevate your overall confidence. Our
-              skin and hair aesthetics studio delivers globally benchmarked therapies designed to rejuvenate, restore,
-              and revitalise your look.
-            </p>
-          </div>
-          <div className="card-grid card-grid--five compact">
-            {SKIN_HAIR_HIGHLIGHTS.map((item) => (
-              <div key={item.title} className="info-card subtle">
-                <h4>{item.title}</h4>
-                <p>{item.text}</p>
-              </div>
-            ))}
-          </div>
-          <div className="split-lists">
-            <div className="list-block">
-              <h3>Our Specialised Skin Treatments</h3>
-              <ul>
-                {SKIN_TREATMENTS.map((item) => (
-                  <li key={item}>{item}</li>
-                ))}
-              </ul>
-            </div>
-            <div className="list-block">
-              <h3>Our Hair Restoration Solutions</h3>
-              <ul>
-                {HAIR_TREATMENTS.map((item) => (
-                  <li key={item}>{item}</li>
-                ))}
-              </ul>
-            </div>
-          </div>
-          <div className="note-card">
-            <h3>Perfect for International Guests</h3>
-            <p>
-              Visiting Bangalore for dental care? Extend your transformation with skin and hair enhancements for a
-              complete aesthetic upgrade before you fly back.
-            </p>
-          </div>
-        </div>
-      </section>
-
       <section className="tourism-section implants">
         <div className="section-shell">
-          <div className="section-heading">
+          <div className="section-heading enhanced">
+            <span className="section-badge">Premium Care</span>
             <h2>Premium Dental Implants &amp; Full Mouth Rehabilitation</h2>
-            <h3>Redefining Smiles. Restoring Confidence. Elevating Lives.</h3>
+            <h3 className="subtitle-gold">Redefining Smiles. Restoring Confidence. Elevating Lives.</h3>
             <p>
               Led by Prof. Dr. Makam Gangaiah, our implantology centre blends precision, artistry, and innovation to
               deliver restorations that feel natural, look beautiful, and last a lifetime.
             </p>
           </div>
           <div className="card-grid card-grid--three">
-            {IMPLANT_HIGHLIGHTS.map((item) => (
-              <div key={item} className="info-card">
+            {IMPLANT_HIGHLIGHTS.map((item, index) => (
+              <div key={item} className="info-card highlight">
+                <div className="highlight-marker"></div>
                 <p>{item}</p>
               </div>
             ))}
           </div>
-          <div className="panel">
-            <h3>Our Specialised Implant Solutions</h3>
+          <div className="panel modern">
+            <div className="panel-header">
+              <div className="panel-icon">⚕</div>
+              <h3>Our Specialised Implant Solutions</h3>
+            </div>
             <div className="pill-row">
               {IMPLANT_SOLUTIONS.map((item) => (
-                <span key={item}>{item}</span>
+                <span key={item} className="pill-modern">{item}</span>
               ))}
             </div>
           </div>
-          <div className="panel">
-            <h3>Dental Tourism + Premium Implants</h3>
-            <p>Travel to Bangalore for a seamless, world-class implant journey with hospitality built in.</p>
-            <ul>
+          <div className="panel modern">
+            <div className="panel-header">
+              <div className="panel-icon">✈</div>
+              <h3>Dental Tourism + Premium Implants</h3>
+            </div>
+            <p className="panel-intro">Travel to Bangalore for a seamless, world-class implant journey with hospitality built in.</p>
+            <ul className="modern-list">
               {CONCIERGE_SUPPORT.map((item) => (
                 <li key={item}>{item}</li>
               ))}
             </ul>
           </div>
-          <div className="panel">
-            <h3>The DentEssencePRO Difference</h3>
-            <ul>
+          <div className="panel modern accent">
+            <div className="panel-header">
+              <div className="panel-icon">★</div>
+              <h3>The DentEssencePRO Difference</h3>
+            </div>
+            <ul className="modern-list">
               {DENTESSENCE_DIFFERENCE.map((item) => (
                 <li key={item}>{item}</li>
               ))}
@@ -486,7 +443,7 @@ export default function DentalTourism() {
         }
 
         .tourism-section {
-          padding: clamp(3.8rem, 6vw, 6.2rem) 0;
+          padding: clamp(4.5rem, 7vw, 7.5rem) 0;
         }
 
         .section-shell {
@@ -494,10 +451,43 @@ export default function DentalTourism() {
           margin: 0 auto;
         }
 
+        .section-header-block {
+          margin-bottom: clamp(3rem, 4.5vw, 3.8rem);
+        }
+
+        .section-header-block.centered {
+          text-align: center;
+          max-width: 800px;
+          margin-left: auto;
+          margin-right: auto;
+          margin-bottom: clamp(3rem, 4.5vw, 3.8rem);
+        }
+
+        .section-badge {
+          display: inline-block;
+          padding: 0.5rem 1.5rem;
+          border-radius: 999px;
+          background: linear-gradient(135deg, rgba(217, 183, 105, 0.15), rgba(217, 183, 105, 0.25));
+          border: 1px solid rgba(217, 183, 105, 0.4);
+          color: #c89840;
+          font-size: 0.85rem;
+          font-weight: 700;
+          letter-spacing: 0.1em;
+          text-transform: uppercase;
+          margin-bottom: 1rem;
+        }
+
+        .section-badge.light {
+          background: linear-gradient(135deg, rgba(96, 177, 212, 0.2), rgba(96, 177, 212, 0.3));
+          border: 1px solid rgba(96, 177, 212, 0.5);
+          color: rgba(96, 177, 212, 0.95);
+        }
+
         .section-title {
-          font-size: clamp(2.1rem, 3.6vw, 2.9rem);
+          font-size: clamp(2.3rem, 3.8vw, 3.2rem);
           color: #0b1e36;
           margin-bottom: clamp(2.2rem, 3.5vw, 2.8rem);
+          line-height: 1.2;
         }
 
         .card-grid {
@@ -514,29 +504,115 @@ export default function DentalTourism() {
         }
 
         .info-card {
+          position: relative;
           background: linear-gradient(140deg, #0e1f3a 0%, #0c1a32 100%);
-          border-radius: 22px;
-          padding: 1.9rem;
-          box-shadow: 0 22px 55px rgba(10, 27, 54, 0.18);
-          border: 1px solid rgba(255, 255, 255, 0.05);
+          border-radius: 24px;
+          padding: 2.2rem;
+          box-shadow: 0 24px 60px rgba(10, 27, 54, 0.2);
+          border: 1px solid rgba(255, 255, 255, 0.08);
           color: #e8edf8;
+          transition: all 0.4s ease;
+          overflow: hidden;
+        }
+
+        .info-card::before {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          height: 3px;
+          background: linear-gradient(90deg, rgba(217, 183, 105, 0.8), rgba(96, 177, 212, 0.8));
+          opacity: 0;
+          transition: opacity 0.4s ease;
+        }
+
+        .info-card:hover {
+          transform: translateY(-6px);
+          box-shadow: 0 32px 80px rgba(10, 27, 54, 0.3);
+          border-color: rgba(217, 183, 105, 0.3);
+        }
+
+        .info-card:hover::before {
+          opacity: 1;
+        }
+
+        .info-card.elevated {
+          background: linear-gradient(145deg, #112240 0%, #0a1628 100%);
+        }
+
+        .card-icon {
+          width: 50px;
+          height: 50px;
+          border-radius: 12px;
+          background: linear-gradient(135deg, rgba(217, 183, 105, 0.15), rgba(217, 183, 105, 0.25));
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-bottom: 1.5rem;
+          border: 1px solid rgba(217, 183, 105, 0.3);
+        }
+
+        .icon-number {
+          font-size: 1.3rem;
+          font-weight: 800;
+          background: linear-gradient(135deg, #d9b769, #f0d99b);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          background-clip: text;
         }
 
         .info-card h3,
         .info-card h4 {
           color: #fefefe;
-          font-size: 1.2rem;
-          margin-bottom: 0.75rem;
+          font-size: 1.3rem;
+          margin-bottom: 1rem;
+          font-weight: 700;
         }
 
         .info-card.subtle {
           background: linear-gradient(150deg, #142b4b 0%, #0f233c 100%);
         }
 
+        .info-card.highlight {
+          position: relative;
+          background: linear-gradient(145deg, #f8f9fc 0%, #ffffff 100%);
+          color: #0b1e36;
+          border: 1px solid rgba(13, 36, 66, 0.12);
+          padding-left: 2.5rem;
+        }
+
+        .info-card.highlight::before {
+          opacity: 1;
+          height: 100%;
+          width: 4px;
+          background: linear-gradient(180deg, #d9b769, #c89840);
+          left: 0;
+          top: 0;
+          border-radius: 0;
+        }
+
+        .info-card.highlight:hover {
+          border-color: rgba(217, 183, 105, 0.4);
+        }
+
+        .info-card.highlight:hover::before {
+          opacity: 1;
+        }
+
+        .info-card.highlight p {
+          color: rgba(27, 50, 82, 0.8);
+        }
+
+        .highlight-marker {
+          display: none;
+        }
+
         .info-card p {
           margin: 0;
-          color: rgba(226, 234, 248, 0.82);
-          line-height: 1.6;
+          color: rgba(226, 234, 248, 0.85);
+          line-height: 1.7;
+          font-size: 1rem;
         }
 
         .soft {
@@ -552,14 +628,42 @@ export default function DentalTourism() {
         .pill-card {
           background: #ffffff;
           border: 1px solid rgba(14, 38, 73, 0.14);
-          border-radius: 16px;
-          padding: 1.1rem 1.4rem;
-          box-shadow: 0 14px 32px rgba(12, 31, 57, 0.12);
+          border-radius: 18px;
+          padding: 1.3rem 1.6rem;
+          box-shadow: 0 16px 40px rgba(12, 31, 57, 0.12);
+          transition: all 0.3s ease;
+        }
+
+        .pill-card:hover {
+          transform: translateY(-3px);
+          box-shadow: 0 20px 50px rgba(12, 31, 57, 0.18);
+          border-color: rgba(217, 183, 105, 0.4);
+        }
+
+        .pill-card.premium {
+          display: flex;
+          align-items: center;
+          gap: 1rem;
+        }
+
+        .pill-icon {
+          width: 28px;
+          height: 28px;
+          border-radius: 50%;
+          background: linear-gradient(135deg, #d9b769, #c89840);
+          color: #ffffff;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-weight: 700;
+          font-size: 0.95rem;
+          flex-shrink: 0;
         }
 
         .pill-card span {
           font-weight: 600;
           color: #0d2a4b;
+          font-size: 1rem;
         }
 
         .travel {
@@ -583,6 +687,7 @@ export default function DentalTourism() {
         .travel-copy p {
           margin: 0;
           line-height: 1.7;
+          color: rgba(230, 236, 248, 0.95);
         }
 
         .travel-list {
@@ -596,6 +701,33 @@ export default function DentalTourism() {
           padding: 1.25rem 1.5rem;
           border: 1px solid rgba(96, 177, 212, 0.3);
           color: rgba(218, 229, 244, 0.94);
+          transition: all 0.3s ease;
+        }
+
+        .travel-item.enhanced {
+          display: flex;
+          align-items: flex-start;
+          gap: 1rem;
+          padding: 1.4rem 1.6rem;
+        }
+
+        .travel-item.enhanced:hover {
+          transform: translateX(8px);
+          border-color: rgba(96, 177, 212, 0.6);
+          background: linear-gradient(140deg, rgba(13, 33, 61, 1), rgba(9, 22, 44, 1));
+        }
+
+        .travel-icon {
+          width: 24px;
+          height: 24px;
+          border-radius: 6px;
+          background: linear-gradient(135deg, rgba(96, 177, 212, 0.3), rgba(96, 177, 212, 0.2));
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-shrink: 0;
+          color: rgba(96, 177, 212, 0.95);
+          margin-top: 2px;
         }
 
         .skin {
@@ -604,24 +736,41 @@ export default function DentalTourism() {
 
         .section-heading {
           text-align: center;
-          max-width: 780px;
-          margin: 0 auto 3.1rem;
+          max-width: 820px;
+          margin: 0 auto 3.5rem;
+        }
+
+        .section-heading.enhanced {
+          max-width: 900px;
+          margin-bottom: 4rem;
         }
 
         .section-heading h2 {
-          font-size: clamp(2.2rem, 3.7vw, 3rem);
+          font-size: clamp(2.4rem, 3.9vw, 3.3rem);
           color: #0b1e36;
-          margin-bottom: 0.8rem;
+          margin-bottom: 1rem;
+          line-height: 1.2;
         }
 
         .section-heading h3 {
           color: #1f4b92;
-          margin-bottom: 1rem;
+          margin-bottom: 1.2rem;
+          font-size: 1.3rem;
+        }
+
+        .subtitle-gold {
+          background: linear-gradient(135deg, #d9b769, #c89840);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          background-clip: text;
+          font-style: italic;
+          font-weight: 600;
         }
 
         .section-heading p {
-          color: rgba(27, 50, 82, 0.72);
-          line-height: 1.7;
+          color: rgba(27, 50, 82, 0.76);
+          line-height: 1.8;
+          font-size: 1.08rem;
         }
 
         .card-grid.compact {
@@ -683,22 +832,98 @@ export default function DentalTourism() {
         .panel {
           margin-top: 2.8rem;
           background: #ffffff;
-          border-radius: 20px;
-          padding: 2rem;
-          box-shadow: 0 24px 60px rgba(13, 36, 66, 0.12);
-          border: 1px solid rgba(13, 36, 66, 0.08);
+          border-radius: 24px;
+          padding: 2.5rem;
+          box-shadow: 0 28px 70px rgba(13, 36, 66, 0.14);
+          border: 1px solid rgba(13, 36, 66, 0.1);
+          transition: all 0.3s ease;
+        }
+
+        .panel:hover {
+          box-shadow: 0 32px 80px rgba(13, 36, 66, 0.18);
+          transform: translateY(-2px);
+        }
+
+        .panel.modern {
+          background: linear-gradient(145deg, #ffffff 0%, #f8fafc 100%);
+          border: 2px solid rgba(217, 183, 105, 0.2);
+        }
+
+        .panel.modern.accent {
+          border-color: rgba(96, 177, 212, 0.3);
+        }
+
+        .panel-header {
+          display: flex;
+          align-items: center;
+          gap: 1rem;
+          margin-bottom: 1.8rem;
+        }
+
+        .panel-icon {
+          width: 46px;
+          height: 46px;
+          border-radius: 12px;
+          background: linear-gradient(135deg, rgba(217, 183, 105, 0.2), rgba(217, 183, 105, 0.3));
+          border: 1px solid rgba(217, 183, 105, 0.4);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 1.4rem;
+          flex-shrink: 0;
         }
 
         .panel h3 {
-          margin-bottom: 1.2rem;
+          margin-bottom: 0;
           color: #0d2a4b;
+          font-size: 1.4rem;
+        }
+
+        .panel-intro {
+          color: rgba(27, 50, 82, 0.72);
+          line-height: 1.7;
+          margin-bottom: 1.5rem;
+          font-size: 1.05rem;
         }
 
         .panel ul {
           margin: 0;
-          padding-left: 1.2rem;
-          color: rgba(27, 50, 82, 0.76);
-          line-height: 1.6;
+          padding-left: 0;
+          list-style: none;
+          color: rgba(27, 50, 82, 0.78);
+          line-height: 1.7;
+        }
+
+        .modern-list {
+          display: grid;
+          gap: 0.9rem;
+        }
+
+        .modern-list li {
+          position: relative;
+          padding-left: 2rem;
+        }
+
+        .modern-list li::before {
+          content: '';
+          position: absolute;
+          left: 0;
+          top: 0.55rem;
+          width: 18px;
+          height: 18px;
+          border-radius: 4px;
+          background: linear-gradient(135deg, #d9b769, #c89840);
+          opacity: 0.2;
+        }
+
+        .modern-list li::after {
+          content: '✓';
+          position: absolute;
+          left: 4px;
+          top: 0.45rem;
+          color: #c89840;
+          font-weight: 700;
+          font-size: 0.85rem;
         }
 
         .panel li + li {
@@ -708,21 +933,41 @@ export default function DentalTourism() {
         .pill-row {
           display: flex;
           flex-wrap: wrap;
-          gap: 0.75rem;
+          gap: 0.9rem;
         }
 
         .pill-row span {
-          padding: 0.6rem 1.2rem;
+          padding: 0.7rem 1.4rem;
           border-radius: 999px;
           background: rgba(34, 82, 148, 0.12);
           color: #1f4b92;
           font-weight: 600;
           border: 1px solid rgba(34, 82, 148, 0.28);
+          transition: all 0.3s ease;
+        }
+
+        .pill-row span:hover {
+          background: rgba(34, 82, 148, 0.18);
+          border-color: rgba(34, 82, 148, 0.4);
+          transform: translateY(-2px);
+        }
+
+        .pill-modern {
+          background: linear-gradient(135deg, rgba(217, 183, 105, 0.15), rgba(217, 183, 105, 0.2));
+          border: 1px solid rgba(217, 183, 105, 0.4);
+          color: #9d7b3a;
+        }
+
+        .pill-modern:hover {
+          background: linear-gradient(135deg, rgba(217, 183, 105, 0.25), rgba(217, 183, 105, 0.3));
+          border-color: rgba(217, 183, 105, 0.6);
         }
 
         .contact {
+          position: relative;
           background: linear-gradient(180deg, rgba(6, 18, 38, 0.96) 0%, rgba(4, 12, 26, 0.94) 100%);
           color: #eaf2ff;
+          z-index: 10;
         }
 
         .contact .section-title {
@@ -733,15 +978,19 @@ export default function DentalTourism() {
           display: grid;
           grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
           gap: clamp(1.8rem, 3vw, 2.6rem);
+          position: relative;
+          z-index: 10;
         }
 
         .contact-card {
+          position: relative;
           background: linear-gradient(150deg, rgba(11, 28, 52, 0.92), rgba(9, 22, 44, 0.92));
           border-radius: 22px;
           padding: 2.2rem 2rem;
           border: 1px solid rgba(255, 255, 255, 0.08);
           box-shadow: 0 26px 70px rgba(5, 13, 28, 0.52);
           text-align: center;
+          z-index: 10;
         }
 
         .contact-card h3 {
@@ -772,6 +1021,9 @@ export default function DentalTourism() {
           text-decoration: none;
           border: none;
           transition: transform 0.3s ease, box-shadow 0.3s ease;
+          position: relative;
+          z-index: 20;
+          cursor: pointer;
         }
 
         .btn:hover {

@@ -18,5 +18,8 @@ if (typeof globalThis.crypto === 'undefined' || typeof globalThis.crypto.getRand
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
+  server: {
+    allowedHosts: ['.ngrok-free.app', '.ngrok.io']
+  }
 })
 

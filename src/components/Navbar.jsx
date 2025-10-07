@@ -4,7 +4,7 @@ import logoUrl from '../assets/images/logo.png'
 
 export default function Navbar({ onBookAppointment }){
   const { pathname } = useLocation()
-  const videoPagesWithHero = ['/gallery', '/blog', '/contact', '/services', '/dental-tourism']
+  const videoPagesWithHero = ['/gallery', '/blog', '/contact', '/services', '/dental-tourism', '/skin-hair-treatment']
   const hasVideoHero = videoPagesWithHero.includes(pathname)
   const [scrolled, setScrolled] = useState(pathname !== '/' && !hasVideoHero)
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
@@ -36,6 +36,7 @@ export default function Navbar({ onBookAppointment }){
           <NavLink to="/services" className={({isActive})=> isActive? 'active' : undefined}>Services</NavLink>
           <NavLink to="/gallery" className={({isActive})=> isActive? 'active' : undefined}>Gallery</NavLink>
           <NavLink to="/dental-tourism" className={({isActive})=> isActive? 'active' : undefined}>Dental Tourism</NavLink>
+          <NavLink to="/skin-hair-treatment" className={({isActive})=> isActive? 'active' : undefined}>Skin & Hair</NavLink>
           <NavLink to="/blog" className={({isActive})=> isActive? 'active' : undefined}>Blog</NavLink>
           <NavLink to="/contact" className={({isActive})=> isActive? 'active' : undefined}>Contact</NavLink>
         </div>
@@ -92,6 +93,13 @@ export default function Navbar({ onBookAppointment }){
               onClick={() => setMobileMenuOpen(false)}
             >
               Dental Tourism
+            </NavLink>
+            <NavLink
+              to="/skin-hair-treatment"
+              className={({isActive})=> isActive? 'active' : undefined}
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              Skin & Hair
             </NavLink>
             <NavLink
               to="/blog"
