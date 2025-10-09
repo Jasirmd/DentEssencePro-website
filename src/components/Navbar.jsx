@@ -4,8 +4,10 @@ import logoUrl from '../assets/images/logo.png'
 
 export default function Navbar({ onBookAppointment }){
   const { pathname } = useLocation()
-  const videoPagesWithHero = ['/gallery', '/blog', '/contact', '/services', '/dental-tourism', '/skin-hair-treatment']
-  const hasVideoHero = videoPagesWithHero.includes(pathname)
+  const videoPagesWithHero = ['/contact', '/services', '/dental-tourism', '/skin-hair-treatment']
+  // Only make navbar transparent on main blog page and category pages, not on individual blog posts
+  const isBlogPost = pathname.startsWith('/blog/') && !pathname.includes('/category/')
+  const hasVideoHero = videoPagesWithHero.includes(pathname) || pathname === '/blog' || pathname.includes('/blog/category/')
   const [scrolled, setScrolled] = useState(pathname !== '/' && !hasVideoHero)
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
@@ -34,7 +36,6 @@ export default function Navbar({ onBookAppointment }){
         <div className="nav-links desktop-nav">
           <NavLink to="/" end className={({isActive})=> isActive? 'active' : undefined}>Home</NavLink>
           <NavLink to="/services" className={({isActive})=> isActive? 'active' : undefined}>Services</NavLink>
-          <NavLink to="/gallery" className={({isActive})=> isActive? 'active' : undefined}>Gallery</NavLink>
           <NavLink to="/dental-tourism" className={({isActive})=> isActive? 'active' : undefined}>Dental Tourism</NavLink>
           <NavLink to="/skin-hair-treatment" className={({isActive})=> isActive? 'active' : undefined}>Skin & Hair</NavLink>
           <NavLink to="/blog" className={({isActive})=> isActive? 'active' : undefined}>Blog</NavLink>
@@ -73,19 +74,12 @@ export default function Navbar({ onBookAppointment }){
             >
               Home
             </NavLink>
-            <NavLink 
-              to="/services" 
+            <NavLink
+              to="/services"
               className={({isActive})=> isActive? 'active' : undefined}
               onClick={() => setMobileMenuOpen(false)}
             >
               Services
-            </NavLink>
-            <NavLink
-              to="/gallery"
-              className={({isActive})=> isActive? 'active' : undefined}
-              onClick={() => setMobileMenuOpen(false)}
-            >
-              Gallery
             </NavLink>
             <NavLink
               to="/dental-tourism"

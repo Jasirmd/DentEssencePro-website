@@ -17,7 +17,8 @@ export default function Footer(){
             <nav style={{display:'grid', gap:8, marginTop:8}}>
               <Link to="/">Home</Link>
               <Link to="/services">Services</Link>
-              <Link to="/gallery">Gallery</Link>
+              <Link to="/dental-tourism">Dental Tourism</Link>
+              <Link to="/skin-hair-treatment">Skin & Hair</Link>
               <Link to="/blog">Blog</Link>
               <Link to="/contact">Contact</Link>
             </nav>
