@@ -6,6 +6,12 @@ import { periodonticsBlogs } from './blogData/periodonticsGumHealth'
 import { dentalImplantsBlogs } from './blogData/dentalImplants'
 import { wisdomTeethBlogs } from './blogData/wisdomTeeth'
 import { cosmeticDentistryBlogs } from './blogData/cosmeticDentistry'
+import { denturesBlogs } from './blogData/denturesProsthodontics'
+import { oralHygieneBlogs } from './blogData/oralHygieneCare'
+import { cavitiesFillingsBlogs } from './blogData/cavitiesFillings'
+import { toothPainSensitivityBlogs } from './blogData/toothPainSensitivity'
+import { dentalCareTipsBlogs } from './blogData/dentalCareTips'
+import { sleepDisordersBlogs } from './blogData/sleepDisordersBruxism'
 // Import other topics as you add them:
 // ... etc
 
@@ -57,37 +63,37 @@ export const blogCategories = [
     id: 8,
     name: 'Dentures & Prosthodontics',
     slug: 'dentures-prosthodontics',
-    blogs: [] // Add denturesBlogs when ready
+    blogs: denturesBlogs
   },
   {
     id: 9,
     name: 'Oral Hygiene & Care',
     slug: 'oral-hygiene-care',
-    blogs: [] // Add oralHygieneBlogs when ready
+    blogs: oralHygieneBlogs
   },
   {
     id: 10,
     name: 'Cavities & Fillings',
     slug: 'cavities-fillings',
-    blogs: [] // Add cavitiesBlogs when ready
+    blogs: cavitiesFillingsBlogs
   },
   {
     id: 11,
     name: 'Tooth Pain & Sensitivity',
     slug: 'tooth-pain-sensitivity',
-    blogs: [] // Add toothPainBlogs when ready
+    blogs: toothPainSensitivityBlogs
   },
   {
     id: 12,
     name: 'Sleep Disorders & Bruxism',
     slug: 'sleep-disorders-bruxism',
-    blogs: [] // Add sleepDisordersBlogs when ready
+    blogs: sleepDisordersBlogs
   },
   {
     id: 13,
     name: 'Dental Care Tips',
     slug: 'dental-care-tips',
-    blogs: [] // Add dentalCareTipsBlogs when ready
+    blogs: dentalCareTipsBlogs
   }
 ]
 

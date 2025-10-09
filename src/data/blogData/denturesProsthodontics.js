@@ -1,0 +1,74 @@
+const fallback = 'https://images.unsplash.com/photo-1612531386531-29cf3a160680?q=80&w=1200&auto=format&fit=crop'
+
+export const denturesBlogs = [
+  {
+    slug: 'how-to-care-for-your-dentures',
+    title: 'How to care for your dentures',
+    category: 'Dentures & Prosthodontics',
+    categorySlug: 'dentures-prosthodontics',
+    cover: fallback,
+    excerpt: 'Simple daily care steps to keep dentures clean, comfortable, and long-lasting at DentEssencePRO, Bangalore.',
+    content: `||How to Care for Your Dentures||
+
+Dentures are a reliable solution for replacing missing teeth and restoring your smile and confidence. Just like natural teeth, dentures require proper care to stay clean, comfortable, and long-lasting. At DentEssencePRO Dental Clinic in Bangalore, we guide you through simple steps to keep dentures in excellent condition.
+
+//Daily Denture Care Tips//
+
+||1. Clean Your Dentures Properly||
+
+- Rinse dentures after every meal to remove food particles.
+- Use a soft-bristled brush and a non-abrasive denture cleanser. Do not use regular toothpaste as it can scratch the surface.
+- Gently brush your gums, tongue, and any remaining natural teeth before putting your dentures back in.
+
+||2. Handle with Care||
+
+- Clean dentures over a towel or a bowl of water to avoid breakage if dropped.
+- Avoid bending or damaging the clasps and plastic base.
+
+||3. Keep Them Moist||
+
+- Dentures can lose their shape if they dry out. When not in use, place them in plain water or denture-soaking solution.
+- Never use hot water, as it may warp your dentures.
+
+||4. Eat and Speak with Confidence||
+
+- Start with soft foods cut into small pieces until you adjust.
+- Chew slowly and evenly on both sides of your mouth.
+- Practice reading aloud to improve speech clarity and reduce any lisp.
+
+||5. Visit Your Dentist Regularly||
+
+- Routine check-ups at DentEssencePRO Dental Clinic Bangalore ensure your dentures fit well.
+- Poorly fitting dentures can cause gum irritation, mouth sores, or bone loss.
+- If you notice clicking, looseness, or discomfort, consult your dentist immediately.
+
+//What to Avoid with Dentures//
+
+❌ Do not use bleach or harsh cleaners. They can damage the material.
+❌ Do not sleep with dentures unless your dentist advises.
+❌ Do not ignore persistent pain, bad breath, or sores. These may signal an infection or poor fit.
+
+//Types of Dentures We Offer//
+
+Type | Best For
+Complete Dentures | Patients with all teeth missing in one arch
+Partial Dentures | Patients with a few missing teeth
+Implant-Supported Dentures | Patients seeking extra stability and chewing power
+
+//Why Choose DentEssencePRO for Denture Care?//
+
+At DentEssencePRO Dental Clinic, Bangalore, we offer:
+
+✅ Personalized denture solutions: complete, partial, and implant-supported dentures
+✅ Expert aftercare and adjustments
+✅ Patient education for long-lasting results
+
+||Contact Information||
+
+📍 DentEssencePRO Dental Clinic, Tatanagar, Bangalore
+📞 9742503814
+🌐 www.drmakamgangaiah.com
+
+✅ Key Takeaway: With proper care and regular dental visits, dentures can give you a natural smile and last for years. Trust the experts at DentEssencePRO Dental Clinic, Bangalore, for denture care and affordable dental treatment.`
+  }
+]
