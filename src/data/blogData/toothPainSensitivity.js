@@ -1,4 +1,16 @@
-const fallback = 'https://images.unsplash.com/photo-1612531386531-29cf3a160680?q=80&w=1200&auto=format&fit=crop'
+import blog1 from '../../assets/images/Blogs/Tooth Pain & Sensitivity/blog1.jpg'
+import blog2 from '../../assets/images/Blogs/Tooth Pain & Sensitivity/blog2.jpg'
+import blog3 from '../../assets/images/Blogs/Tooth Pain & Sensitivity/blog3.jpg'
+import blog4 from '../../assets/images/Blogs/Tooth Pain & Sensitivity/blog4.jpg'
+import blog5 from '../../assets/images/Blogs/Tooth Pain & Sensitivity/blog5.jpg'
+import blog6 from '../../assets/images/Blogs/Tooth Pain & Sensitivity/blog6.jpg'
+import blog7 from '../../assets/images/Blogs/Tooth Pain & Sensitivity/blog7.jpg'
+import blog8 from '../../assets/images/Blogs/Tooth Pain & Sensitivity/blog8.jpg'
+import blog9 from '../../assets/images/Blogs/Tooth Pain & Sensitivity/blog9.jpg'
+import blog10 from '../../assets/images/Blogs/Tooth Pain & Sensitivity/blog10.png'
+import blog11 from '../../assets/images/Blogs/Tooth Pain & Sensitivity/blog11.jpg'
+import blog12 from '../../assets/images/Blogs/Tooth Pain & Sensitivity/blog12.jpg'
+import fallback from '../../assets/images/Blogs/Fallback.png'
 
 export const toothPainSensitivityBlogs = [
   {
@@ -6,7 +18,7 @@ export const toothPainSensitivityBlogs = [
     title: 'What causes tooth hypersensitivity?',
     category: 'Tooth Pain & Sensitivity',
     categorySlug: 'tooth-pain-sensitivity',
-    cover: fallback,
+    cover: blog1,
     excerpt: 'Tooth sensitivity occurs when enamel wears or roots are exposed, causing sharp pain to hot, cold, sweet, or acidic triggers.',
     content: `||What causes tooth hypersensitivity?||
 
@@ -47,7 +59,7 @@ Book your appointment today!`
     title: 'Why do my teeth hurt suddenly?',
     category: 'Tooth Pain & Sensitivity',
     categorySlug: 'tooth-pain-sensitivity',
-    cover: fallback,
+    cover: blog2,
     excerpt: 'Sudden tooth pain signals an underlying issue. Timely diagnosis prevents complications and brings faster relief.',
     content: `||Why do my teeth hurt suddenly?||
 
@@ -75,7 +87,7 @@ Do not let sudden tooth pain disrupt your day. Book your consultation at DentEss
     title: 'What causes toothache?',
     category: 'Tooth Pain & Sensitivity',
     categorySlug: 'tooth-pain-sensitivity',
-    cover: fallback,
+    cover: blog3,
     excerpt: 'Toothache ranges from mild sensitivity to severe throbbing pain and usually indicates an underlying dental problem.',
     content: `||What causes toothache?||
 
@@ -136,7 +148,7 @@ Call now or book online for same-day appointments.`
     title: 'When should I see a dentist for a toothache?',
     category: 'Tooth Pain & Sensitivity',
     categorySlug: 'tooth-pain-sensitivity',
-    cover: fallback,
+    cover: blog4,
     excerpt: 'See a dentist if pain lasts more than a day, worsens, or is accompanied by red-flag symptoms like swelling or fever.',
     content: `||When should I see a dentist for a toothache?||
 
@@ -181,7 +193,7 @@ Call now or book your appointment online - walk in with pain, walk out with reli
     title: 'What does a sharp or shooting tooth pain mean?',
     category: 'Tooth Pain & Sensitivity',
     categorySlug: 'tooth-pain-sensitivity',
-    cover: fallback,
+    cover: blog5,
     excerpt: 'Sharp pain often involves the nerve, enamel, or gums and indicates an underlying issue needing attention.',
     content: `||What does a sharp or shooting tooth pain mean?||
 
@@ -241,7 +253,7 @@ Do not ignore sharp or shooting tooth pain - early diagnosis can save your tooth
     title: 'Can a toothache go away on its own?',
     category: 'Tooth Pain & Sensitivity',
     categorySlug: 'tooth-pain-sensitivity',
-    cover: fallback,
+    cover: blog6,
     excerpt: 'Toothaches that fade often return. Underlying decay or infection remains and needs professional care.',
     content: `||Can a toothache go away on its own?||
 
@@ -280,7 +292,7 @@ Do not wait for pain to return - early intervention prevents complications and s
     title: 'Is a toothache always caused by a tooth problem?',
     category: 'Tooth Pain & Sensitivity',
     categorySlug: 'tooth-pain-sensitivity',
-    cover: fallback,
+    cover: blog7,
     excerpt: 'Not always. Tooth pain can be referred from sinus, TMJ, ear, nerve or cardiac issues.',
     content: `||Is a toothache always caused by a tooth problem?||
 
@@ -330,7 +342,7 @@ Whether your pain is due to a dental issue or something deeper, our expert team 
     title: 'What can I do at home to relieve toothache pain?',
     category: 'Tooth Pain & Sensitivity',
     categorySlug: 'tooth-pain-sensitivity',
-    cover: fallback,
+    cover: blog8,
     excerpt: 'Safe home remedies for temporary relief: salt rinse, cold compress, clove oil, OTC painkillers, and more.',
     content: `||What can I do at home to relieve toothache pain?||
 
@@ -391,7 +403,7 @@ At DentEssencePRO Dental Clinic, we provide long-lasting relief with safe, effec
     title: 'Can a toothache be a dental emergency?',
     category: 'Tooth Pain & Sensitivity',
     categorySlug: 'tooth-pain-sensitivity',
-    cover: fallback,
+    cover: blog9,
     excerpt: 'Yes. Severe pain, swelling, fever, pus, or trauma are emergency signs. Seek prompt care.',
     content: `||Can a toothache be a dental emergency?||
 
@@ -445,7 +457,7 @@ If you are experiencing a dental emergency in Bangalore, do not wait. Prof. Dr. 
     title: 'What are the treatment options for toothache?',
     category: 'Tooth Pain & Sensitivity',
     categorySlug: 'tooth-pain-sensitivity',
-    cover: fallback,
+    cover: blog10,
     excerpt: 'Treatment depends on cause: fillings, root canal, crown, gum therapy, antibiotics, extraction, nightguards, and more.',
     content: `||What are the treatment options for toothache?||
 
@@ -516,7 +528,7 @@ If you are dealing with a toothache - whether mild, sharp, or throbbing - do not
     title: 'Can stress or grinding teeth cause toothache?',
     category: 'Tooth Pain & Sensitivity',
     categorySlug: 'tooth-pain-sensitivity',
-    cover: fallback,
+    cover: blog11,
     excerpt: 'Yes. Stress and bruxism cause pain, wear, cracks, sensitivity, TMJ pain, and headaches.',
     content: `||Can stress or grinding teeth cause toothache?||
 
@@ -573,7 +585,7 @@ If you are experiencing tooth pain without obvious decay, the cause might be hid
     title: 'How do I prevent toothaches?',
     category: 'Tooth Pain & Sensitivity',
     categorySlug: 'tooth-pain-sensitivity',
-    cover: fallback,
+    cover: blog12,
     excerpt: 'Simple steps and home remedies for temporary relief; see a dentist for diagnosis and treatment.',
     content: `||How do I prevent toothaches?||
 

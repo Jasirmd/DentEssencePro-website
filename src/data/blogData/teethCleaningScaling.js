@@ -1,4 +1,14 @@
-const fallback = 'https://images.unsplash.com/photo-1612531386531-29cf3a160680?q=80&w=1200&auto=format&fit=crop'
+import blog1 from '../../assets/images/Blogs/Teeth cleaning and scaling/blog1.jpg'
+import blog2 from '../../assets/images/Blogs/Teeth cleaning and scaling/blog2.png'
+import blog3 from '../../assets/images/Blogs/Teeth cleaning and scaling/blog3.png'
+import blog4 from '../../assets/images/Blogs/Teeth cleaning and scaling/blog4.png'
+import blog5 from '../../assets/images/Blogs/Teeth cleaning and scaling/blog5.jpg'
+import blog6 from '../../assets/images/Blogs/Teeth cleaning and scaling/blog6.jpg'
+import blog7 from '../../assets/images/Blogs/Teeth cleaning and scaling/blog7.jpg'
+import blog8 from '../../assets/images/Blogs/Teeth cleaning and scaling/blog8.jpg'
+import blog9 from '../../assets/images/Blogs/Teeth cleaning and scaling/blog9.jpg'
+import blog10 from '../../assets/images/Blogs/Teeth cleaning and scaling/blog10.jpeg'
+import fallback from '../../assets/images/Blogs/Fallback.png'
 
 export const teethCleaningBlogs = [
   {
@@ -6,7 +16,7 @@ export const teethCleaningBlogs = [
     title: 'Cost of Teeth Cleaning (Scaling) in Bangalore',
     category: 'Teeth Cleaning & Scaling',
     categorySlug: 'teeth-cleaning-scaling',
-    cover: fallback,
+    cover: blog1,
     excerpt: 'Maintaining a healthy smile goes beyond daily brushing and flossing. Learn about professional scaling costs and benefits at DentEssencePRO.',
     content: `Maintaining a healthy smile goes beyond daily brushing and flossing. Over time, plaque hardens into tartar (calculus), which cannot be removed by regular home care and requires professional teeth cleaning (scaling). At DentEssencePRO Dental Clinic, Bangalore, we offer safe, effective, and affordable scaling treatments tailored to your oral health needs.
 
@@ -45,7 +55,7 @@ Don't wait until tartar leads to gum problems or tooth loss. Schedule your teeth
     title: 'What is dental cleaning or scaling?',
     category: 'Teeth Cleaning & Scaling',
     categorySlug: 'teeth-cleaning-scaling',
-    cover: fallback,
+    cover: blog2,
     excerpt: 'Dental cleaning, also known as scaling and polishing, is a professional procedure to remove plaque, tartar, and surface stains from your teeth.',
     content: `Patient Education by DentEssencePRO Dental Clinic, Bangalore
 
@@ -82,7 +92,7 @@ DentEssencePRO Dental Clinic, Tatanagar, Bangalore
     title: 'Why is professional cleaning necessary?',
     category: 'Teeth Cleaning & Scaling',
     categorySlug: 'teeth-cleaning-scaling',
-    cover: fallback,
+    cover: blog3,
     excerpt: 'Professional teeth cleaning is essential for maintaining healthy gums, fresh breath, and cavity-free teeth. Learn why it matters.',
     content: `Preventive Care by DentEssencePRO Dental Clinic, Bangalore
 
@@ -123,7 +133,7 @@ By Prof. Dr. Makam Gangaiah – Implant Prosthodontist, DentessencePro Dental Cl
     title: 'How long does a cleaning session take?',
     category: 'Teeth Cleaning & Scaling',
     categorySlug: 'teeth-cleaning-scaling',
-    cover: fallback,
+    cover: blog4,
     excerpt: 'A routine dental cleaning session usually takes 30 to 45 minutes. Learn what factors affect the duration.',
     content: `Expert Dental Care at DentEssencePRO Dental Clinic, Bangalore
 
@@ -151,7 +161,7 @@ DentEssencePRO Dental Clinic, Tatanagar, Bangalore
     title: 'Is teeth cleaning painful?',
     category: 'Teeth Cleaning & Scaling',
     categorySlug: 'teeth-cleaning-scaling',
-    cover: fallback,
+    cover: blog5,
     excerpt: 'No, teeth cleaning is usually not painful. Most patients describe it as a mild vibration or scraping sensation.',
     content: `Gentle Dental Care at DentEssencePRO Dental Clinic, Bangalore
 
@@ -182,7 +192,7 @@ DentEssencePRO Dental Clinic, Tatanagar, Bangalore
     title: 'Will teeth become loose after cleaning?',
     category: 'Teeth Cleaning & Scaling',
     categorySlug: 'teeth-cleaning-scaling',
-    cover: fallback,
+    cover: blog6,
     excerpt: 'No, teeth do not become loose because of cleaning. Learn the truth behind this common myth.',
     content: `Expert Clarification from DentEssencePRO Dental Clinic, Bangalore
 
@@ -218,7 +228,7 @@ DentEssencePRO Dental Clinic, Tatanagar, Bangalore
     title: 'How often should I get a dental cleaning?',
     category: 'Teeth Cleaning & Scaling',
     categorySlug: 'teeth-cleaning-scaling',
-    cover: fallback,
+    cover: blog7,
     excerpt: 'You should get a professional dental cleaning every 6 months to maintain healthy gums and prevent cavities.',
     content: `Preventive Oral Care by DentEssencePRO Dental Clinic, Bangalore
 
@@ -261,7 +271,7 @@ By Prof. Dr. Makam Gangaiah – Implant Prosthodontist, DentessencePro Dental Cl
     title: 'Are there any side effects after cleaning?',
     category: 'Teeth Cleaning & Scaling',
     categorySlug: 'teeth-cleaning-scaling',
-    cover: fallback,
+    cover: blog8,
     excerpt: 'Dental cleaning is safe, but some mild and temporary side effects can occur. Learn what to expect.',
     content: `Honest Guidance from DentEssencePRO Dental Clinic, Bangalore
 
@@ -307,7 +317,7 @@ DentEssencePRO Dental Clinic, Tatanagar, Bangalore
     title: 'Can teeth cleaning whiten my teeth?',
     category: 'Teeth Cleaning & Scaling',
     categorySlug: 'teeth-cleaning-scaling',
-    cover: fallback,
+    cover: blog9,
     excerpt: 'Yes — to an extent. Professional cleaning can make your teeth look brighter by removing surface stains and tartar.',
     content: `Smile Brighter with DentEssencePRO Dental Clinic, Bangalore
 
@@ -350,7 +360,7 @@ DentEssencePRO Dental Clinic, Tatanagar, Bangalore
     title: 'What is the cost of teeth cleaning in Bangalore?',
     category: 'Teeth Cleaning & Scaling',
     categorySlug: 'teeth-cleaning-scaling',
-    cover: fallback,
+    cover: blog10,
     excerpt: 'The cost of professional teeth cleaning in Bangalore typically ranges from ₹800 to ₹2,500, depending on your teeth and gum condition.',
     content: `Transparent Pricing at DentEssencePRO Dental Clinic, Tatanagar
 

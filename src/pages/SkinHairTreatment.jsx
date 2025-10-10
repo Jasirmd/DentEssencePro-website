@@ -1,4 +1,5 @@
 import { useEffect, useMemo } from 'react'
+import SEO from '../components/SEO'
 
 const HERO_FEATURES = [
   'Advanced Dermatology',
@@ -126,9 +127,46 @@ const TECHNOLOGY_HIGHLIGHTS = [
 ]
 
 export default function SkinHairTreatment() {
-  useEffect(() => {
-    document.title = 'Skin & Hair Treatment in Bangalore | DentEssencePro'
-  }, [])
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "MedicalClinic",
+    "name": "DentEssencePro Skin & Hair Treatment",
+    "description": "Advanced dermatology and hair restoration services in Bangalore. Expert skin treatments, hair loss solutions, aesthetic medicine, and cosmetic procedures.",
+    "url": "https://dentessencepro.com/skin-hair-treatment",
+    "telephone": "+91-9742503814",
+    "email": "info@dentessencepro.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "House of Hiranandani, Balaji complex 1, Kodigehalli Main Rd",
+      "addressLocality": "Bangalore",
+      "addressRegion": "Karnataka",
+      "postalCode": "560094",
+      "addressCountry": "IN"
+    },
+    "medicalSpecialty": "Dermatology",
+    "availableService": [
+      {
+        "@type": "MedicalProcedure",
+        "name": "Anti-Aging & Wrinkle Reduction",
+        "description": "Botox, fillers, chemical peels, and collagen-boosting therapies"
+      },
+      {
+        "@type": "MedicalProcedure",
+        "name": "Skin Brightening & Pigmentation",
+        "description": "Laser therapy, clinical brightening, and melasma treatment"
+      },
+      {
+        "@type": "MedicalProcedure",
+        "name": "Hair Loss Prevention & Growth",
+        "description": "PRP therapy, hair transplant solutions, and scalp treatments"
+      },
+      {
+        "@type": "MedicalProcedure",
+        "name": "Medical Facials & Peels",
+        "description": "Clinical-grade facials and professional skincare treatments"
+      }
+    ]
+  }
 
   const sparkles = useMemo(
     () =>
@@ -143,7 +181,15 @@ export default function SkinHairTreatment() {
   )
 
   return (
-    <div className="skin-hair-page">
+    <>
+      <SEO
+        title="Skin & Hair Treatment - Advanced Dermatology | DentEssencePro Bangalore"
+        description="Expert skin and hair treatments in Bangalore: anti-aging, hair restoration, skin brightening, PRP therapy, and aesthetic medicine. Advanced dermatology and trichology services."
+        keywords="skin treatment bangalore, hair restoration bangalore, dermatology bangalore, PRP therapy, botox, hair transplant, skin brightening, aesthetic medicine bangalore"
+        canonical="/skin-hair-treatment"
+        structuredData={structuredData}
+      />
+      <div className="skin-hair-page">
       <section className="skin-hero">
         <div className="sparkle-container">
           {sparkles.map((sparkle, index) => (
@@ -977,6 +1023,7 @@ export default function SkinHairTreatment() {
           }
         }
       `}</style>
-    </div>
+      </div>
+    </>
   )
 }

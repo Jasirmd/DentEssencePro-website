@@ -1,4 +1,7 @@
-const fallback = 'https://images.unsplash.com/photo-1612531386531-29cf3a160680?q=80&w=1200&auto=format&fit=crop'
+import blog1 from '../../assets/images/Blogs/Dental Care Tips/blog1.jpg'
+import blog2 from '../../assets/images/Blogs/Dental Care Tips/blog2.jpg'
+import blog3 from '../../assets/images/Blogs/Dental Care Tips/blog3.png'
+import fallback from '../../assets/images/Blogs/Fallback.png'
 
 export const dentalCareTipsBlogs = [
   {
@@ -6,7 +9,7 @@ export const dentalCareTipsBlogs = [
     title: 'How can you manage post-dental procedure discomfort without antibiotics if you are allergic to them?',
     category: 'Dental Care Tips',
     categorySlug: 'dental-care-tips',
-    cover: fallback,
+    cover: blog1,
     excerpt: 'For antibiotic allergies, manage pain and swelling with NSAIDs, paracetamol, compresses, and antiseptic hygiene. Use alternatives only when necessary.',
     content: `||How can you manage post-dental procedure discomfort without antibiotics if you are allergic to them?||
 
@@ -59,7 +62,7 @@ Dental care for patients with antibiotic allergy`
     title: 'Can a cracked tooth heal on its own?',
     category: 'Dental Care Tips',
     categorySlug: 'dental-care-tips',
-    cover: fallback,
+    cover: blog2,
     excerpt: 'No. Teeth cannot regenerate like bone. Cracks worsen and invite infection. Seek timely treatment.',
     content: `||Can a cracked tooth heal on its own?||
 
@@ -94,7 +97,7 @@ Looking for an experienced dentist in Bangalore for cracked tooth treatment? Con
     title: 'Oral health and mental health - are they interconnected?',
     category: 'Dental Care Tips',
     categorySlug: 'dental-care-tips',
-    cover: fallback,
+    cover: blog3,
     excerpt: 'Yes. Oral issues affect confidence and stress; mental health affects hygiene and habits. Steps to improve both.',
     content: `||Oral health and mental health - are they interconnected?||
 

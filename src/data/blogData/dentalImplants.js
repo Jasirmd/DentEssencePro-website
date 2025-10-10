@@ -1,4 +1,28 @@
-const fallback = 'https://images.unsplash.com/photo-1612531386531-29cf3a160680?q=80&w=1200&auto=format&fit=crop'
+import blog1 from '../../assets/images/Blogs/Dental Implants/blog1.jpg'
+import blog2 from '../../assets/images/Blogs/Dental Implants/blog2.jpg'
+import blog3 from '../../assets/images/Blogs/Dental Implants/blog3.jpg'
+import blog4 from '../../assets/images/Blogs/Dental Implants/blog4.jpg'
+import blog5 from '../../assets/images/Blogs/Dental Implants/blog5.jpg'
+import blog6 from '../../assets/images/Blogs/Dental Implants/blog6.jpg'
+import blog7 from '../../assets/images/Blogs/Dental Implants/blog7.png'
+import blog8 from '../../assets/images/Blogs/Dental Implants/blog8.jpg'
+import blog9 from '../../assets/images/Blogs/Dental Implants/blog9.jpg'
+import blog10 from '../../assets/images/Blogs/Dental Implants/blog10.jpg'
+import blog11 from '../../assets/images/Blogs/Dental Implants/blog11.jpg'
+import blog12 from '../../assets/images/Blogs/Dental Implants/blog12.jpg'
+import blog13 from '../../assets/images/Blogs/Dental Implants/blog13.jpg'
+import blog14 from '../../assets/images/Blogs/Dental Implants/blog14.jpg'
+import blog15 from '../../assets/images/Blogs/Dental Implants/blog15.jpg'
+import blog16 from '../../assets/images/Blogs/Dental Implants/blog16.jpeg'
+import blog17 from '../../assets/images/Blogs/Dental Implants/blog17.jpg'
+import blog18 from '../../assets/images/Blogs/Dental Implants/blog18.jpeg'
+import blog19 from '../../assets/images/Blogs/Dental Implants/blog19.jpg'
+import blog20 from '../../assets/images/Blogs/Dental Implants/blog20.jpg'
+import blog21 from '../../assets/images/Blogs/Dental Implants/blog21.jpg'
+import blog22 from '../../assets/images/Blogs/Dental Implants/blog22.jpg'
+import blog23 from '../../assets/images/Blogs/Dental Implants/blog23.png'
+import blog24 from '../../assets/images/Blogs/Dental Implants/blog24.jpg'
+import fallback from '../../assets/images/Blogs/Fallback.png'
 
 export const dentalImplantsBlogs = [
   {
@@ -6,7 +30,7 @@ export const dentalImplantsBlogs = [
     title: 'What is the best treatment for missing teeth?',
     category: 'Dental Implants',
     categorySlug: 'dental-implants',
-    cover: fallback,
+    cover: blog1,
     excerpt: 'The best treatment for a missing tooth depends on several factors such as your age, overall oral health, bone density, budget, and aesthetic needs.',
     content: `The best treatment for a missing tooth depends on several factors such as your age, overall oral health, bone density, budget, and aesthetic needs. Here's a breakdown of the top treatment options, from most ideal to alternative solutions:
 
@@ -64,7 +88,7 @@ We specialize in dental implants, zirconia bridges, and custom dentures-offering
     title: 'What are dental implants?',
     category: 'Dental Implants',
     categorySlug: 'dental-implants',
-    cover: fallback,
+    cover: blog2,
     excerpt: 'Dental implants are artificial tooth roots made of biocompatible titanium or zirconia that are surgically placed into your jawbone.',
     content: `Dental implants are artificial tooth roots made of biocompatible titanium or zirconia that are surgically placed into your jawbone to support a replacement tooth, bridge, or denture.
 
@@ -109,7 +133,7 @@ The visible tooth-like cap that sits on top.
     title: 'Who is eligible for dental implants?',
     category: 'Dental Implants',
     categorySlug: 'dental-implants',
-    cover: fallback,
+    cover: blog3,
     excerpt: 'Most people with one or more missing teeth are eligible for dental implants - but some health and structural conditions must be met.',
     content: `Most people with one or more missing teeth are eligible for dental implants - but some health and structural conditions must be met to ensure implant success.
 
@@ -143,7 +167,7 @@ The visible tooth-like cap that sits on top.
     title: 'Are dental implants painful?',
     category: 'Dental Implants',
     categorySlug: 'dental-implants',
-    cover: fallback,
+    cover: blog4,
     excerpt: 'Most patients experience little to no pain! Dental implant procedures are generally painless, thanks to modern techniques.',
     content: `Short Answer: No - Most patients experience little to no pain!
 
@@ -174,7 +198,7 @@ Mild soreness or swelling for 1-3 days, easily managed with prescribed medicatio
     title: 'How long do dental implants last?',
     category: 'Dental Implants',
     categorySlug: 'dental-implants',
-    cover: fallback,
+    cover: blog5,
     excerpt: '20+ Years - Often a Lifetime! Dental implants are one of the most durable tooth replacement options available.',
     content: `✅ Short Answer: 20+ Years - Often a Lifetime!
 
@@ -204,7 +228,7 @@ Dr. Makam Gangaiah uses premium-grade implants with advanced 3D placement techni
     title: 'How long does the implant process take?',
     category: 'Dental Implants',
     categorySlug: 'dental-implants',
-    cover: fallback,
+    cover: blog6,
     excerpt: 'The dental implant process typically takes 3 to 6 months, depending on your individual case.',
     content: `The dental implant process typically takes 3 to 6 months, depending on your individual case. Here's a breakdown of the stages:
 
@@ -252,7 +276,7 @@ Risk | Slightly higher if not well-indicated | More predictable
     title: 'Why choose DentEssencePRO Dental Clinic for implants?',
     category: 'Dental Implants',
     categorySlug: 'dental-implants',
-    cover: fallback,
+    cover: blog7,
     excerpt: 'Led by Dr. Prof. Makam Gangaiah, an acclaimed implantologist with decades of experience combining clinical excellence with a personal touch.',
     content: `||1. Expertise You Can Trust||
 
@@ -288,7 +312,7 @@ Patients from across Bangalore, India, and abroad trust DentEssencePRO for hones
     title: 'What is All-On-4?',
     category: 'Dental Implants',
     categorySlug: 'dental-implants',
-    cover: fallback,
+    cover: blog8,
     excerpt: 'All-on-4 is a revolutionary dental implant technique that uses only four strategically placed implants to support a full arch of fixed teeth.',
     content: `By Prof. Dr. Makam Gangaiah - Implant Specialist, DentessencePro Dental Clinic, Bangalore
 
@@ -337,7 +361,7 @@ At DentessencePro Dental Clinic, we've helped hundreds of patients regain their 
     title: 'Who Is a Good Candidate for All-on-4 Dental Implants?',
     category: 'Dental Implants',
     categorySlug: 'dental-implants',
-    cover: fallback,
+    cover: blog9,
     excerpt: 'If you are struggling with missing teeth, loose dentures, or failing dental health, All-on-4 dental implants may be the life-changing solution.',
     content: `By Prof. Dr. Makam Gangaiah - Implant Prosthodontist, DentessencePro Dental Clinic, Bangalore
 
@@ -383,7 +407,7 @@ At DentessencePro Dental Clinic, Prof. Dr. Makam Gangaiah personally evaluates e
     title: 'Is the All-on-4 procedure painful?',
     category: 'Dental Implants',
     categorySlug: 'dental-implants',
-    cover: fallback,
+    cover: blog10,
     excerpt: 'No, the procedure is not painful. The All-on-4 treatment is performed using local anesthesia and sedation options for maximum comfort.',
     content: `By Prof. Dr. Makam Gangaiah - Implant Prosthodontist, DentessencePro Dental Clinic, Bangalore
 
@@ -426,7 +450,7 @@ Experience expert care with Prof. Dr. Makam Gangaiah, trusted implant specialist
     title: 'How long does the All-on-4 treatment take?',
     category: 'Dental Implants',
     categorySlug: 'dental-implants',
-    cover: fallback,
+    cover: blog11,
     excerpt: 'The All-on-4 dental implant treatment is designed to be faster and more efficient than traditional full-mouth implant procedures.',
     content: `By Prof. Dr. Makam Gangaiah - Full-Arch Implant Specialist, DentessencePro Dental Clinic, Bangalore
 
@@ -468,7 +492,7 @@ You get fixed teeth on day one, and the final smile in just a few weeks - unlike
     title: 'How are All-on-4 implants different from traditional dentures?',
     category: 'Dental Implants',
     categorySlug: 'dental-implants',
-    cover: fallback,
+    cover: blog12,
     excerpt: 'All-on-4 dental implants offer fixed teeth that look, feel, and function like natural teeth - a modern alternative to dentures.',
     content: `By Prof. Dr. Makam Gangaiah - Prosthodontist & Implant Expert, DentessencePro Dental Clinic, Bangalore
 
@@ -505,7 +529,7 @@ If you're tired of loose dentures or missing teeth, book your consultation at De
     title: 'How long do All-on-4 implants last?',
     category: 'Dental Implants',
     categorySlug: 'dental-implants',
-    cover: fallback,
+    cover: blog13,
     excerpt: 'All-on-4 dental implants can last 15 years or more, and in many cases, even a lifetime with proper care and maintenance.',
     content: `By Prof. Dr. Makam Gangaiah - Implant Prosthodontist, DentessencePro Dental Clinic, Bangalore
 
@@ -557,7 +581,7 @@ Book your consultation at DentessencePro Dental Clinic in Bangalore to learn if 
     title: 'Do I get teeth on the same day?',
     category: 'Dental Implants',
     categorySlug: 'dental-implants',
-    cover: fallback,
+    cover: blog14,
     excerpt: 'Yes - in most cases, you do get teeth on the same day with the All-on-4 dental implant procedure. This concept is called "Teeth in a Day".',
     content: `By Prof. Dr. Makam Gangaiah - Full-Arch Implant Specialist, DentessencePro Dental Clinic, Bangalore
 
@@ -606,7 +630,7 @@ Schedule your appointment at DentessencePro Dental Clinic, RMV 2nd Stage, Bangal
     title: 'Do I need bone grafting?',
     category: 'Dental Implants',
     categorySlug: 'dental-implants',
-    cover: fallback,
+    cover: blog15,
     excerpt: 'In most cases, No. One of the biggest advantages of All-on-4 is that it usually eliminates the need for bone grafting.',
     content: `Answered by Prof. Dr. Makam Gangaiah - Implant Prosthodontist, DentessencePro Dental Clinic, Bangalore
 
@@ -645,7 +669,7 @@ Visit DentessencePro Dental Clinic in RMV 2nd Stage, Bangalore and get evaluated
     title: 'What is the cost of All-on-4 treatment in India?',
     category: 'Dental Implants',
     categorySlug: 'dental-implants',
-    cover: fallback,
+    cover: blog16,
     excerpt: 'The cost of All-on-4 dental implants in India varies depending on several factors such as the implant system used and prosthesis type.',
     content: `By Prof. Dr. Makam Gangaiah - Full-Arch Implant Specialist, DentessencePro Dental Clinic, Bangalore
 
@@ -703,7 +727,7 @@ Visit DentessencePro Dental Clinic, RMV 2nd Stage, for a personalized quote and 
     title: 'How do I care for All-on-4 implants?',
     category: 'Dental Implants',
     categorySlug: 'dental-implants',
-    cover: fallback,
+    cover: blog17,
     excerpt: 'Proper care of All-on-4 dental implants is essential to ensure their long-term success and health.',
     content: `By Prof. Dr. Makam Gangaiah - Implant Prosthodontist, DentessencePro Dental Clinic, Bangalore
 
@@ -762,7 +786,7 @@ Visit DentessencePro Dental Clinic, RMV 2nd Stage, for expert care, implant hygi
     title: 'What are All-on-6 dental implants?',
     category: 'Dental Implants',
     categorySlug: 'dental-implants',
-    cover: fallback,
+    cover: blog18,
     excerpt: 'All-on-6 uses six strategically placed dental implants to support a full arch of fixed, non-removable artificial teeth.',
     content: `By Prof. Dr. Makam Gangaiah - Prosthodontist & Implant Expert, DentessencePro Dental Clinic, Bangalore
 
@@ -797,7 +821,7 @@ Visit DentessencePro Dental Clinic, RMV 2nd Stage, for expert evaluation and tre
     title: 'Who is a candidate for All-on-6 treatment?',
     category: 'Dental Implants',
     categorySlug: 'dental-implants',
-    cover: fallback,
+    cover: blog19,
     excerpt: 'All-on-6 is excellent for patients who have lost most or all teeth and want a fixed, permanent, and natural-looking replacement.',
     content: `Expert Insight from Prof. Dr. Makam Gangaiah - Implant Prosthodontist, DentessencePro Dental Clinic, Bangalore
 
@@ -844,7 +868,7 @@ At DentessencePro Dental Clinic, we use 3D CBCT imaging and expert planning by P
     title: 'All-on-6 vs All-on-4 - What is the difference?',
     category: 'Dental Implants',
     categorySlug: 'dental-implants',
-    cover: fallback,
+    cover: blog20,
     excerpt: 'The key difference lies in the number of implants used, bone support, and long-term strength of the prosthesis.',
     content: `Explained by Prof. Dr. Makam Gangaiah - Implant Prosthodontist, DentessencePro Dental Clinic, Bangalore
 
@@ -891,7 +915,7 @@ Get a full digital evaluation and personalized recommendation with 3D CBCT scans
     title: 'What if I have bone loss?',
     category: 'Dental Implants',
     categorySlug: 'dental-implants',
-    cover: fallback,
+    cover: blog21,
     excerpt: 'Even with moderate to severe bone loss, you may still be eligible for All-on-6 dental implants with advanced planning and techniques.',
     content: `Answered by Prof. Dr. Makam Gangaiah - Implant Prosthodontist, DentessencePro Dental Clinic, Bangalore
 
@@ -942,7 +966,7 @@ Visit DentessencePro Dental Clinic, RMV 2nd Stage, Bangalore for a full bone ass
     title: 'What is the cost of All-on-6 dental implants in India?',
     category: 'Dental Implants',
     categorySlug: 'dental-implants',
-    cover: fallback,
+    cover: blog22,
     excerpt: 'The cost varies depending on the clinic expertise, technology used, type of implant system, and material of the final prosthesis.',
     content: `By Prof. Dr. Makam Gangaiah - Implant Prosthodontist, DentessencePro Dental Clinic, Bangalore
 
@@ -982,7 +1006,7 @@ Get expert-guided, long-lasting All-on-6 implants at DentessencePro Dental Clini
     title: 'What are the benefits of All-on-6 implants?',
     category: 'Dental Implants',
     categorySlug: 'dental-implants',
-    cover: fallback,
+    cover: blog23,
     excerpt: 'All-on-6 offers a life-changing solution restoring your smile, function, and confidence with fixed, non-removable teeth.',
     content: `By Prof. Dr. Makam Gangaiah - Full-Arch Implant Specialist, DentessencePro Dental Clinic, Bangalore
 
@@ -1028,7 +1052,7 @@ Led by Prof. Dr. Makam Gangaiah, our team combines world-class implant systems w
     title: 'Where can I get All-on-6 implants in Bangalore?',
     category: 'Dental Implants',
     categorySlug: 'dental-implants',
-    cover: fallback,
+    cover: blog24,
     excerpt: 'DentessencePro Dental Clinic, located in RMV 2nd Stage, is one of the most trusted centers in Bangalore for All-on-6 implants.',
     content: `Expert Care by Prof. Dr. Makam Gangaiah - Implant Prosthodontist, DentessencePro Dental Clinic
 

@@ -1,4 +1,21 @@
-const fallback = 'https://images.unsplash.com/photo-1612531386531-29cf3a160680?q=80&w=1200&auto=format&fit=crop'
+import blog1 from '../../assets/images/Blogs/Oral Hygiene & Care/blog1.jpg'
+import blog2 from '../../assets/images/Blogs/Oral Hygiene & Care/blog2.jpg'
+import blog3 from '../../assets/images/Blogs/Oral Hygiene & Care/blog3.jpg'
+import blog4 from '../../assets/images/Blogs/Oral Hygiene & Care/blog4.jpg'
+import blog5 from '../../assets/images/Blogs/Oral Hygiene & Care/blog5.jpg'
+import blog6 from '../../assets/images/Blogs/Oral Hygiene & Care/blog6.jpg'
+import blog7 from '../../assets/images/Blogs/Oral Hygiene & Care/blog7.jpeg'
+import blog8 from '../../assets/images/Blogs/Oral Hygiene & Care/blog8.jpg'
+import blog9 from '../../assets/images/Blogs/Oral Hygiene & Care/blog9.jpg'
+import blog10 from '../../assets/images/Blogs/Oral Hygiene & Care/blog10.jpg'
+import blog11 from '../../assets/images/Blogs/Oral Hygiene & Care/blog11.jpg'
+import blog12 from '../../assets/images/Blogs/Oral Hygiene & Care/blog12.jpg'
+import blog13 from '../../assets/images/Blogs/Oral Hygiene & Care/blog13.jpg'
+import blog14 from '../../assets/images/Blogs/Oral Hygiene & Care/blog14.jpg'
+import blog15 from '../../assets/images/Blogs/Oral Hygiene & Care/blog15.jpg'
+import blog16 from '../../assets/images/Blogs/Oral Hygiene & Care/blog16.jpg'
+import blog17 from '../../assets/images/Blogs/Oral Hygiene & Care/blog17.jpg'
+import fallback from '../../assets/images/Blogs/Fallback.png'
 
 export const oralHygieneBlogs = [
   {
@@ -6,7 +23,7 @@ export const oralHygieneBlogs = [
     title: 'What is the correct way to brush my teeth?',
     category: 'Oral Hygiene & Care',
     categorySlug: 'oral-hygiene-care',
-    cover: fallback,
+    cover: blog1,
     excerpt: 'Use the Modified Bass Technique with a soft brush and gentle circular motions for 2 minutes.',
     content: `||What is the correct way to brush my teeth?||
 
@@ -51,7 +68,7 @@ Oral hygiene advice by DentEssencePRO Dental Clinic, Bangalore. Brushing your te
     title: 'How often should I brush?',
     category: 'Oral Hygiene & Care',
     categorySlug: 'oral-hygiene-care',
-    cover: fallback,
+    cover: blog2,
     excerpt: 'Brush twice a day: morning after breakfast and night before bed. Night brushing is most important.',
     content: `||How often should I brush?||
 
@@ -79,7 +96,7 @@ You should brush your teeth twice a day: once in the morning after breakfast and
     title: 'How long should I brush each time?',
     category: 'Oral Hygiene & Care',
     categorySlug: 'oral-hygiene-care',
-    cover: fallback,
+    cover: blog3,
     excerpt: 'Brush for a full 2 minutes: 30 seconds per quadrant with gentle circular motions.',
     content: `||How long should I brush each time?||
 
@@ -104,7 +121,7 @@ Brush for a full 2 minutes every time. Follow the 2-minute rule using the correc
     title: 'What type of toothbrush should I use?',
     category: 'Oral Hygiene & Care',
     categorySlug: 'oral-hygiene-care',
-    cover: fallback,
+    cover: blog4,
     excerpt: 'Use a soft-bristled brush with a small to medium head. Replace every 3 months.',
     content: `||What type of toothbrush should I use?||
 
@@ -139,7 +156,7 @@ Portability | Very portable | Less portable
     title: 'What kind of toothpaste is best?',
     category: 'Oral Hygiene & Care',
     categorySlug: 'oral-hygiene-care',
-    cover: fallback,
+    cover: blog5,
     excerpt: 'Use a fluoride toothpaste. Choose variants for sensitivity, gum care, or whitening as needed.',
     content: `||What kind of toothpaste is best?||
 
@@ -162,7 +179,7 @@ Kids | Mild, low-fluoride options as advised
     title: 'Can brushing too hard damage my teeth?',
     category: 'Oral Hygiene & Care',
     categorySlug: 'oral-hygiene-care',
-    cover: fallback,
+    cover: blog6,
     excerpt: 'Yes. Overbrushing can cause enamel wear, gum recession, and sensitivity. Use gentle pressure.',
     content: `||Can brushing too hard damage my teeth?||
 
@@ -188,7 +205,7 @@ Yes. Brushing too hard can harm your teeth and gums.
     title: 'Do I still need to floss if I brush well?',
     category: 'Oral Hygiene & Care',
     categorySlug: 'oral-hygiene-care',
-    cover: fallback,
+    cover: blog7,
     excerpt: 'Yes. Brushing cleans 60 to 70 percent of surfaces. Flossing cleans between teeth and below the gumline.',
     content: `||Do I still need to floss if I brush well?||
 
@@ -213,7 +230,7 @@ Yes. Brushing alone misses tight spaces between teeth and below the gumline.
     title: 'Should I brush after every meal?',
     category: 'Oral Hygiene & Care',
     categorySlug: 'oral-hygiene-care',
-    cover: fallback,
+    cover: blog8,
     excerpt: 'Do not brush immediately after acidic meals. Brush twice daily; wait 30 minutes after acids.',
     content: `||Should I brush after every meal?||
 
@@ -242,7 +259,7 @@ Not necessarily. Brushing immediately after acidic meals can harm enamel.
     title: 'What is flossing?',
     category: 'Oral Hygiene & Care',
     categorySlug: 'oral-hygiene-care',
-    cover: fallback,
+    cover: blog9,
     excerpt: 'Flossing removes plaque and food between teeth and under the gumline where brushes miss.',
     content: `||What is flossing?||
 
@@ -266,7 +283,7 @@ Flossing uses a thin thread to clean between teeth and under the gumline where y
     title: 'Why is flossing important?',
     category: 'Oral Hygiene & Care',
     categorySlug: 'oral-hygiene-care',
-    cover: fallback,
+    cover: blog10,
     excerpt: 'Brushing misses 30 to 40 percent of surfaces. Flossing prevents gum disease and decay.',
     content: `||Why is flossing important?||
 
@@ -284,7 +301,7 @@ Even with perfect brushing, 30 to 40 percent of tooth surfaces remain untouched.
     title: 'What is the difference between dental floss and water flossers?',
     category: 'Oral Hygiene & Care',
     categorySlug: 'oral-hygiene-care',
-    cover: fallback,
+    cover: blog11,
     excerpt: 'Both clean between teeth: string scrapes plaque; water pulses flush debris and reduce inflammation.',
     content: `||Dental floss vs water flosser||
 
@@ -304,7 +321,7 @@ Cost | Very affordable | Higher initial cost
     title: 'How do I floss correctly?',
     category: 'Oral Hygiene & Care',
     categorySlug: 'oral-hygiene-care',
-    cover: fallback,
+    cover: blog12,
     excerpt: 'Use 12 to 18 inches of floss, slide gently, wrap in a C-shape, and sweep under the gumline.',
     content: `||How do I floss correctly?||
 
@@ -328,7 +345,7 @@ Pro tips:
     title: 'How does a water flosser work?',
     category: 'Oral Hygiene & Care',
     categorySlug: 'oral-hygiene-care',
-    cover: fallback,
+    cover: blog13,
     excerpt: 'A device uses a pulsating water jet to flush debris and bacteria between teeth and below the gumline.',
     content: `||How does a water flosser work?||
 
@@ -351,7 +368,7 @@ Best for:
     title: 'Which one is better: string floss or water flosser?',
     category: 'Oral Hygiene & Care',
     categorySlug: 'oral-hygiene-care',
-    cover: fallback,
+    cover: blog14,
     excerpt: 'Both work. Choose based on comfort and dental needs; many use both for best results.',
     content: `||Which one is better: string floss or water flosser?||
 
@@ -376,7 +393,7 @@ Recommendation:
     title: 'How often should I floss?',
     category: 'Oral Hygiene & Care',
     categorySlug: 'oral-hygiene-care',
-    cover: fallback,
+    cover: blog15,
     excerpt: 'Once daily is ideal. Night-time flossing helps remove plaque before sleep.',
     content: `||How often should I floss?||
 
@@ -390,7 +407,7 @@ Floss once a day, preferably at night.
     title: 'Can flossing damage gums?',
     category: 'Oral Hygiene & Care',
     categorySlug: 'oral-hygiene-care',
-    cover: fallback,
+    cover: blog16,
     excerpt: 'No, not when done correctly. Gentle C-shaped flossing reduces bleeding and inflammation.',
     content: `||Can flossing damage gums?||
 
@@ -415,7 +432,7 @@ No, proper flossing protects gums.
     title: 'Is water flossing a substitute for brushing?',
     category: 'Oral Hygiene & Care',
     categorySlug: 'oral-hygiene-care',
-    cover: fallback,
+    cover: blog17,
     excerpt: 'No. Water flossing complements brushing but does not replace it.',
     content: `||Is water flossing a substitute for brushing?||
 

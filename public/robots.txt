@@ -1,0 +1,17 @@
+# robots.txt for DentEssencePro
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://dentessencepro.com/sitemap.xml
+
+# Disallow admin and private areas (if any in future)
+# Disallow: /admin/
+# Disallow: /private/
+
+# Allow all pages for SEO
+Allow: /services
+Allow: /blog
+Allow: /dental-tourism
+Allow: /skin-hair-treatment
+Allow: /contact

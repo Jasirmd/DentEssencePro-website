@@ -1,4 +1,5 @@
-const fallback = 'https://images.unsplash.com/photo-1612531386531-29cf3a160680?q=80&w=1200&auto=format&fit=crop'
+import blog1 from '../../assets/images/Blogs/Dentures & Prosthodontics/blog1.jpg'
+import fallback from '../../assets/images/Blogs/Fallback.png'
 
 export const denturesBlogs = [
   {
@@ -6,7 +7,7 @@ export const denturesBlogs = [
     title: 'How to care for your dentures',
     category: 'Dentures & Prosthodontics',
     categorySlug: 'dentures-prosthodontics',
-    cover: fallback,
+    cover: blog1,
     excerpt: 'Simple daily care steps to keep dentures clean, comfortable, and long-lasting at DentEssencePRO, Bangalore.',
     content: `||How to Care for Your Dentures||
 

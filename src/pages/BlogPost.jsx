@@ -1,6 +1,7 @@
 import { useParams, Link, useNavigate } from 'react-router-dom'
 import Section from '../components/Section'
 import ScrollToTop from '../components/ScrollToTop'
+import SEO from '../components/SEO'
 import { posts } from '../data/blog'
 
 const fallback = 'https://images.unsplash.com/photo-1612531386531-29cf3a160680?q=80&w=1200&auto=format&fit=crop'
@@ -144,8 +145,47 @@ export default function BlogPost(){
 
   if(!post) return <Section title="Not found"><p>We couldn't find that article. <Link to="/blog">Back to blog</Link></p></Section>
 
+  // SEO structured data for blog article
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": post.title,
+    "description": post.excerpt,
+    "image": post.cover || fallback,
+    "author": {
+      "@type": "Organization",
+      "name": "DentEssencePro Dental Clinic"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "DentEssencePro",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://dentessencepro.com/logo.png"
+      }
+    },
+    "datePublished": "2025-01-01",
+    "dateModified": "2025-10-10",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": `https://dentessencepro.com/blog/${post.slug}`
+    }
+  }
+
   return (
     <>
+      <SEO
+        title={`${post.title} | DentEssencePro Blog`}
+        description={post.excerpt}
+        keywords={`${post.category}, dental care bangalore, ${post.title}, bangalore dentist, DentEssencePro, dental treatment bangalore, oral health, dental tips, dental advice, dental procedures, dental health bangalore`}
+        canonical={`/blog/${post.slug}`}
+        ogType="article"
+        ogImage={post.cover || 'https://dentessencepro.com/og-image.jpg'}
+        article={true}
+        articlePublishedTime="2025-01-01T00:00:00Z"
+        articleModifiedTime="2025-10-10T00:00:00Z"
+        structuredData={structuredData}
+      />
       <div style={{ paddingTop: '100px', paddingLeft: '40px', paddingRight: '40px', maxWidth: '1200px', margin: '0 auto' }}>
         {/* Breadcrumb Navigation */}
         <nav style={{

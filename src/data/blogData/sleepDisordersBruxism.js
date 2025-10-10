@@ -1,4 +1,19 @@
-const fallback = 'https://images.unsplash.com/photo-1612531386531-29cf3a160680?q=80&w=1200&auto=format&fit=crop'
+import blog1 from '../../assets/images/Blogs/Sleep Disorders & Bruxism/blog1.jpg'
+import blog2 from '../../assets/images/Blogs/Sleep Disorders & Bruxism/blog2.jpg'
+import blog3 from '../../assets/images/Blogs/Sleep Disorders & Bruxism/blog3.jpg'
+import blog4 from '../../assets/images/Blogs/Sleep Disorders & Bruxism/blog4.jpg'
+import blog5 from '../../assets/images/Blogs/Sleep Disorders & Bruxism/blog5.jpg'
+import blog6 from '../../assets/images/Blogs/Sleep Disorders & Bruxism/blog6.jpeg'
+import blog7 from '../../assets/images/Blogs/Sleep Disorders & Bruxism/blog7.jpg'
+import blog8 from '../../assets/images/Blogs/Sleep Disorders & Bruxism/blog8.png'
+import blog9 from '../../assets/images/Blogs/Sleep Disorders & Bruxism/blog9.jpg'
+import blog10 from '../../assets/images/Blogs/Sleep Disorders & Bruxism/blog10.jpg'
+import blog11 from '../../assets/images/Blogs/Sleep Disorders & Bruxism/blog11.jpg'
+import blog12 from '../../assets/images/Blogs/Sleep Disorders & Bruxism/blog12.jpg'
+import blog13 from '../../assets/images/Blogs/Sleep Disorders & Bruxism/blog13.jpg'
+import blog14 from '../../assets/images/Blogs/Sleep Disorders & Bruxism/blog14.jpg'
+import blog15 from '../../assets/images/Blogs/Sleep Disorders & Bruxism/blog15.jpg'
+import fallback from '../../assets/images/Blogs/Fallback.png'
 
 export const sleepDisordersBlogs = [
   {
@@ -6,7 +21,7 @@ export const sleepDisordersBlogs = [
     title: 'What is night grinding?',
     category: 'Sleep Disorders & Bruxism',
     categorySlug: 'sleep-disorders-bruxism',
-    cover: fallback,
+    cover: blog1,
     excerpt: 'Night grinding (bruxism) is clenching or grinding during sleep causing enamel wear, sensitivity, and TMJ issues.',
     content: `||What is night grinding?||
 
@@ -32,7 +47,7 @@ By Prof. Dr. Makam Gangaiah - Implant Prosthodontist, DentEssencePRO Dental Clin
     title: 'What causes night grinding?',
     category: 'Sleep Disorders & Bruxism',
     categorySlug: 'sleep-disorders-bruxism',
-    cover: fallback,
+    cover: blog2,
     excerpt: 'Bruxism is multi-factorial: stress, sleep disorders, bite issues, lifestyle, and some medications.',
     content: `||What causes night grinding?||
 
@@ -68,7 +83,7 @@ Stress and teeth grinding treatment Bangalore`
     title: 'How do I know if I am grinding my teeth at night?',
     category: 'Sleep Disorders & Bruxism',
     categorySlug: 'sleep-disorders-bruxism',
-    cover: fallback,
+    cover: blog3,
     excerpt: 'Common signs include jaw pain, headaches, sensitive worn teeth, and partner reports of grinding.',
     content: `||How do I know if I am grinding my teeth at night?||
 
@@ -113,7 +128,7 @@ DentEssencePRO Dental Clinic Tatanagar`
     title: 'Can night grinding damage my teeth?',
     category: 'Sleep Disorders & Bruxism',
     categorySlug: 'sleep-disorders-bruxism',
-    cover: fallback,
+    cover: blog4,
     excerpt: 'Yes. Night grinding can cause wear, cracks, sensitivity, gum recession, TMJ issues, and even tooth mobility.',
     content: `||Can night grinding damage my teeth?||
 
@@ -148,7 +163,7 @@ Night guard for teeth Bangalore`
     title: 'How is bruxism treated?',
     category: 'Sleep Disorders & Bruxism',
     categorySlug: 'sleep-disorders-bruxism',
-    cover: fallback,
+    cover: blog5,
     excerpt: 'Treatment includes custom night guards, bite correction, stress and sleep management, and targeted therapies.',
     content: `||How is bruxism treated?||
 
@@ -193,7 +208,7 @@ By Prof. Dr. Makam Gangaiah - Implant Prosthodontist, DentEssencePRO Dental Clin
     title: 'Can bruxism be cured completely?',
     category: 'Sleep Disorders & Bruxism',
     categorySlug: 'sleep-disorders-bruxism',
-    cover: fallback,
+    cover: blog6,
     excerpt: 'Often managed, not cured; with proper care damage is prevented and symptoms controlled long-term.',
     content: `||Can bruxism be cured completely?||
 
@@ -228,7 +243,7 @@ Night guard for bruxism Bangalore`
     title: 'What happens if I do not treat bruxism?',
     category: 'Sleep Disorders & Bruxism',
     categorySlug: 'sleep-disorders-bruxism',
-    cover: fallback,
+    cover: blog7,
     excerpt: 'Untreated bruxism leads to tooth damage, TMJ disorders, headaches, gum issues, restoration failures, and poor sleep.',
     content: `||What happens if I do not treat bruxism?||
 
@@ -274,7 +289,7 @@ Bruxism treatment DentEssencePRO`
     title: 'Is night grinding related to snoring or sleep apnea?',
     category: 'Sleep Disorders & Bruxism',
     categorySlug: 'sleep-disorders-bruxism',
-    cover: fallback,
+    cover: blog8,
     excerpt: 'Yes. Grinding is often linked with sleep-disordered breathing and airway obstruction.',
     content: `||Is night grinding related to snoring or sleep apnea?||
 
@@ -317,7 +332,7 @@ Dentist for sleep apnea-related bruxism`
     title: 'Do children grind their teeth too?',
     category: 'Sleep Disorders & Bruxism',
     categorySlug: 'sleep-disorders-bruxism',
-    cover: fallback,
+    cover: blog9,
     excerpt: 'Yes. Pediatric bruxism is common; often temporary but needs evaluation if causing wear or pain.',
     content: `||Do children grind their teeth too?||
 
@@ -368,7 +383,7 @@ By Prof. Dr. Makam Gangaiah - Implant Prosthodontist, DentEssencePRO Dental Clin
     title: 'What causes snoring?',
     category: 'Sleep Disorders & Bruxism',
     categorySlug: 'sleep-disorders-bruxism',
-    cover: fallback,
+    cover: blog10,
     excerpt: 'Snoring is caused by partial airflow blockage; obesity, nasal blockage, position, alcohol, and anatomy contribute.',
     content: `||What causes snoring?||
 
@@ -407,7 +422,7 @@ DentEssencePRO Dental Clinic Tatanagar`
     title: 'Is snoring harmful or just a nuisance?',
     category: 'Sleep Disorders & Bruxism',
     categorySlug: 'sleep-disorders-bruxism',
-    cover: fallback,
+    cover: blog11,
     excerpt: 'Occasional snoring may be harmless; chronic loud snoring can signal sleep apnea and health risks.',
     content: `||Is snoring harmful or just a nuisance?||
 
@@ -446,7 +461,7 @@ Best snoring treatment in Bangalore`
     title: 'Can snoring be related to dental problems?',
     category: 'Sleep Disorders & Bruxism',
     categorySlug: 'sleep-disorders-bruxism',
-    cover: fallback,
+    cover: blog12,
     excerpt: 'Yes. Jaw position, bite issues, bruxism, and oral structures can contribute to snoring.',
     content: `||Can snoring be related to dental problems?||
 
@@ -479,7 +494,7 @@ Snoring treatment dental clinic Bangalore`
     title: 'How is snoring treated?',
     category: 'Sleep Disorders & Bruxism',
     categorySlug: 'sleep-disorders-bruxism',
-    cover: fallback,
+    cover: blog13,
     excerpt: 'Treatment includes lifestyle changes, custom oral appliances, jaw management, CPAP or surgery when needed.',
     content: `||How is snoring treated?||
 
@@ -521,7 +536,7 @@ By Prof. Dr. Makam Gangaiah - Implant Prosthodontist, DentEssencePRO Dental Clin
     title: 'When should I see a doctor or dentist about snoring?',
     category: 'Sleep Disorders & Bruxism',
     categorySlug: 'sleep-disorders-bruxism',
-    cover: fallback,
+    cover: blog14,
     excerpt: 'Seek help for chronic loud snoring, breathing pauses, daytime sleepiness, or if dental issues contribute.',
     content: `||When should I see a doctor or dentist about snoring?||
 
@@ -551,7 +566,7 @@ Occasional soft snoring without symptoms is usually harmless. Seek medical or de
     title: 'How can DentEssencePRO Dental Clinic help with snoring?',
     category: 'Sleep Disorders & Bruxism',
     categorySlug: 'sleep-disorders-bruxism',
-    cover: fallback,
+    cover: blog15,
     excerpt: 'We provide comprehensive evaluation, custom oral appliances, digital diagnostics, and holistic care with specialists.',
     content: `||How can DentEssencePRO Dental Clinic help with snoring?||
 

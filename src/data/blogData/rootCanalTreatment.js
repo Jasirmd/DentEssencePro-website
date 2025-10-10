@@ -1,6 +1,14 @@
-import blog1 from '../../assets/images/Blogs/blog1.jpg'
-
-const fallback = 'https://images.unsplash.com/photo-1612531386531-29cf3a160680?q=80&w=1200&auto=format&fit=crop'
+import blog1 from '../../assets/images/Blogs/Root canal treatment/blog1.jpg'
+import blog2 from '../../assets/images/Blogs/Root canal treatment/blog2.jpg'
+import blog3 from '../../assets/images/Blogs/Root canal treatment/blog3.jpg'
+import blog4 from '../../assets/images/Blogs/Root canal treatment/blog4.png'
+import blog5 from '../../assets/images/Blogs/Root canal treatment/blog5.jpg'
+import blog6 from '../../assets/images/Blogs/Root canal treatment/blog6.jpg'
+import blog7 from '../../assets/images/Blogs/Root canal treatment/blog7.jpg'
+import blog8 from '../../assets/images/Blogs/Root canal treatment/blog8.png'
+import blog9 from '../../assets/images/Blogs/Root canal treatment/blog9.png'
+import blog10 from '../../assets/images/Blogs/Root canal treatment/blog10.jpg'
+import fallback from '../../assets/images/Blogs/Fallback.png'
 
 export const rootCanalBlogs = [
   {
@@ -63,7 +71,7 @@ Tatanagar, Bangalore
     title: 'Root Canal Treatment Cost in Bangalore',
     category: 'Root Canal Treatment',
     categorySlug: 'root-canal-treatment',
-    cover: fallback,
+    cover: blog2,
     excerpt: 'At DentEssencePRO, we believe in transparent pricing so that patients know exactly what to expect.',
     content: `At DentEssencePRO, we believe in transparent pricing so that patients know exactly what to expect. The cost of RCT depends on the type of tooth treated:
 
@@ -105,7 +113,7 @@ Third Molars (Wisdom Teeth) | ₹8,000
     title: 'How do I know if I need a root canal?',
     category: 'Root Canal Treatment',
     categorySlug: 'root-canal-treatment',
-    cover: fallback,
+    cover: blog3,
     excerpt: 'If you\'re experiencing persistent tooth pain or swelling, it could be more than just a cavity.',
     content: `If you're experiencing persistent tooth pain or swelling, it could be more than just a cavity. You may need a root canal treatment — a procedure that saves your natural tooth by removing infected pulp.
 
@@ -128,7 +136,7 @@ Book your consultation now for expert diagnosis and gentle care!`
     title: 'Is root canal treatment painful?',
     category: 'Root Canal Treatment',
     categorySlug: 'root-canal-treatment',
-    cover: fallback,
+    cover: blog4,
     excerpt: 'Get Gentle, Painless RCT at DentEssencePRO Dental Clinic, Bangalore',
     content: `Get Gentle, Painless RCT at DentEssencePRO Dental Clinic, Bangalore
 
@@ -164,7 +172,7 @@ DentEssencePRO Dental Clinic, Tatanagar, Bangalore`
     title: 'How long does a root canal take?',
     category: 'Root Canal Treatment',
     categorySlug: 'root-canal-treatment',
-    cover: fallback,
+    cover: blog5,
     excerpt: 'Fast & Efficient Root Canal Treatment at DentEssencePRO Dental Clinic, Bangalore',
     content: `— Fast & Efficient Root Canal Treatment at DentEssencePRO Dental Clinic, Bangalore
 
@@ -207,7 +215,7 @@ Book your painless root canal today at DentEssencePRO Dental Clinic in Tatanagar
     title: 'Can I go to work after a root canal?',
     category: 'Root Canal Treatment',
     categorySlug: 'root-canal-treatment',
-    cover: fallback,
+    cover: blog6,
     excerpt: 'Quick Recovery After RCT at DentEssencePRO Dental Clinic, Bangalore',
     content: `Quick Recovery After RCT at DentEssencePRO Dental Clinic, Bangalore
 
@@ -239,7 +247,7 @@ For painless, quick-recovery root canal treatment in Bangalore, visit:
     title: 'Is a crown required after a root canal?',
     category: 'Root Canal Treatment',
     categorySlug: 'root-canal-treatment',
-    cover: fallback,
+    cover: blog7,
     excerpt: 'Expert Guidance by DentEssencePRO Dental Clinic, Bangalore',
     content: `Expert Guidance by DentEssencePRO Dental Clinic, Bangalore
 
@@ -278,7 +286,7 @@ For expert root canal and crown treatment in Bangalore, visit:
     title: 'How long does a root canal-treated tooth last?',
     category: 'Root Canal Treatment',
     categorySlug: 'root-canal-treatment',
-    cover: fallback,
+    cover: blog8,
     excerpt: 'Trusted Care from DentEssencePRO Dental Clinic, Bangalore',
     content: `Trusted Care from DentEssencePRO Dental Clinic, Bangalore
 
@@ -318,7 +326,7 @@ Give your tooth a second chance with expert RCT and crowns at:
     title: 'Are there alternatives to root canal treatment?',
     category: 'Root Canal Treatment',
     categorySlug: 'root-canal-treatment',
-    cover: fallback,
+    cover: blog9,
     excerpt: 'Honest Answers from DentEssencePRO Dental Clinic, Bangalore',
     content: `Honest Answers from DentEssencePRO Dental Clinic, Bangalore
 
@@ -365,7 +373,7 @@ Not sure if you need a root canal or extraction?
     title: 'Signs You Might Need Root Canal Treatment',
     category: 'Root Canal Treatment',
     categorySlug: 'root-canal-treatment',
-    cover: fallback,
+    cover: blog10,
     excerpt: 'You may need a root canal treatment when the soft tissue inside your tooth becomes infected, inflamed, or damaged.',
     content: `Signs You Might Need Root Canal Treatment | DentEssencePRO Dental Clinic, Bangalore
 You may need a root canal treatment when the soft tissue inside your tooth (called the pulp) becomes infected, inflamed, or damaged. This can happen due to deep decay, trauma, or cracks.

@@ -1,4 +1,21 @@
-const fallback = 'https://images.unsplash.com/photo-1606811971618-4486d14f3f99?q=80&w=1200&auto=format&fit=crop'
+import blog1 from '../../assets/images/Blogs/Cosmetic Dentistry/blog1.jpg'
+import blog2 from '../../assets/images/Blogs/Cosmetic Dentistry/blog2.jpg'
+import blog3 from '../../assets/images/Blogs/Cosmetic Dentistry/blog3.jpg'
+import blog4 from '../../assets/images/Blogs/Cosmetic Dentistry/blog4.jpg'
+import blog5 from '../../assets/images/Blogs/Cosmetic Dentistry/blog5.jpg'
+import blog6 from '../../assets/images/Blogs/Cosmetic Dentistry/blog6.jpeg'
+import blog7 from '../../assets/images/Blogs/Cosmetic Dentistry/blog7.jpg'
+import blog8 from '../../assets/images/Blogs/Cosmetic Dentistry/blog8.jpg'
+import blog9 from '../../assets/images/Blogs/Cosmetic Dentistry/blog9.jpg'
+import blog10 from '../../assets/images/Blogs/Cosmetic Dentistry/blog10.jpg'
+import blog11 from '../../assets/images/Blogs/Cosmetic Dentistry/blog11.jpg'
+import blog12 from '../../assets/images/Blogs/Cosmetic Dentistry/blog12.jpg'
+import blog13 from '../../assets/images/Blogs/Cosmetic Dentistry/blog13.png'
+import blog14 from '../../assets/images/Blogs/Cosmetic Dentistry/blog14.jpg'
+import blog15 from '../../assets/images/Blogs/Cosmetic Dentistry/blog15.jpg'
+import blog16 from '../../assets/images/Blogs/Cosmetic Dentistry/blog16.jpg'
+import blog17 from '../../assets/images/Blogs/Cosmetic Dentistry/blog17.jpg'
+import fallback from '../../assets/images/Blogs/Fallback.png'
 
 export const cosmeticDentistryBlogs = [
   {
@@ -6,7 +23,7 @@ export const cosmeticDentistryBlogs = [
     title: 'What are dental veneers?',
     category: 'Cosmetic Dentistry',
     categorySlug: 'cosmetic-dentistry',
-    cover: fallback,
+    cover: blog1,
     excerpt: 'Dental veneers are ultra-thin, custom-made shells made of porcelain or composite resin that are bonded to the front surface of your teeth.',
     content: `||Smile Makeover Expertise at DentEssencePRO Dental Clinic, Bangalore||
 
@@ -57,7 +74,7 @@ Composite Veneers
     title: 'What problems can veneers fix?',
     category: 'Cosmetic Dentistry',
     categorySlug: 'cosmetic-dentistry',
-    cover: fallback,
+    cover: blog2,
     excerpt: 'Dental veneers are one of the most versatile cosmetic dental treatments that can fix multiple smile flaws quickly and painlessly.',
     content: `||Smile Correction by DentEssencePRO Dental Clinic, Bangalore||
 
@@ -102,7 +119,7 @@ At DentEssencePRO Dental Clinic in Tatanagar, Bangalore, we use high-quality por
     title: 'Are veneers permanent?',
     category: 'Cosmetic Dentistry',
     categorySlug: 'cosmetic-dentistry',
-    cover: fallback,
+    cover: blog3,
     excerpt: 'Yes, dental veneers are considered a permanent cosmetic treatment, especially porcelain veneers.',
     content: `||Reliable Smile Solutions from DentEssencePRO Dental Clinic, Bangalore||
 
@@ -138,7 +155,7 @@ Yes. Over time, if a veneer chips, discolors, or wears out, it can be:
     title: 'Do veneers look natural?',
     category: 'Cosmetic Dentistry',
     categorySlug: 'cosmetic-dentistry',
-    cover: fallback,
+    cover: blog4,
     excerpt: 'Yes, high-quality dental veneers look extremely natural at DentEssencePRO Dental Clinic.',
     content: `||Crafted Perfection at DentEssencePRO Dental Clinic, Bangalore||
 
@@ -171,7 +188,7 @@ Preview your smile before we begin! We use digital mockups to ensure your new sm
     title: 'What is the process of getting veneers?',
     category: 'Cosmetic Dentistry',
     categorySlug: 'cosmetic-dentistry',
-    cover: fallback,
+    cover: blog5,
     excerpt: 'At DentEssencePRO Dental Clinic, getting dental veneers is a safe, precise, and comfortable process that typically takes just 2-3 visits.',
     content: `||Smile Transformation by Experts at DentEssencePRO Dental Clinic, Bangalore||
 
@@ -214,7 +231,7 @@ At DentEssencePRO Dental Clinic in Tatanagar, Bangalore, getting dental veneers 
     title: 'Do veneers require special care?',
     category: 'Cosmetic Dentistry',
     categorySlug: 'cosmetic-dentistry',
-    cover: fallback,
+    cover: blog6,
     excerpt: 'No, veneers do not require special care, but they do require consistent, good oral hygiene.',
     content: `||Long-Lasting Smiles with DentEssencePRO Dental Clinic, Bangalore||
 
@@ -249,7 +266,7 @@ At DentEssencePRO Dental Clinic in Tatanagar, Bangalore, we guide every patient 
     title: 'What is the cost of dental veneers in Bangalore?',
     category: 'Cosmetic Dentistry',
     categorySlug: 'cosmetic-dentistry',
-    cover: fallback,
+    cover: blog7,
     excerpt: 'The cost of dental veneers in Bangalore depends on the material used, the number of teeth being treated, and the experience of the cosmetic dentist.',
     content: `||Affordable Smile Makeovers at DentEssencePRO Dental Clinic, Bangalore||
 
@@ -292,7 +309,7 @@ Porcelain Veneers (E-max) | ₹12,000 - ₹18,000 | 10-15+ years
     title: 'Are veneers painful?',
     category: 'Cosmetic Dentistry',
     categorySlug: 'cosmetic-dentistry',
-    cover: fallback,
+    cover: blog8,
     excerpt: 'No, getting dental veneers is not painful. The procedure is minimally invasive and typically requires only mild enamel reshaping under local anesthesia.',
     content: `||Gentle Smile Enhancements at DentEssencePRO Dental Clinic, Bangalore||
 
@@ -325,7 +342,7 @@ At DentEssencePRO Dental Clinic in Tatanagar, Bangalore, we use gentle technique
     title: 'Can veneers stain?',
     category: 'Cosmetic Dentistry',
     categorySlug: 'cosmetic-dentistry',
-    cover: fallback,
+    cover: blog9,
     excerpt: 'Porcelain veneers are highly stain-resistant and do not discolor like natural teeth.',
     content: `||Expert Insight from DentEssencePRO Dental Clinic, Bangalore||
 
@@ -359,7 +376,7 @@ However, composite veneers (made from resin) are slightly more prone to staining
     title: 'What is teeth whitening or bleaching?',
     category: 'Cosmetic Dentistry',
     categorySlug: 'cosmetic-dentistry',
-    cover: fallback,
+    cover: blog10,
     excerpt: 'Teeth whitening (also called bleaching) is a safe and effective cosmetic dental procedure that helps to brighten discolored or stained teeth.',
     content: `||Cosmetic Smile Enhancement at DentEssencePRO Dental Clinic, Bangalore||
 
@@ -394,7 +411,7 @@ By Prof. Dr. Makam Gangaiah - Implant Prosthodontist, DentEssencePro Dental Clin
     title: 'Is teeth whitening safe?',
     category: 'Cosmetic Dentistry',
     categorySlug: 'cosmetic-dentistry',
-    cover: fallback,
+    cover: blog11,
     excerpt: 'Yes, professional teeth whitening is safe when performed under the supervision of a qualified dentist.',
     content: `||Expert Cosmetic Dentistry at DentEssencePRO Dental Clinic, Bangalore||
 
@@ -431,7 +448,7 @@ That is why we recommend in-clinic whitening or customized home kits prescribed 
     title: 'How long does the teeth whitening procedure take?',
     category: 'Cosmetic Dentistry',
     categorySlug: 'cosmetic-dentistry',
-    cover: fallback,
+    cover: blog12,
     excerpt: 'At DentEssencePRO Dental Clinic, the duration of a teeth whitening session depends on the method you choose.',
     content: `||Fast & Effective Whitening at DentEssencePRO Dental Clinic, Bangalore||
 
@@ -466,7 +483,7 @@ Most patients see visible results after a single visit!
     title: 'How many shades whiter can I go?',
     category: 'Cosmetic Dentistry',
     categorySlug: 'cosmetic-dentistry',
-    cover: fallback,
+    cover: blog13,
     excerpt: 'Most patients can expect to go 2 to 4 shades lighter after a professional teeth whitening session at DentEssencePRO Dental Clinic.',
     content: `||Smile Transformation by DentEssencePRO Dental Clinic, Bangalore||
 
@@ -501,7 +518,7 @@ Note: Whitening enhances your natural shade - it will not make your teeth "artif
     title: 'Does teeth whitening hurt?',
     category: 'Cosmetic Dentistry',
     categorySlug: 'cosmetic-dentistry',
-    cover: fallback,
+    cover: blog14,
     excerpt: 'Teeth whitening is generally not painful, but some patients may experience temporary sensitivity.',
     content: `||Gentle & Safe Whitening at DentEssencePRO Dental Clinic, Bangalore||
 
@@ -536,7 +553,7 @@ By Prof. Dr. Makam Gangaiah - Implant Prosthodontist, DentEssencePro Dental Clin
     title: 'How long does the whitening last?',
     category: 'Cosmetic Dentistry',
     categorySlug: 'cosmetic-dentistry',
-    cover: fallback,
+    cover: blog15,
     excerpt: 'Teeth whitening results typically last between 6 months to 2 years, depending on your oral habits and lifestyle.',
     content: `||Long-Lasting Results at DentEssencePRO Dental Clinic, Bangalore||
 
@@ -572,7 +589,7 @@ Using sensitivity/whitening toothpaste | Skipping follow-up care or touch-ups
     title: 'Can all teeth be whitened?',
     category: 'Cosmetic Dentistry',
     categorySlug: 'cosmetic-dentistry',
-    cover: fallback,
+    cover: blog16,
     excerpt: 'Not all teeth respond equally to whitening. Natural teeth usually whiten well, but artificial or internally discolored teeth may not.',
     content: `||Honest Advice from DentEssencePRO Dental Clinic, Bangalore||
 
@@ -613,7 +630,7 @@ At DentEssencePRO Dental Clinic in Tatanagar, Bangalore, we assess your tooth ty
     title: 'What is the cost of teeth whitening in Bangalore?',
     category: 'Cosmetic Dentistry',
     categorySlug: 'cosmetic-dentistry',
-    cover: fallback,
+    cover: blog17,
     excerpt: 'The cost of teeth whitening in Bangalore typically ranges between ₹3,500 to ₹10,000, depending on the type of treatment.',
     content: `||Professional Smile Enhancement at DentEssencePRO Dental Clinic, Tatanagar||
 

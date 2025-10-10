@@ -1,4 +1,8 @@
-const fallback = 'https://images.unsplash.com/photo-1612531386531-29cf3a160680?q=80&w=1200&auto=format&fit=crop'
+import blog1 from '../../assets/images/Blogs/Cavities & Fillings/blog1.jpeg'
+import blog2 from '../../assets/images/Blogs/Cavities & Fillings/blog2.jpg'
+import blog3 from '../../assets/images/Blogs/Cavities & Fillings/blog3.jpg'
+import blog4 from '../../assets/images/Blogs/Cavities & Fillings/blog4.jpg'
+import fallback from '../../assets/images/Blogs/Fallback.png'
 
 export const cavitiesFillingsBlogs = [
   {
@@ -6,7 +10,7 @@ export const cavitiesFillingsBlogs = [
     title: 'GIC (Glass Ionomer Cement) filling cost in Bangalore',
     category: 'Cavities & Fillings',
     categorySlug: 'cavities-fillings',
-    cover: fallback,
+    cover: blog1,
     excerpt: 'GIC is a tooth-colored, fluoride-releasing material ideal for kids and high-decay-risk cases. Here is when it is recommended and the cost at our clinic.',
     content: `||GIC (Glass Ionomer Cement) Filling Cost in Bangalore||
 
@@ -64,7 +68,7 @@ If you or your child has a cavity, do not wait until it worsens. GIC fillings ar
     title: 'How can I prevent cavities?',
     category: 'Cavities & Fillings',
     categorySlug: 'cavities-fillings',
-    cover: fallback,
+    cover: blog2,
     excerpt: 'Cavities are damaged areas in enamel caused by bacteria, acids, and hygiene gaps. Prevention is simple with consistent care and professional guidance.',
     content: `||How can I prevent cavities?||
 
@@ -95,7 +99,7 @@ Book your checkup today!`
     title: 'What are the signs of a dental cavity?',
     category: 'Cavities & Fillings',
     categorySlug: 'cavities-fillings',
-    cover: fallback,
+    cover: blog3,
     excerpt: 'Cavities can develop slowly and painlessly until they worsen. Here are common signs and how we detect them early at our clinic.',
     content: `||What are the signs of a dental cavity?||
 
@@ -121,7 +125,7 @@ Call today to book your dental exam and protect your smile from cavities!`
     title: 'How can I prevent cavities? (Bangalore clinic guide)',
     category: 'Cavities & Fillings',
     categorySlug: 'cavities-fillings',
-    cover: fallback,
+    cover: blog4,
     excerpt: 'Simple, effective habits to prevent decay: fluoride brushing, flossing, diet changes, and regular check-ups at DentEssencePRO.',
     content: `||How can I prevent cavities?||
 

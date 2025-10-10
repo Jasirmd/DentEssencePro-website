@@ -1,4 +1,6 @@
-const fallback = 'https://images.unsplash.com/photo-1612531386531-29cf3a160680?q=80&w=1200&auto=format&fit=crop'
+import blog1 from '../../assets/images/Blogs/Periodontics & Gum Health/blog1.jpg'
+import blog2 from '../../assets/images/Blogs/Periodontics & Gum Health/blog2.jpg'
+import fallback from '../../assets/images/Blogs/Fallback.png'
 
 export const periodonticsBlogs = [
   {
@@ -6,7 +8,7 @@ export const periodonticsBlogs = [
     title: 'Why do my gums bleed when I brush?',
     category: 'Periodontics & Gum Health',
     categorySlug: 'periodontics-gum-health',
-    cover: fallback,
+    cover: blog1,
     excerpt: 'Bleeding gums during brushing is often an early sign of gum disease (gingivitis) — caused by plaque buildup along the gum line.',
     content: `Bleeding gums during brushing is often an early sign of gum disease (gingivitis) — caused by plaque buildup along the gum line. It may also result from brushing too hard, using a hard-bristled toothbrush, or having poor oral hygiene.
 
@@ -31,7 +33,7 @@ At DentEssencePRO, Bengaluru, we specialize in gum disease treatment, including 
     title: 'Laser-Assisted Teeth Cleaning & Deep Cleaning Cost in Bangalore',
     category: 'Periodontics & Gum Health',
     categorySlug: 'periodontics-gum-health',
-    cover: fallback,
+    cover: blog2,
     excerpt: 'Healthy gums are the foundation of a healthy smile. Learn about laser-assisted periodontal therapy and costs at DentEssencePRO.',
     content: `//Why Gum Health Matters//
 

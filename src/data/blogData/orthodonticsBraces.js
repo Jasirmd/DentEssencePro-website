@@ -1,4 +1,16 @@
-const fallback = 'https://images.unsplash.com/photo-1612531386531-29cf3a160680?q=80&w=1200&auto=format&fit=crop'
+import blog1 from '../../assets/images/Blogs/Orthodontics & braces/blog1.jpg'
+import blog2 from '../../assets/images/Blogs/Orthodontics & braces/blog2.png'
+import blog3 from '../../assets/images/Blogs/Orthodontics & braces/blog3.jpeg'
+import blog4 from '../../assets/images/Blogs/Orthodontics & braces/blog4.jpeg'
+import blog5 from '../../assets/images/Blogs/Orthodontics & braces/blog5.jpg'
+import blog6 from '../../assets/images/Blogs/Orthodontics & braces/blog6.jpg'
+import blog7 from '../../assets/images/Blogs/Orthodontics & braces/blog7.jpg'
+import blog8 from '../../assets/images/Blogs/Orthodontics & braces/blog8.jpg'
+import blog9 from '../../assets/images/Blogs/Orthodontics & braces/blog9.jpg'
+import blog10 from '../../assets/images/Blogs/Orthodontics & braces/blog10.jpg'
+import blog11 from '../../assets/images/Blogs/Orthodontics & braces/blog11.jpeg'
+import blog12 from '../../assets/images/Blogs/Orthodontics & braces/blog12.jpg'
+import fallback from '../../assets/images/Blogs/Fallback.png'
 
 export const orthodonticsBlogs = [
   {
@@ -6,7 +18,7 @@ export const orthodonticsBlogs = [
     title: 'First Orthodontic Check-up by Age 7',
     category: 'Orthodontics & Braces',
     categorySlug: 'orthodontics-braces',
-    cover: fallback,
+    cover: blog1,
     excerpt: 'According to the American Association of Orthodontists (AAO), every child should have their first orthodontic check-up by the age of 7.',
     content: `According to the American Association of Orthodontists (AAO), every child should have their first orthodontic check-up by the age of 7. By this age, permanent teeth have started to appear, and we can identify early signs of crowding, bite issues, or jaw growth problems.
 
@@ -24,7 +36,7 @@ www.drmakamgangaiah.com`
     title: 'Can I eat normally with braces?',
     category: 'Orthodontics & Braces',
     categorySlug: 'orthodontics-braces',
-    cover: fallback,
+    cover: blog2,
     excerpt: 'Braces can cause temporary soreness around fittings and adjustments, but with the right care, you can manage discomfort easily.',
     content: `||Do Braces Hurt?||
 
@@ -51,7 +63,7 @@ In short: Braces don't constantly hurt. You only feel temporary soreness when th
     title: 'Will my speech change with braces?',
     category: 'Orthodontics & Braces',
     categorySlug: 'orthodontics-braces',
-    cover: fallback,
+    cover: blog3,
     excerpt: 'Yes, braces can temporarily affect speech, but usually only in the beginning. Here\'s what you need to know.',
     content: `Yes, braces can temporarily affect speech, but usually only in the beginning. Here's what you need to know:
 
@@ -80,7 +92,7 @@ Speech changes are temporary and improve quickly as your tongue and lips adapt.`
     title: 'Are braces expensive?',
     category: 'Orthodontics & Braces',
     categorySlug: 'orthodontics-braces',
-    cover: fallback,
+    cover: blog4,
     excerpt: 'Yes — braces can be expensive, but how much you\'ll pay depends on many factors.',
     content: `Yes — braces can be expensive, but how much you'll pay depends on many factors. Here's a breakdown of what influences cost, and typical ranges in India to give you an idea.
 
@@ -113,7 +125,7 @@ Speech changes are temporary and improve quickly as your tongue and lips adapt.`
     title: 'What happens after braces are removed?',
     category: 'Orthodontics & Braces',
     categorySlug: 'orthodontics-braces',
-    cover: fallback,
+    cover: blog5,
     excerpt: 'Removing braces is an exciting milestone, but treatment isn\'t completely over when the brackets come off.',
     content: `Great question. Removing braces is an exciting milestone, but treatment isn't completely over when the brackets come off. Here's what typically happens:
 
@@ -153,7 +165,7 @@ Usually worn full-time for a few months, then nightly. Some need long-term/night
     title: 'What types of braces are available?',
     category: 'Orthodontics & Braces',
     categorySlug: 'orthodontics-braces',
-    cover: fallback,
+    cover: blog6,
     excerpt: 'Multiple types of braces exist: metal, ceramic, lingual, self-ligating and clear aligners — choice depends on needs and budget.',
     content: `//Types of Braces//
 
@@ -193,7 +205,7 @@ Usually worn full-time for a few months, then nightly. Some need long-term/night
     title: 'How often are follow-up visits required?',
     category: 'Orthodontics & Braces',
     categorySlug: 'orthodontics-braces',
-    cover: fallback,
+    cover: blog7,
     excerpt: 'Orthodontic visits are usually every 4–6 weeks during active treatment; frequency varies by system and case.',
     content: `//How Often Are Visits Needed?//
 
@@ -220,7 +232,7 @@ Usually worn full-time for a few months, then nightly. Some need long-term/night
     title: 'How should I take care of my teeth with braces?',
     category: 'Orthodontics & Braces',
     categorySlug: 'orthodontics-braces',
-    cover: fallback,
+    cover: blog8,
     excerpt: 'With braces, extra oral care is essential: brush after meals, floss using threaders or interdental tools, and avoid hard/sticky foods.',
     content: `//Daily Oral Care with Braces//
 
@@ -261,7 +273,7 @@ With braces, your teeth need extra care — brush after meals, floss carefully, 
     title: 'What are orthodontic braces?',
     category: 'Orthodontics & Braces',
     categorySlug: 'orthodontics-braces',
-    cover: fallback,
+    cover: blog9,
     excerpt: 'Orthodontic braces are modern dental devices used to straighten crooked teeth, close gaps, and correct bite problems.',
     content: `Orthodontic braces are modern dental devices used to straighten crooked teeth, close gaps, and correct bite problems such as overbite, underbite, and crossbite. They work by applying gentle, controlled pressure to gradually move your teeth and jaws into proper alignment.
 
@@ -281,7 +293,7 @@ www.drmakamgangaiah.com`
     title: 'Who needs braces?',
     category: 'Orthodontics & Braces',
     categorySlug: 'orthodontics-braces',
-    cover: fallback,
+    cover: blog10,
     excerpt: 'Braces are recommended for anyone who wants to improve the alignment of their teeth and bite.',
     content: `Braces are recommended for anyone who wants to improve the alignment of their teeth and bite. You may need orthodontic braces if you have:
 
@@ -309,7 +321,7 @@ www.drmakamgangaiah.com`
     title: 'At what age can braces be started?',
     category: 'Orthodontics & Braces',
     categorySlug: 'orthodontics-braces',
-    cover: fallback,
+    cover: blog11,
     excerpt: 'Orthodontic braces can be started once a child\'s permanent teeth begin to erupt – usually between the ages of 10 to 14 years.',
     content: `Orthodontic braces can be started once a child's permanent teeth begin to erupt – usually between the ages of 10 to 14 years. This is the ideal time because the teeth and jaw are still developing, making it easier to guide them into proper alignment. Early orthodontic evaluation (around age 7) helps us identify potential bite or alignment issues and plan the best time to begin treatment.
 
@@ -327,7 +339,7 @@ www.drmakamgangaiah.com`
     title: 'How long does the treatment take?',
     category: 'Orthodontics & Braces',
     categorySlug: 'orthodontics-braces',
-    cover: fallback,
+    cover: blog12,
     excerpt: 'The duration of orthodontic treatment with braces varies from person to person, depending on the severity of misalignment.',
     content: `The duration of orthodontic treatment with braces varies from person to person, depending on the severity of misalignment, type of braces, and how well the patient follows instructions. On average, most treatments last between 12 to 24 months.
 

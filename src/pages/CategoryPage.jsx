@@ -3,6 +3,7 @@ import Section from '../components/Section'
 import VideoHero from '../components/VideoHero'
 import BlogCard from '../components/BlogCard'
 import ScrollToTop from '../components/ScrollToTop'
+import SEO from '../components/SEO'
 import { blogCategories } from '../data/blog'
 
 export default function CategoryPage() {
@@ -28,8 +29,23 @@ export default function CategoryPage() {
     )
   }
 
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": `${category.name} - DentEssencePro Blog`,
+    "description": `Expert articles and insights about ${category.name} from DentEssencePro Dental Clinic in Bangalore`,
+    "url": `https://dentessencepro.com/blog/category/${category.slug}`
+  }
+
   return (
     <>
+      <SEO
+        title={`${category.name} - Expert Articles | DentEssencePro Blog`}
+        description={`Browse expert articles and comprehensive guides on ${category.name}. Professional dental insights from DentEssencePro Bangalore.`}
+        keywords={`${category.name}, dental articles bangalore, ${category.slug}, bangalore dentist, oral health bangalore, dental care tips, dental treatment, dental procedures, dental health education, dental information bangalore`}
+        canonical={`/blog/category/${category.slug}`}
+        structuredData={structuredData}
+      />
       <VideoHero title={category.name} subtitle="Expert dental insights and oral health tips" />
 
       <div style={{ paddingTop: '40px', paddingLeft: '40px', paddingRight: '40px', maxWidth: '1200px', margin: '0 auto' }}>

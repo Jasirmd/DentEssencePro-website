@@ -1,4 +1,5 @@
 import { useEffect, useMemo } from 'react'
+import SEO from '../components/SEO'
 
 const WHY_CHOOSE = [
   {
@@ -74,9 +75,60 @@ const DENTESSENCE_DIFFERENCE = [
 ]
 
 export default function DentalTourism() {
-  useEffect(() => {
-    document.title = 'Dental Tourism in Bangalore | DentEssencePro'
-  }, [])
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "MedicalClinic",
+    "name": "DentEssencePro Dental Tourism",
+    "description": "Premium dental tourism in Bangalore, India. Affordable world-class dental care including dental implants, cosmetic dentistry, and full mouth rehabilitation for international patients.",
+    "url": "https://dentessencepro.com/dental-tourism",
+    "telephone": "+91-9742503814",
+    "email": "info@drmakamgangaiah.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "House of Hiranandani, Balaji complex 1, Kodigehalli Main Rd",
+      "addressLocality": "Bangalore",
+      "addressRegion": "Karnataka",
+      "postalCode": "560094",
+      "addressCountry": "IN"
+    },
+    "medicalSpecialty": "Dentistry",
+    "availableService": [
+      {
+        "@type": "MedicalProcedure",
+        "name": "Dental Implants (All-on-4, All-on-6)",
+        "description": "Advanced implant dentistry with immediate loading protocols"
+      },
+      {
+        "@type": "MedicalProcedure", 
+        "name": "Cosmetic Dentistry & Smile Design",
+        "description": "Complete smile makeovers and aesthetic dentistry"
+      },
+      {
+        "@type": "MedicalProcedure",
+        "name": "Invisible Braces / Clear Aligners",
+        "description": "Modern orthodontic treatment for teeth alignment"
+      },
+      {
+        "@type": "MedicalProcedure",
+        "name": "Full Mouth Rehabilitation",
+        "description": "Comprehensive dental restoration and rehabilitation"
+      }
+    ],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Dental Tourism Packages",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Complete Dental Tourism Package",
+            "description": "Dental treatment + accommodation + travel assistance"
+          }
+        }
+      ]
+    }
+  }
 
   const heroStars = useMemo(
     () =>
@@ -91,7 +143,15 @@ export default function DentalTourism() {
   )
 
   return (
-    <div className="tourism-page">
+    <>
+      <SEO
+        title="Dental Tourism in Bangalore, India | Affordable World-Class Care | DentEssencePro"
+        description="Premium dental tourism in Bangalore, India. Save up to 70% on dental implants, cosmetic dentistry, and full mouth rehabilitation. Expert dentists, modern technology, complete travel support."
+        keywords="dental tourism india, dental tourism bangalore, affordable dental care india, dental implants india, cosmetic dentistry bangalore, dental tourism packages, international dental patients"
+        canonical="/dental-tourism"
+        structuredData={structuredData}
+      />
+      <div className="tourism-page">
       <section className="tourism-hero">
         <div className="hero-backdrop">
           <div className="aurora-layer aurora-one"></div>
@@ -1183,7 +1243,8 @@ export default function DentalTourism() {
           }
         }
       `}</style>
-    </div>
+      </div>
+    </>
   )
 }
 

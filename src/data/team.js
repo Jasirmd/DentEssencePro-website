@@ -3,7 +3,7 @@ export const team = [
     name: 'Dr. Makam Gangaiah',
     role: 'Lead Prosthodontist & Program Director',
     specialization: 'Implant Dentistry & Prosthodontics',
-    img: 'https://images.unsplash.com/photo-1588771930290-a3d2b2c6d9b9?q=80&w=1200&auto=format&fit=crop',
+    img: '/src/assets/images/makam_gangaiah.jpeg',
     education: [
       'BDS - Bachelor of Dental Surgery',
       'MDS - Master of Dental Surgery (Prosthodontics)',
@@ -29,7 +29,7 @@ export const team = [
     name: 'Prof. Dr. Sowmya Gangaiah',
     role: 'Orthodontist & Dentofacial Orthopaedician',
     specialization: 'BDS, MDS',
-    img: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=1200&auto=format&fit=crop',
+    img: '/src/assets/images/sowmya_gangaiah.jpeg',
     bio: 'Prof. Dr. Sowmya Gangaiah is a best and leading well known orthodontist in Bengaluru. She worked as lecturer in the same university for 1 year training undergraduates in clinicals and academics.',
     education: [
       'Bachelor of Dental Surgery - M.S. Ramaiah Faculty of Dental Sciences, Bengaluru (2003)',
@@ -45,7 +45,7 @@ export const team = [
     name: 'Dr. G Praveen Kumar',
     role: 'Dental Surgeon',
     specialization: 'BDS, FBOCI',
-    img: 'https://images.unsplash.com/photo-1531123414780-f74241a6d1a8?q=80&w=1200&auto=format&fit=crop',
+    img: '/src/assets/images/praveenkumar.jpeg',
     bio: 'Dr. G Praveen Kumar brings 8 years of dedicated experience in dental surgery and implantology. His expertise in clinical practice and commitment to patient care has established him as a trusted dental professional.',
     education: [
       'Bachelor of Dental Surgery (BDS)',

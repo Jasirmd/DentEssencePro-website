@@ -1,4 +1,13 @@
-const fallback = 'https://images.unsplash.com/photo-1606811841689-23dfddce3e95?q=80&w=1200&auto=format&fit=crop'
+import blog1 from '../../assets/images/Blogs/Wisdom Teeth/blog1.png'
+import blog2 from '../../assets/images/Blogs/Wisdom Teeth/blog2.jpg'
+import blog3 from '../../assets/images/Blogs/Wisdom Teeth/blog3.jpg'
+import blog4 from '../../assets/images/Blogs/Wisdom Teeth/blog4.jpg'
+import blog5 from '../../assets/images/Blogs/Wisdom Teeth/blog5.jpg'
+import blog6 from '../../assets/images/Blogs/Wisdom Teeth/blog6.jpg'
+import blog7 from '../../assets/images/Blogs/Wisdom Teeth/blog7.jpg'
+import blog8 from '../../assets/images/Blogs/Wisdom Teeth/blog8.jpg'
+import blog9 from '../../assets/images/Blogs/Wisdom Teeth/blog9.jpg'
+import fallback from '../../assets/images/Blogs/Fallback.png'
 
 export const wisdomTeethBlogs = [
   {
@@ -6,7 +15,7 @@ export const wisdomTeethBlogs = [
     title: 'What are wisdom teeth?',
     category: 'Wisdom Teeth',
     categorySlug: 'wisdom-teeth',
-    cover: fallback,
+    cover: blog1,
     excerpt: 'Wisdom teeth are the third and final set of molars that usually appear between the ages of 17 and 25, often causing dental problems.',
     content: `Dental Insights from DentEssencePRO Dental Clinic, Bangalore
 
@@ -47,7 +56,7 @@ Visit DentEssencePRO Dental Clinic, Tatanagar, Bangalore
     title: 'Wisdom Tooth Surgery Cost in Bangalore',
     category: 'Wisdom Teeth',
     categorySlug: 'wisdom-teeth',
-    cover: fallback,
+    cover: blog2,
     excerpt: 'The cost of wisdom tooth surgery in Bangalore ranges from ₹2,000 to ₹25,000+ depending on the complexity of the procedure.',
     content: `Wisdom teeth, or third molars, usually erupt between ages 17 and 25. Many times, they do not have enough room to grow properly, leading to:
 
@@ -125,7 +134,7 @@ If you are experiencing wisdom tooth pain, do not delay. Early removal can preve
     title: 'Why do wisdom teeth cause problems?',
     category: 'Wisdom Teeth',
     categorySlug: 'wisdom-teeth',
-    cover: fallback,
+    cover: blog3,
     excerpt: 'Wisdom teeth often cause problems because they do not have enough space to erupt properly in the already fully developed jaw.',
     content: `Wisdom teeth often cause problems because they do not have enough space to erupt properly. They are the last set of molars to emerge, usually between ages 17 and 25, when the jaw is already fully developed.
 
@@ -173,7 +182,7 @@ Visit DentEssencePRO Dental Clinic, Tatanagar, Bangalore for evaluation & safe r
     title: 'What are common symptoms of a problematic wisdom tooth?',
     category: 'Wisdom Teeth',
     categorySlug: 'wisdom-teeth',
-    cover: fallback,
+    cover: blog4,
     excerpt: 'Common symptoms include pain at the back of the mouth, swelling, jaw stiffness, bad breath, and recurring gum infections.',
     content: `Identifying Trouble Early with DentEssencePRO Dental Clinic, Bangalore
 
@@ -227,7 +236,7 @@ Visit DentEssencePRO Dental Clinic, Tatanagar, Bangalore for painless evaluation
     title: 'Do all wisdom teeth need to be removed?',
     category: 'Wisdom Teeth',
     categorySlug: 'wisdom-teeth',
-    cover: fallback,
+    cover: blog5,
     excerpt: 'No, not all wisdom teeth need removal. Healthy, properly aligned wisdom teeth that are easy to clean can be left in place.',
     content: `Honest Advice from DentEssencePRO Dental Clinic, Bangalore
 
@@ -265,7 +274,7 @@ Visit DentEssencePRO Dental Clinic, Tatanagar, Bangalore for painless diagnosis 
     title: 'Is wisdom tooth extraction painful?',
     category: 'Wisdom Teeth',
     categorySlug: 'wisdom-teeth',
-    cover: fallback,
+    cover: blog6,
     excerpt: 'No, wisdom tooth extraction is not painful when performed by an experienced dental surgeon with proper anesthesia.',
     content: `Gentle Surgical Care at DentEssencePRO Dental Clinic, Bangalore
 
@@ -303,7 +312,7 @@ DentEssencePRO Dental Clinic, Tatanagar, Bangalore
     title: 'How long is the recovery after wisdom tooth removal?',
     category: 'Wisdom Teeth',
     categorySlug: 'wisdom-teeth',
-    cover: fallback,
+    cover: blog7,
     excerpt: 'Recovery usually takes 3 to 7 days, depending on the complexity of the surgery and your body healing response.',
     content: `Post-Surgical Care by DentEssencePRO Dental Clinic, Bangalore
 
@@ -351,7 +360,7 @@ DentEssencePRO Dental Clinic, Tatanagar, Bangalore
     title: 'When should I see a dentist for wisdom tooth pain?',
     category: 'Wisdom Teeth',
     categorySlug: 'wisdom-teeth',
-    cover: fallback,
+    cover: blog8,
     excerpt: 'See a dentist immediately if you experience pain, swelling, or discomfort in the back of your mouth to prevent complications.',
     content: `Trusted Dental Advice from DentEssencePRO Dental Clinic, Bangalore
 
@@ -384,7 +393,7 @@ DentEssencePRO Dental Clinic, Tatanagar, Bangalore
     title: 'Wisdom Tooth Extraction Charges in Bangalore',
     category: 'Wisdom Teeth',
     categorySlug: 'wisdom-teeth',
-    cover: fallback,
+    cover: blog9,
     excerpt: 'Wisdom tooth extraction charges in Bangalore range from ₹2,000 to ₹12,000 depending on the complexity of the extraction.',
     content: `Transparent Pricing at DentEssencePRO Dental Clinic, Tatanagar
 
