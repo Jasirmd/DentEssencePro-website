@@ -1,5 +1,9 @@
-import { useEffect, useMemo } from 'react'
+import { useState, useEffect, useMemo } from 'react'
 import SEO from '../components/SEO'
+import dentalImplantsImg from '../assets/images/dental-implants.jpg'
+import cosmeticDentistryImg from '../assets/images/cosmetic-dentistry.jpg'
+import alignersImg from '../assets/images/aligners.jpg'
+import rootCanalImg from '../assets/images/root-canal.jpg'
 
 const WHY_CHOOSE = [
   {
@@ -30,10 +34,30 @@ const WHY_CHOOSE = [
 ]
 
 const POPULAR_TREATMENTS = [
-  'Dental Implants (All-on-4, All-on-6, Full Mouth Rehabilitation)',
-  'Cosmetic Dentistry & Smile Design',
-  'Invisible Braces / Clear Aligners',
-  'Root Canal & Restorative Dentistry'
+  {
+    title: 'Dental Implants',
+    subtitle: 'All-on-4, All-on-6, Full Mouth Rehabilitation',
+    description: 'Advanced dental implant solutions for single tooth replacement to complete full mouth rehabilitation. Using premium global systems like Nobel Biocare and Straumann, our expert implantologists restore your smile with precision and care.',
+    image: dentalImplantsImg
+  },
+  {
+    title: 'Cosmetic Dentistry & Smile Design',
+    subtitle: 'Transform Your Smile',
+    description: 'Professional smile makeovers combining teeth whitening, veneers, bonding, and digital smile design. Our aesthetic dentistry experts create natural-looking, beautiful smiles tailored to your facial features and preferences.',
+    image: cosmeticDentistryImg
+  },
+  {
+    title: 'Invisible Braces / Clear Aligners',
+    subtitle: 'Discreet Orthodontic Treatment',
+    description: 'Modern orthodontic solutions with clear aligners and invisible braces for adults and teens. Straighten your teeth comfortably and discreetly without traditional metal braces, with predictable results and shorter treatment times.',
+    image: alignersImg
+  },
+  {
+    title: 'Root Canal & Restorative Dentistry',
+    subtitle: 'Save Your Natural Teeth',
+    description: 'Painless root canal treatments using advanced techniques and microscopic precision. Our endodontists specialize in saving damaged teeth and restoring them to full function with modern materials and technology.',
+    image: rootCanalImg
+  }
 ]
 
 const TRAVEL_EXPERIENCE = [
@@ -75,6 +99,38 @@ const DENTESSENCE_DIFFERENCE = [
 ]
 
 export default function DentalTourism() {
+  const [activeSlide, setActiveSlide] = useState(0)
+  const [progress, setProgress] = useState(0)
+
+  const nextSlide = () => {
+    setActiveSlide((prev) => (prev + 1) % POPULAR_TREATMENTS.length)
+    setProgress(0)
+  }
+
+  const prevSlide = () => {
+    setActiveSlide((prev) => (prev - 1 + POPULAR_TREATMENTS.length) % POPULAR_TREATMENTS.length)
+    setProgress(0)
+  }
+
+  const goToSlide = (index) => {
+    setActiveSlide(index)
+    setProgress(0)
+  }
+
+  // Auto-play carousel with timer
+  useEffect(() => {
+    const progressInterval = setInterval(() => {
+      setProgress((prev) => {
+        if (prev >= 100) {
+          setActiveSlide((current) => (current + 1) % POPULAR_TREATMENTS.length)
+          return 0
+        }
+        return prev + 2 // Increment by 2% every 100ms (5 seconds total)
+      })
+    }, 100)
+
+    return () => clearInterval(progressInterval)
+  }, [])
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "MedicalClinic",
@@ -207,19 +263,57 @@ export default function DentalTourism() {
         </div>
       </section>
 
-      <section className="tourism-section soft">
+      <section className="tourism-section treatments-carousel-section">
         <div className="section-shell">
           <div className="section-header-block centered">
             <span className="section-badge">Our Specialties</span>
             <h2 className="section-title">Popular Dental Treatments for International Patients</h2>
           </div>
-          <div className="pill-grid">
-            {POPULAR_TREATMENTS.map((item, index) => (
-              <div key={item} className="pill-card premium">
-                <div className="pill-icon">✓</div>
-                <span>{item}</span>
+          <div className="carousel-wrapper">
+            <button className="carousel-nav carousel-prev" onClick={prevSlide} aria-label="Previous slide">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M15 18L9 12L15 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+              </svg>
+            </button>
+            <div className="carousel-main">
+              <div className="carousel-container">
+                <div className="carousel-slide">
+                  <div className="carousel-image">
+                    <img src={POPULAR_TREATMENTS[activeSlide].image} alt={POPULAR_TREATMENTS[activeSlide].title} />
+                    <div className="carousel-image-overlay"></div>
+                  </div>
+                  <div className="carousel-content">
+                    <h3 className="carousel-title">{POPULAR_TREATMENTS[activeSlide].title}</h3>
+                    <p className="carousel-subtitle">{POPULAR_TREATMENTS[activeSlide].subtitle}</p>
+                    <p className="carousel-description">{POPULAR_TREATMENTS[activeSlide].description}</p>
+                  </div>
+                </div>
               </div>
-            ))}
+              <div className="carousel-progress-bars">
+                {POPULAR_TREATMENTS.map((_, index) => (
+                  <button
+                    key={index}
+                    className="progress-bar-wrapper"
+                    onClick={() => goToSlide(index)}
+                    aria-label={`Go to slide ${index + 1}`}
+                  >
+                    <div className="progress-bar-bg">
+                      <div
+                        className="progress-bar-fill"
+                        style={{
+                          width: index === activeSlide ? `${progress}%` : index < activeSlide ? '100%' : '0%'
+                        }}
+                      ></div>
+                    </div>
+                  </button>
+                ))}
+              </div>
+            </div>
+            <button className="carousel-nav carousel-next" onClick={nextSlide} aria-label="Next slide">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M9 18L15 12L9 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+              </svg>
+            </button>
           </div>
         </div>
       </section>
@@ -677,6 +771,148 @@ export default function DentalTourism() {
 
         .soft {
           background: linear-gradient(180deg, #ffffff 0%, #f3f6fc 100%);
+        }
+
+        .treatments-carousel-section {
+          background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+        }
+
+        .carousel-wrapper {
+          display: flex;
+          align-items: center;
+          gap: 2rem;
+          max-width: 1200px;
+          margin: 0 auto;
+        }
+
+        .carousel-main {
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+          gap: 1rem;
+        }
+
+        .treatments-carousel-section .carousel-container {
+          position: relative;
+          background: linear-gradient(145deg, #ffffff 0%, #f8fafc 100%);
+          border-radius: 28px;
+          overflow: hidden;
+          box-shadow: 0 32px 80px rgba(13, 36, 66, 0.15);
+          border: 2px solid rgba(217, 183, 105, 0.2);
+        }
+
+        .treatments-carousel-section .carousel-slide {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          align-items: stretch;
+        }
+
+        .treatments-carousel-section .carousel-image {
+          position: relative;
+          width: 100%;
+          height: 100%;
+          overflow: hidden;
+        }
+
+        .treatments-carousel-section .carousel-image img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+
+        .treatments-carousel-section .carousel-image-overlay {
+          position: absolute;
+          inset: 0;
+          background: linear-gradient(
+            90deg,
+            transparent 0%,
+            rgba(248, 250, 252, 0.3) 70%,
+            rgba(248, 250, 252, 0.8) 100%
+          );
+        }
+
+        .treatments-carousel-section .carousel-content {
+          padding: 2rem 2.5rem;
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          min-height: 280px;
+          height: auto;
+        }
+
+        .carousel-title {
+          font-size: 1.75rem;
+          color: #0b1e36;
+          margin-bottom: 0.6rem;
+          font-weight: 700;
+          line-height: 1.3;
+        }
+
+        .carousel-subtitle {
+          color: #c89840;
+          font-size: 0.9rem;
+          font-weight: 600;
+          margin-bottom: 1rem;
+          text-transform: uppercase;
+          letter-spacing: 0.05em;
+        }
+
+        .carousel-description {
+          color: rgba(27, 50, 82, 0.8);
+          line-height: 1.65;
+          font-size: 0.95rem;
+          margin: 0;
+        }
+
+        .carousel-nav {
+          width: 56px;
+          height: 56px;
+          border-radius: 50%;
+          background: rgba(255, 255, 255, 0.95);
+          border: 2px solid rgba(217, 183, 105, 0.4);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          cursor: pointer;
+          transition: all 0.3s ease;
+          color: #c89840;
+          flex-shrink: 0;
+        }
+
+        .carousel-nav:hover {
+          background: #ffffff;
+          border-color: #c89840;
+          transform: scale(1.1);
+          box-shadow: 0 8px 20px rgba(217, 183, 105, 0.3);
+        }
+
+        .carousel-progress-bars {
+          display: flex;
+          gap: 8px;
+          justify-content: center;
+          padding: 0;
+        }
+
+        .progress-bar-wrapper {
+          background: none;
+          border: none;
+          padding: 0;
+          cursor: pointer;
+        }
+
+        .progress-bar-bg {
+          width: 60px;
+          height: 4px;
+          background: rgba(217, 183, 105, 0.25);
+          border-radius: 2px;
+          overflow: hidden;
+        }
+
+        .progress-bar-fill {
+          height: 100%;
+          background: linear-gradient(90deg, #d9b769, #c89840);
+          transition: width 0.1s linear;
+          border-radius: 2px;
         }
 
         .pill-grid {
@@ -1200,6 +1436,44 @@ export default function DentalTourism() {
 
           .travel-shell {
             grid-template-columns: 1fr;
+          }
+
+          .carousel-wrapper {
+            flex-direction: row;
+            align-items: center;
+            gap: 1rem;
+          }
+
+          .carousel-main {
+            gap: 1.2rem;
+          }
+
+          .treatments-carousel-section .carousel-slide {
+            grid-template-columns: 1fr;
+            min-height: auto;
+            gap: 0;
+          }
+
+          .treatments-carousel-section .carousel-image {
+            height: 220px;
+          }
+
+          .treatments-carousel-section .carousel-content {
+            padding: 1.8rem 1.5rem;
+            height: auto;
+            min-height: auto;
+          }
+
+          .carousel-nav {
+            display: none;
+          }
+
+          .carousel-wrapper {
+            flex-direction: column;
+          }
+
+          .progress-bar-bg {
+            width: 50px;
           }
         }
 

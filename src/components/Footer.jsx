@@ -16,7 +16,10 @@ export default function Footer(){
             <h3>Explore</h3>
             <nav style={{display:'grid', gap:8, marginTop:8}}>
               <Link to="/">Home</Link>
-              <Link to="/services">Services</Link>
+              <span>Services</span>
+              <Link to="/general-dentistry" style={{paddingLeft: '0.5rem'}}>• General Dentistry</Link>
+              <Link to="/orthodontic-therapy" style={{paddingLeft: '0.5rem'}}>• Orthodontic Therapy</Link>
+              <Link to="/implant-dentistry" style={{paddingLeft: '0.5rem'}}>• Implant Dentistry</Link>
               <Link to="/dental-tourism">Dental Tourism</Link>
               <Link to="/skin-hair-treatment">Skin & Hair</Link>
               <Link to="/blog">Blog</Link>

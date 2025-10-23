@@ -1,15 +1,18 @@
 import { NavLink, Link, useLocation } from 'react-router-dom'
 import { useEffect, useState } from 'react'
 import logoUrl from '../assets/images/logo.png'
+import DropdownMenu from './DropdownMenu'
 
 export default function Navbar({ onBookAppointment }){
   const { pathname } = useLocation()
-  const videoPagesWithHero = ['/contact', '/services', '/dental-tourism', '/skin-hair-treatment']
+  const videoPagesWithHero = ['/contact', '/services', '/dental-tourism', '/skin-hair-treatment', '/general-dentistry', '/orthodontic-therapy', '/implant-dentistry']
   // Only make navbar transparent on main blog page and category pages, not on individual blog posts
   const isBlogPost = pathname.startsWith('/blog/') && !pathname.includes('/category/')
   const hasVideoHero = videoPagesWithHero.includes(pathname) || pathname === '/blog' || pathname.includes('/blog/category/')
   const [scrolled, setScrolled] = useState(pathname !== '/' && !hasVideoHero)
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const [showServicesDropdown, setShowServicesDropdown] = useState(false)
+  const [showMobileServicesDropdown, setShowMobileServicesDropdown] = useState(false)
 
   useEffect(()=>{
     // Show the navbar after user scrolls a bit on home and video hero pages. Always show on other inner pages.
@@ -35,7 +38,19 @@ export default function Navbar({ onBookAppointment }){
         {/* Desktop Navigation */}
         <div className="nav-links desktop-nav">
           <NavLink to="/" end className={({isActive})=> isActive? 'active' : undefined}>Home</NavLink>
-          <NavLink to="/services" className={({isActive})=> isActive? 'active' : undefined}>Services</NavLink>
+          <div
+            className="nav-dropdown-wrapper"
+            onMouseEnter={() => setShowServicesDropdown(true)}
+            onMouseLeave={() => setShowServicesDropdown(false)}
+          >
+            <button className="nav-link nav-dropdown-trigger">
+              Services
+              <svg className="dropdown-arrow" width="10" height="6" viewBox="0 0 10 6" fill="none">
+                <path d="M1 1L5 5L9 1" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
+              </svg>
+            </button>
+            {showServicesDropdown && <DropdownMenu />}
+          </div>
           <NavLink to="/dental-tourism" className={({isActive})=> isActive? 'active' : undefined}>Dental Tourism</NavLink>
           <NavLink to="/skin-hair-treatment" className={({isActive})=> isActive? 'active' : undefined}>Skin & Hair</NavLink>
           <NavLink to="/blog" className={({isActive})=> isActive? 'active' : undefined}>Blog</NavLink>
@@ -66,21 +81,38 @@ export default function Navbar({ onBookAppointment }){
             </Link>
           </div>
           <div className="mobile-menu-content">
-            <NavLink 
-              to="/" 
-              end 
+            <NavLink
+              to="/"
+              end
               className={({isActive})=> isActive? 'active' : undefined}
               onClick={() => setMobileMenuOpen(false)}
             >
               Home
             </NavLink>
-            <NavLink
-              to="/services"
-              className={({isActive})=> isActive? 'active' : undefined}
-              onClick={() => setMobileMenuOpen(false)}
-            >
-              Services
-            </NavLink>
+            <div className="mobile-services-section">
+              <div className="mobile-services-label">Services</div>
+              <NavLink
+                to="/general-dentistry"
+                className={({isActive})=> isActive? 'active mobile-service-link' : 'mobile-service-link'}
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                General Dentistry
+              </NavLink>
+              <NavLink
+                to="/orthodontic-therapy"
+                className={({isActive})=> isActive? 'active mobile-service-link' : 'mobile-service-link'}
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                Orthodontic Therapy
+              </NavLink>
+              <NavLink
+                to="/implant-dentistry"
+                className={({isActive})=> isActive? 'active mobile-service-link' : 'mobile-service-link'}
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                Implant Dentistry
+              </NavLink>
+            </div>
             <NavLink
               to="/dental-tourism"
               className={({isActive})=> isActive? 'active' : undefined}
@@ -102,15 +134,15 @@ export default function Navbar({ onBookAppointment }){
             >
               Blog
             </NavLink>
-            <NavLink 
-              to="/contact" 
+            <NavLink
+              to="/contact"
               className={({isActive})=> isActive? 'active' : undefined}
               onClick={() => setMobileMenuOpen(false)}
             >
               Contact
             </NavLink>
-            <button 
-              className="btn primary mobile-book-btn" 
+            <button
+              className="btn primary mobile-book-btn"
               onClick={() => {
                 onBookAppointment();
                 setMobileMenuOpen(false);

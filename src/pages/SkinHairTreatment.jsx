@@ -1,5 +1,13 @@
 import { useEffect, useMemo } from 'react'
 import SEO from '../components/SEO'
+import antiAgingImg from '../assets/images/Anti-Ageing.png'
+import skinBrighteningImg from '../assets/images/skin-brightening.jpg'
+import acneTreatmentImg from '../assets/images/acne-treatment.jpg'
+import medicalFacialImg from '../assets/images/medical-facial.jpg'
+import hairLossImg from '../assets/images/hair-loss.jpg'
+import prpHairImg from '../assets/images/prp-hair-restoration.jpg'
+import hairTransplantImg from '../assets/images/hair transplant.jpg'
+import scalpHealthImg from '../assets/images/Scalp-health.jpg'
 
 const HERO_FEATURES = [
   'Advanced Dermatology',
@@ -41,25 +49,29 @@ const SKIN_TREATMENTS = [
     title: 'Anti-Aging & Wrinkle Reduction',
     description:
       'Combat signs of aging with advanced treatments including Botox, dermal fillers, chemical peels, and collagen-boosting therapies that restore youthful radiance.',
-    features: ['Botox & Fillers', 'Chemical Peels', 'Microneedling', 'Collagen Induction']
+    features: ['Botox & Fillers', 'Chemical Peels', 'Microneedling', 'Collagen Induction'],
+    image: antiAgingImg
   },
   {
     title: 'Skin Brightening & Pigmentation',
     description:
       'Address dark spots, melasma, and uneven skin tone with clinical-grade brightening treatments, laser therapy, and customized pigmentation correction programs.',
-    features: ['Laser Therapy', 'Clinical Brightening', 'Melasma Treatment', 'Even Tone Restoration']
+    features: ['Laser Therapy', 'Clinical Brightening', 'Melasma Treatment', 'Even Tone Restoration'],
+    image: skinBrighteningImg
   },
   {
     title: 'Acne & Scar Treatment',
     description:
       'Comprehensive acne management and scar reduction using medical-grade facials, laser resurfacing, and advanced texture refinement protocols.',
-    features: ['Acne Management', 'Scar Reduction', 'Laser Resurfacing', 'Texture Refinement']
+    features: ['Acne Management', 'Scar Reduction', 'Laser Resurfacing', 'Texture Refinement'],
+    image: acneTreatmentImg
   },
   {
     title: 'Medical Facials & Peels',
     description:
       'Luxurious medical-grade facials combining deep cleansing, exfoliation, and nourishment for radiant, healthy skin with visible results.',
-    features: ['Deep Cleansing', 'Clinical Peels', 'Hydration Therapy', 'Skin Rejuvenation']
+    features: ['Deep Cleansing', 'Clinical Peels', 'Hydration Therapy', 'Skin Rejuvenation'],
+    image: medicalFacialImg
   }
 ]
 
@@ -68,25 +80,29 @@ const HAIR_TREATMENTS = [
     title: 'Hair Loss Prevention & Growth',
     description:
       'Evidence-based hair loss solutions including FDA-approved medications, topical treatments, and growth-boosting therapies tailored to your needs.',
-    features: ['Medical Treatments', 'Growth Boosters', 'Preventive Care', 'Scalp Analysis']
+    features: ['Medical Treatments', 'Growth Boosters', 'Preventive Care', 'Scalp Analysis'],
+    image: hairLossImg
   },
   {
     title: 'PRP Hair Regeneration',
     description:
       'Platelet-Rich Plasma therapy uses your own growth factors to stimulate hair follicles, increase density, and restore natural hair growth.',
-    features: ['Natural Growth', 'Increased Density', 'Non-Surgical', 'Minimal Downtime']
+    features: ['Natural Growth', 'Increased Density', 'Non-Surgical', 'Minimal Downtime'],
+    image: prpHairImg
   },
   {
     title: 'Hair Transplant Solutions',
     description:
       'Advanced FUE and FUT hair transplant techniques performed by skilled surgeons for natural-looking, permanent hair restoration.',
-    features: ['FUE Technique', 'FUT Method', 'Natural Results', 'Permanent Solution']
+    features: ['FUE Technique', 'FUT Method', 'Natural Results', 'Permanent Solution'],
+    image: hairTransplantImg
   },
   {
     title: 'Scalp Health & Treatment',
     description:
       'Comprehensive scalp care including dandruff management, seborrheic dermatitis treatment, and scalp rejuvenation therapies.',
-    features: ['Dandruff Control', 'Scalp Detox', 'Health Restoration', 'Maintenance Programs']
+    features: ['Dandruff Control', 'Scalp Detox', 'Health Restoration', 'Maintenance Programs'],
+    image: scalpHealthImg
   }
 ]
 
@@ -291,13 +307,18 @@ export default function SkinHairTreatment() {
             {SKIN_TREATMENTS.map((treatment) => (
               <div key={treatment.title} className="treatment-card">
                 <h3>{treatment.title}</h3>
-                <p>{treatment.description}</p>
-                <div className="treatment-features">
-                  {treatment.features.map((feature) => (
-                    <span key={feature} className="feature-tag">
-                      {feature}
-                    </span>
-                  ))}
+                <div className="treatment-image">
+                  <img src={treatment.image} alt={treatment.title} />
+                </div>
+                <div className="treatment-content">
+                  <p>{treatment.description}</p>
+                  <div className="treatment-features">
+                    {treatment.features.map((feature) => (
+                      <span key={feature} className="feature-tag">
+                        {feature}
+                      </span>
+                    ))}
+                  </div>
                 </div>
               </div>
             ))}
@@ -305,7 +326,7 @@ export default function SkinHairTreatment() {
         </div>
       </section>
 
-      <section className="content-section treatments-section dark">
+      <section className="content-section hair-treatments-section">
         <div className="content-container">
           <div className="section-header centered">
             <h2>Advanced Hair Restoration Solutions</h2>
@@ -314,17 +335,23 @@ export default function SkinHairTreatment() {
               restoration.
             </p>
           </div>
-          <div className="treatment-cards">
-            {HAIR_TREATMENTS.map((treatment) => (
-              <div key={treatment.title} className="treatment-card">
-                <h3>{treatment.title}</h3>
-                <p>{treatment.description}</p>
-                <div className="treatment-features">
-                  {treatment.features.map((feature) => (
-                    <span key={feature} className="feature-tag">
-                      {feature}
-                    </span>
-                  ))}
+          <div className="hair-treatment-grid">
+            {HAIR_TREATMENTS.map((treatment, index) => (
+              <div key={treatment.title} className={`hair-card hair-card-${index + 1}`}>
+                <div className="hair-card-image">
+                  <img src={treatment.image} alt={treatment.title} />
+                  <div className="hair-card-overlay"></div>
+                </div>
+                <div className="hair-card-body">
+                  <h3>{treatment.title}</h3>
+                  <p>{treatment.description}</p>
+                  <div className="hair-features">
+                    {treatment.features.map((feature) => (
+                      <span key={feature} className="hair-feature-badge">
+                        {feature}
+                      </span>
+                    ))}
+                  </div>
                 </div>
               </div>
             ))}
@@ -724,6 +751,10 @@ export default function SkinHairTreatment() {
           padding: 2.5rem;
           box-shadow: 0 22px 56px rgba(10, 22, 48, 0.14);
           border: 1px solid rgba(147, 51, 234, 0.1);
+          display: grid;
+          grid-template-columns: 1fr 300px;
+          grid-template-rows: auto auto;
+          gap: 2rem;
         }
 
         .treatments-section.dark .treatment-card {
@@ -734,11 +765,34 @@ export default function SkinHairTreatment() {
         .treatment-card h3 {
           font-size: 1.6rem;
           color: #0a1628;
-          margin-bottom: 1.2rem;
+          margin-bottom: 0;
+          grid-column: 1 / -1;
         }
 
         .treatments-section.dark .treatment-card h3 {
           color: #ffffff;
+        }
+
+        .treatment-content {
+          display: flex;
+          flex-direction: column;
+          grid-column: 1 / 2;
+          grid-row: 2 / 3;
+        }
+
+        .treatment-image {
+          width: 100%;
+          height: 250px;
+          border-radius: 16px;
+          overflow: hidden;
+          grid-column: 2 / 3;
+          grid-row: 2 / 3;
+        }
+
+        .treatment-image img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
         }
 
         .treatment-card p {
@@ -773,6 +827,112 @@ export default function SkinHairTreatment() {
           border: 1px solid rgba(147, 51, 234, 0.4);
         }
 
+        /* Hair Treatments Section - Unique Layout */
+        .hair-treatments-section {
+          background: linear-gradient(170deg, rgba(10, 22, 48, 0.97) 0%, rgba(6, 14, 28, 0.95) 100%);
+          position: relative;
+          overflow: hidden;
+        }
+
+        .hair-treatments-section::before {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background: radial-gradient(circle at 20% 50%, rgba(147, 51, 234, 0.08) 0%, transparent 50%),
+                      radial-gradient(circle at 80% 50%, rgba(236, 72, 153, 0.08) 0%, transparent 50%);
+          pointer-events: none;
+        }
+
+        .hair-treatments-section .section-header h2 {
+          color: #ffffff;
+        }
+
+        .hair-treatments-section .section-header p {
+          color: rgba(226, 232, 240, 0.85);
+        }
+
+        .hair-treatment-grid {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          gap: 2.5rem;
+          position: relative;
+          z-index: 1;
+        }
+
+        .hair-card {
+          background: linear-gradient(145deg, rgba(15, 31, 59, 0.95), rgba(10, 22, 44, 0.92));
+          border-radius: 24px;
+          overflow: hidden;
+          border: 1px solid rgba(147, 51, 234, 0.25);
+          display: flex;
+          flex-direction: column;
+        }
+
+        .hair-card-image {
+          position: relative;
+          width: 100%;
+          height: 280px;
+          overflow: hidden;
+        }
+
+        .hair-card-image img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+
+        .hair-card-overlay {
+          position: absolute;
+          inset: 0;
+          background: linear-gradient(
+            180deg,
+            transparent 0%,
+            rgba(10, 22, 44, 0.3) 50%,
+            rgba(10, 22, 44, 0.85) 100%
+          );
+          pointer-events: none;
+        }
+
+        .hair-card-body {
+          padding: 2rem;
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+        }
+
+        .hair-card h3 {
+          font-size: 1.5rem;
+          color: #ffffff;
+          margin-bottom: 1rem;
+          line-height: 1.3;
+        }
+
+        .hair-card p {
+          color: rgba(226, 232, 240, 0.85);
+          line-height: 1.75;
+          margin-bottom: 1.5rem;
+          flex: 1;
+        }
+
+        .hair-features {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 0.7rem;
+        }
+
+        .hair-feature-badge {
+          padding: 0.5rem 1rem;
+          border-radius: 999px;
+          background: linear-gradient(135deg, rgba(147, 51, 234, 0.2), rgba(236, 72, 153, 0.2));
+          color: rgba(196, 181, 253, 0.95);
+          font-weight: 600;
+          font-size: 0.85rem;
+          border: 1px solid rgba(147, 51, 234, 0.35);
+        }
+
         .process-section {
           background: #ffffff;
         }
@@ -792,12 +952,14 @@ export default function SkinHairTreatment() {
         .step-number {
           font-size: 3rem;
           font-weight: 800;
-          color: transparent;
           background: linear-gradient(135deg, #9333ea, #ec4899);
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
           background-clip: text;
-          line-height: 1;
+          line-height: 1.5;
+          min-width: 100px;
+          min-height: 60px;
+          display: inline-block;
         }
 
         .step-content h3 {
@@ -998,6 +1160,41 @@ export default function SkinHairTreatment() {
 
           .intro-grid {
             grid-template-columns: 1fr;
+          }
+
+          .treatment-card {
+            grid-template-columns: 1fr;
+            grid-template-rows: auto auto auto;
+            gap: 1.5rem;
+          }
+
+          .treatment-card h3 {
+            grid-column: 1;
+            grid-row: 1;
+          }
+
+          .treatment-image {
+            grid-column: 1;
+            grid-row: 2;
+            height: 200px;
+          }
+
+          .treatment-content {
+            grid-column: 1;
+            grid-row: 3;
+          }
+
+          .hair-treatment-grid {
+            grid-template-columns: 1fr;
+            gap: 2rem;
+          }
+
+          .hair-card-image {
+            height: 220px;
+          }
+
+          .hair-card-body {
+            padding: 1.5rem;
           }
 
           .tech-grid {

@@ -88,7 +88,7 @@ export default function Home(){
             <p className="reveal delay-2">Aesthetic dentistry, implants, aligners, and full‑mouth rehabilitation using modern technology and evidence‑based protocols. Compassionate care, predictable outcomes.</p>
             <div className="reveal delay-3" style={{display:'flex', gap:12}}>
               <Link className="btn" to="/contact">Book Appointment</Link>
-              <Link className="btn secondary" to="/services">Explore Services</Link>
+              <a className="btn secondary" href="#services">Explore Services</a>
             </div>
           </div>
           <div className="hero-photo" aria-hidden="true" />
@@ -117,9 +117,6 @@ export default function Home(){
       >
         <div className="grid cols-3">
           {services.map((s, i)=> <ServiceCard key={i} {...s} />)}
-        </div>
-        <div style={{textAlign: 'center', marginTop: '2rem'}}>
-          <Link className="btn" to="/services">View All Services</Link>
         </div>
       </Section>
 

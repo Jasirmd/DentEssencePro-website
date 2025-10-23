@@ -3,6 +3,9 @@ import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import Home from './pages/Home'
 import Services from './pages/Services'
+import GeneralDentistry from './pages/GeneralDentistry'
+import OrthodonticTherapy from './pages/OrthodonticTherapy'
+import ImplantDentistry from './pages/ImplantDentistry'
 import Blog from './pages/Blog'
 import BlogPost from './pages/BlogPost'
 import CategoryPage from './pages/CategoryPage'
@@ -35,7 +38,11 @@ function App() {
       <Navbar onBookAppointment={openModal} />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/services" element={<Services />} />
+        {/* Services route kept for reference but commented out - can be uncommented if needed */}
+        {/* <Route path="/services" element={<Services />} /> */}
+        <Route path="/general-dentistry" element={<GeneralDentistry />} />
+        <Route path="/orthodontic-therapy" element={<OrthodonticTherapy />} />
+        <Route path="/implant-dentistry" element={<ImplantDentistry />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/blog/category/:categorySlug" element={<CategoryPage />} />
         <Route path="/blog/:slug" element={<BlogPost />} />
