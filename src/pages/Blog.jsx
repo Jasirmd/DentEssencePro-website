@@ -93,7 +93,7 @@ export default function Blog() {
   return (
     <>
       <SEO
-        title="Dental Blog - Expert Tips & Insights | DentEssencePro Bangalore"
+        title="Dental Blogs | Expert tips & insights | DentEssencePro"
         description="Expert dental insights, oral health tips, and comprehensive guides on dental implants, cosmetic dentistry, orthodontics, and preventive care from DentEssencePro Bangalore."
         keywords="dental blog bangalore, dental tips, oral health tips, dental care advice, dental implants guide, cosmetic dentistry tips, orthodontics information, dental health blog, bangalore dentist blog, dental care tips, oral hygiene tips, dental treatment guide, dental procedures, dental advice, dental information bangalore, dental insights, preventive dental care, dental health education"
         canonical="/blog"

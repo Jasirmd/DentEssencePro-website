@@ -2,6 +2,7 @@ import Section from '../components/Section'
 import VideoHero from '../components/VideoHero'
 import SEO from '../components/SEO'
 import orthodonticTherapyDetail from '../assets/images/orthodontic-therapist_1.jpg'
+import { Link } from 'react-router-dom'
 
 export default function OrthodonticTherapy() {
   const structuredData = {
@@ -29,7 +30,7 @@ export default function OrthodonticTherapy() {
   return (
     <>
       <SEO
-        title="Orthodontic Therapy - Clear Aligners & Braces | DentEssencePro Bangalore"
+        title="Best dental clinic for orthodontics in Bangalore | DentEssencePro"
         description="Expert orthodontic therapy in Bangalore including clear aligners, traditional braces, ceramic braces, and bite correction. Advanced 3D digital planning for perfect smile transformation."
         keywords="orthodontic therapy bangalore, clear aligners, invisible braces, traditional braces, ceramic braces, teeth straightening, orthodontist bangalore, bite correction, DentEssencePro"
         canonical="/orthodontic-therapy"
@@ -107,48 +108,48 @@ export default function OrthodonticTherapy() {
                   We offer a comprehensive range of orthodontic solutions to address various alignment and bite issues:
                 </p>
                 <div className="procedures-grid">
-                  <div className="procedure-card">
+                  <Link to="/blog/category/orthodontics-braces" className="procedure-card">
                     <span className="procedure-check">✓</span>
                     <div className="procedure-info">
                       <h4>Clear Aligner Therapy</h4>
                       <p>Virtually invisible aligners that straighten teeth discreetly and comfortably</p>
                     </div>
-                  </div>
-                  <div className="procedure-card">
+                  </Link>
+                  <Link to="/blog/category/orthodontics-braces" className="procedure-card">
                     <span className="procedure-check">✓</span>
                     <div className="procedure-info">
                       <h4>Traditional Braces</h4>
                       <p>Proven metal braces for effective treatment of complex orthodontic cases</p>
                     </div>
-                  </div>
-                  <div className="procedure-card">
+                  </Link>
+                  <Link to="/blog/category/orthodontics-braces" className="procedure-card">
                     <span className="procedure-check">✓</span>
                     <div className="procedure-info">
                       <h4>Ceramic Braces</h4>
                       <p>Tooth-colored braces that blend with your natural teeth for a more aesthetic appearance</p>
                     </div>
-                  </div>
-                  <div className="procedure-card">
+                  </Link>
+                  <Link to="/blog/category/orthodontics-braces" className="procedure-card">
                     <span className="procedure-check">✓</span>
                     <div className="procedure-info">
                       <h4>Retainers</h4>
                       <p>Custom retainers to maintain your beautiful new smile after treatment completion</p>
                     </div>
-                  </div>
-                  <div className="procedure-card">
+                  </Link>
+                  <Link to="/blog/category/sleep-disorders-bruxism" className="procedure-card">
                     <span className="procedure-check">✓</span>
                     <div className="procedure-info">
                       <h4>Bite Correction</h4>
                       <p>Advanced treatments to correct overbites, underbites, and crossbites for improved function</p>
                     </div>
-                  </div>
-                  <div className="procedure-card">
+                  </Link>
+                  <Link to="/blog/category/orthodontics-braces" className="procedure-card">
                     <span className="procedure-check">✓</span>
                     <div className="procedure-info">
                       <h4>Early Intervention Treatment</h4>
                       <p>Interceptive orthodontics for children to guide proper jaw and tooth development</p>
                     </div>
-                  </div>
+                  </Link>
                 </div>
               </div>
 
@@ -195,6 +196,21 @@ export default function OrthodonticTherapy() {
                       <p>Custom retainers and follow-up care to maintain your beautiful new smile</p>
                     </div>
                   </div>
+                </div>
+              </div>
+
+              <div className="service-related-blogs">
+                <h3>Read Blogs from Related Topics</h3>
+                <div className="related-blog-tags">
+                  <Link to="/blog/category/orthodontics-braces" className="blog-tag">
+                    Orthodontics & Braces
+                  </Link>
+                  <Link to="/blog/category/sleep-disorders-bruxism" className="blog-tag">
+                    Sleep Disorders & Bruxism
+                  </Link>
+                  <Link to="/blog/category/dental-care-tips" className="blog-tag">
+                    Dental Care Tips
+                  </Link>
                 </div>
               </div>
             </div>

@@ -240,6 +240,49 @@ footer .brand{ color: #fff; }
 footer .copyright{ border-top: 1px solid rgba(255,255,255,.1); margin-top: 28px; padding-top: 18px; font-size:.9rem; opacity:.8; }
 @media (max-width: 900px){ footer .cols{ grid-template-columns: 1fr; } }
 
+.footer-social-links {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.footer-social-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  color: #e8f2ff;
+  transition: all 0.3s ease;
+}
+
+.footer-social-links a:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.footer-social-links a[href*="facebook"]:hover {
+  background: #1877F2;
+  box-shadow: 0 4px 12px rgba(24, 119, 242, 0.5);
+}
+
+.footer-social-links a[href*="instagram"]:hover {
+  background: linear-gradient(135deg, #833AB4, #E1306C, #FCAF45);
+  box-shadow: 0 4px 12px rgba(225, 48, 108, 0.5);
+}
+
+.footer-social-links a[href*="linkedin"]:hover {
+  background: #0A66C2;
+  box-shadow: 0 4px 12px rgba(10, 102, 194, 0.5);
+}
+
+.footer-social-links svg {
+  width: 20px;
+  height: 20px;
+}
+
 /* Hero */
 .hero{ position:relative; isolation:isolate; overflow:hidden; padding: 0; }
 .hero-dark{ background: #0a0a0f; color: #eef1f7; }
@@ -1210,6 +1253,239 @@ section{ scroll-margin-top: 80px; }
   
   .procedures-grid-compact {
     grid-template-columns: 1fr;
+  }
+}
+
+/* Related Blogs Section */
+.service-related-blogs {
+  padding: 3rem 2.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  background: linear-gradient(135deg, rgba(15, 32, 60, 0.6) 0%, rgba(20, 40, 70, 0.5) 100%);
+}
+
+.service-related-blogs h3 {
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0 0 1.8rem 0;
+  text-align: left;
+  letter-spacing: 0.3px;
+}
+
+.related-blog-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.85rem;
+  align-items: center;
+}
+
+.blog-tag {
+  display: inline-block;
+  padding: 0.7rem 1.6rem;
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  color: #1a73e8;
+  font-size: 0.95rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.blog-tag:hover {
+  background: #ffffff;
+  color: #0d5bc6;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(26, 115, 232, 0.25);
+  border-color: rgba(26, 115, 232, 0.3);
+}
+
+@media (max-width: 768px) {
+  .service-related-blogs {
+    padding: 2rem 1.5rem;
+  }
+
+  .service-related-blogs h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .related-blog-tags {
+    gap: 0.6rem;
+  }
+
+  .blog-tag {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
+  }
+}
+
+/* New About Section */
+.about-section-new {
+  padding: 3.5rem 2rem;
+  background: linear-gradient(135deg, #1a2332 0%, #0f1419 100%);
+}
+
+.about-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.about-image-wrapper {
+  position: relative;
+}
+
+.about-image {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+.experience-badge {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  background: linear-gradient(135deg, #1a73e8 0%, #00b8d9 100%);
+  color: white;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 20px rgba(26, 115, 232, 0.5);
+  border: 5px solid rgba(255, 255, 255, 0.2);
+}
+
+.experience-number {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 0.3rem;
+}
+
+.experience-text {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-align: center;
+  line-height: 1.2;
+  letter-spacing: 0.5px;
+}
+
+.about-content {
+  padding: 0;
+}
+
+.about-eyebrow {
+  color: #00b8d9;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.about-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 1.2rem;
+  line-height: 1.3;
+}
+
+.about-description {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 0.95rem;
+  line-height: 1.7;
+  margin-bottom: 1rem;
+}
+
+.about-services-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.7rem;
+  margin-top: 1.5rem;
+}
+
+.about-service-item {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.about-service-check {
+  color: #1a73e8;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+@media (max-width: 968px) {
+  .about-section-new {
+    padding: 3rem 2rem;
+  }
+
+  .about-container {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .about-title {
+    font-size: 1.7rem;
+  }
+
+  .experience-badge {
+    width: 120px;
+    height: 120px;
+    bottom: 20px;
+    right: 20px;
+  }
+
+  .experience-number {
+    font-size: 2rem;
+  }
+
+  .experience-text {
+    font-size: 0.7rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .about-section-new {
+    padding: 2.5rem 1.5rem;
+  }
+
+  .about-services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-title {
+    font-size: 1.4rem;
+  }
+
+  .experience-badge {
+    width: 100px;
+    height: 100px;
+    bottom: 15px;
+    right: 15px;
+  }
+
+  .experience-number {
+    font-size: 1.5rem;
+  }
+
+  .experience-text {
+    font-size: 0.65rem;
   }
 }
 
@@ -2928,6 +3204,85 @@ h2.doctor-name {
   box-shadow: 0 12px 32px rgba(26, 115, 232, 0.4);
 }
 
+/* Social Media Section on Contact Page */
+.contact-social-section {
+  margin-top: 2rem;
+}
+
+.social-card {
+  background: rgba(15, 23, 42, 0.95);
+  backdrop-filter: blur(20px);
+  border-radius: 24px;
+  padding: 2.5rem;
+  text-align: center;
+  box-shadow:
+    0 20px 40px rgba(0, 0, 0, 0.3),
+    0 0 0 1px rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.social-card h3 {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0 0 0.8rem 0;
+}
+
+.social-card p {
+  color: rgba(255, 255, 255, 0.8);
+  margin: 0 0 2rem 0;
+  font-size: 1rem;
+}
+
+.contact-social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem 2rem;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 16px;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.social-link:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+}
+
+.social-link.facebook:hover {
+  background: #1877F2;
+  border-color: #1877F2;
+}
+
+.social-link.instagram:hover {
+  background: linear-gradient(135deg, #833AB4, #E1306C, #FCAF45);
+  border-color: transparent;
+}
+
+.social-link.linkedin:hover {
+  background: #0A66C2;
+  border-color: #0A66C2;
+}
+
+.social-link svg {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
+
 @media (max-width: 768px) {
   .contact-container { gap: 1.25rem; padding: 1rem 0; }
   .contact-info-grid { grid-template-columns: 1fr; gap: 1rem; }
@@ -2938,6 +3293,20 @@ h2.doctor-name {
   .contact-secondary-grid { grid-template-columns: 1fr; gap: 1rem; }
   .contact-secondary-grid .location-section { padding: 1rem; border-radius: 14px; }
   .map-btn { padding: .9rem 1rem; border-radius: 12px; }
+
+  .social-card {
+    padding: 2rem 1.5rem;
+  }
+
+  .contact-social-links {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .social-link {
+    justify-content: center;
+    padding: 1rem 1.5rem;
+  }
 }
 
 /* Video Hero Section */

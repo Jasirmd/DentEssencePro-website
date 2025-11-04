@@ -2,8 +2,36 @@ import Section from '../components/Section'
 import VideoHero from '../components/VideoHero'
 import SEO from '../components/SEO'
 import { services } from '../data/services'
+import { Link } from 'react-router-dom'
+
+// Mapping of services to related blog categories
+const serviceToBlogs = {
+  'General Dentistry': [
+    { name: 'Root Canal Treatment', slug: 'root-canal-treatment' },
+    { name: 'Cavities & Fillings', slug: 'cavities-fillings' },
+    { name: 'Teeth Cleaning & Scaling', slug: 'teeth-cleaning-scaling' },
+    { name: 'Periodontics & Gum Health', slug: 'periodontics-gum-health' },
+    { name: 'Tooth Pain & Sensitivity', slug: 'tooth-pain-sensitivity' },
+    { name: 'Wisdom Teeth', slug: 'wisdom-teeth' },
+    { name: 'Dental Care Tips', slug: 'dental-care-tips' },
+    { name: 'Oral Hygiene Care', slug: 'oral-hygiene-care' }
+  ],
+  'Orthodontic Therapy': [
+    { name: 'Orthodontics & Braces', slug: 'orthodontics-braces' },
+    { name: 'Sleep Disorders & Bruxism', slug: 'sleep-disorders-bruxism' },
+    { name: 'Dental Care Tips', slug: 'dental-care-tips' }
+  ],
+  'Implant Dentistry': [
+    { name: 'Dental Implants', slug: 'dental-implants' },
+    { name: 'Dentures & Prosthodontics', slug: 'dentures-prosthodontics' },
+    { name: 'Cosmetic Dentistry', slug: 'cosmetic-dentistry' },
+    { name: 'Dental Care Tips', slug: 'dental-care-tips' }
+  ]
+}
 
 function ServiceDetail({ service, index }) {
+  const relatedBlogs = serviceToBlogs[service.title] || []
+
   return (
     <div className="service-detail-compact">
       <div className="service-content-row">
@@ -12,7 +40,7 @@ function ServiceDetail({ service, index }) {
             <h2 className="service-title">{service.title}</h2>
             <p className="service-subtitle">{service.subtitle}</p>
           </div>
-          
+
           <div className="service-features-compact">
             {service.features.map((feature, idx) => (
               <div key={idx} className="feature-item-compact">
@@ -25,16 +53,16 @@ function ServiceDetail({ service, index }) {
             ))}
           </div>
         </div>
-        
+
         <div className="service-image-side">
-          <img 
-            src={service.detailImage} 
+          <img
+            src={service.detailImage}
             alt={service.title}
             className="service-image-compact"
           />
         </div>
       </div>
-      
+
       <div className="service-procedures-compact">
         <h3>Available Procedures</h3>
         <div className="procedures-grid-compact">
@@ -46,6 +74,23 @@ function ServiceDetail({ service, index }) {
           ))}
         </div>
       </div>
+
+      {relatedBlogs.length > 0 && (
+        <div className="service-related-blogs">
+          <h3>Read Blogs from Related Topics</h3>
+          <div className="related-blog-tags">
+            {relatedBlogs.map((blog, idx) => (
+              <Link
+                key={idx}
+                to={`/blog/category/${blog.slug}`}
+                className="blog-tag"
+              >
+                {blog.name}
+              </Link>
+            ))}
+          </div>
+        </div>
+      )}
     </div>
   )
 }

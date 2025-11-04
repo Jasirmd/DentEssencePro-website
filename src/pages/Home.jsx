@@ -5,6 +5,8 @@ import { services } from '../data/services'
 import { Link } from 'react-router-dom'
 import TeamCarousel from '../components/TeamCarousel'
 import SEO from '../components/SEO'
+import makamGangaiah from '../assets/images/makam_gangaiah.jpeg'
+import surgeryImage from '../assets/images/surgery.jpeg'
 
 export default function Home(){
   const structuredData = {
@@ -71,10 +73,11 @@ export default function Home(){
   return (
     <>
       <SEO
-        title="DentEssencePro — Advanced Dental Care in Bangalore | Best Dental Clinic"
+        title="Best Dental Clinic in Bangalore for Dental Implants & Orthodontics | DentEssencePro"
         description="Expert dental care in Bangalore. Cosmetic dentistry, dental implants, root canals, orthodontics, teeth whitening & preventive care. Modern technology, experienced dentists, patient-first approach."
         keywords="dental clinic bangalore, dentist bangalore, dental implants bangalore, cosmetic dentistry bangalore, root canal treatment bangalore, teeth whitening bangalore, orthodontics bangalore, best dental clinic bangalore, DentEssencePro, dental checkup bangalore, teeth cleaning bangalore, dental tourism bangalore, emergency dentist bangalore, dental implants cost bangalore, cosmetic dentist bangalore, orthodontist bangalore, dental care bangalore, oral health bangalore, preventive dentistry bangalore"
         canonical="/"
+        ogImage={`https://dentessencepro.com${makamGangaiah}`}
         structuredData={structuredData}
       />
       <section className="hero hero-dark" id="home">
@@ -95,19 +98,65 @@ export default function Home(){
         </div>
       </section>
 
-      <Section
-        id="about"
-        className="about-section"
-        eyebrow="About"
-        title="DentEssencePro"
-        intro="At DentEssencePro, we practice precision-driven, minimally invasive, and biomimetic dentistry—combining advanced diagnostics, digital workflows, and evidence-based techniques to preserve natural tooth structure, enhance aesthetics, and optimize long-term function. Our approach integrates technology, expertise, and patient comfort to deliver care that's as safe and predictable as it is aesthetic."
-      >
-        <div className="grid cols-3 glass-cards">
-          <div className="card glass-card"><h3 style={{color: '#1e40af'}}>Digital Diagnostics</h3><p>State-of-the-art intraoral imaging, digital impressions, and 3D treatment planning ensure unmatched diagnostic precision. Every case is digitally analyzed to enhance clinical accuracy, minimize procedural errors, and provide predictable treatment outcomes tailored to each patient.</p></div>
-          <div className="card glass-card"><h3 style={{color: '#1e40af'}}>Strict Sterilization</h3><p>Implementation of international-grade infection control systems, including Class B autoclaving, single-use disposables, and validated sterilization cycles. Every instrument and operatory follows CDC and ADA-compliant sterilization protocols to ensure uncompromising safety and hygiene.</p></div>
-          <div className="card glass-card"><h3 style={{color: '#1e40af'}}>Comfort-First Care</h3><p>Integration of painless anesthesia delivery, ergonomic treatment setups, and anxiety-reduction protocols for an enhanced patient experience. Our clinicians employ behavioral comfort techniques and digital pain-mapping technologies to ensure every procedure feels gentle, predictable, and stress-free.</p></div>
+      <section id="about" className="about-section-new">
+        <div className="about-container">
+          <div className="about-image-wrapper">
+            <img src={surgeryImage} alt="Dental Treatment at DentEssencePro" className="about-image" />
+            <div className="experience-badge">
+              <div className="experience-number">20+</div>
+              <div className="experience-text">YEARS<br />EXPERIENCE</div>
+            </div>
+          </div>
+
+          <div className="about-content">
+            <p className="about-eyebrow">WHO WE ARE</p>
+            <h2 className="about-title">Welcome to the Best Dental Clinic in Kodigehalli, Bangalore!</h2>
+
+            <p className="about-description">
+              At DentEssencePro, we are committed to providing you and your family with the highest quality dental care in Bangalore. Our state-of-the-art facility is equipped with cutting-edge technology and staffed by a team of experienced and dedicated dental specialists who are passionate about your oral health.
+            </p>
+
+            <p className="about-description">
+              We emphasize the availability of skilled and licensed doctors who are ready to assist patients with their medical needs, ensuring comprehensive and personalized care for every individual.
+            </p>
+
+            <div className="about-services-grid">
+              <div className="about-service-item">
+                <span className="about-service-check">✓</span>
+                <span>Full Mouth Rehabilitation</span>
+              </div>
+              <div className="about-service-item">
+                <span className="about-service-check">✓</span>
+                <span>Dental Implants</span>
+              </div>
+              <div className="about-service-item">
+                <span className="about-service-check">✓</span>
+                <span>Complete Crown</span>
+              </div>
+              <div className="about-service-item">
+                <span className="about-service-check">✓</span>
+                <span>Cosmetic Dentistry</span>
+              </div>
+              <div className="about-service-item">
+                <span className="about-service-check">✓</span>
+                <span>Digital Smile Design</span>
+              </div>
+              <div className="about-service-item">
+                <span className="about-service-check">✓</span>
+                <span>Orthodontic Therapy</span>
+              </div>
+              <div className="about-service-item">
+                <span className="about-service-check">✓</span>
+                <span>Root Canal Treatment</span>
+              </div>
+              <div className="about-service-item">
+                <span className="about-service-check">✓</span>
+                <span>Prosthodontics</span>
+              </div>
+            </div>
+          </div>
         </div>
-      </Section>
+      </section>
 
       <Section
         id="services"

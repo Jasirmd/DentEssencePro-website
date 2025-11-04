@@ -2,6 +2,7 @@ import Section from '../components/Section'
 import VideoHero from '../components/VideoHero'
 import SEO from '../components/SEO'
 import implantDentistryDetail from '../assets/images/Implant-dentistry_1.jpg'
+import { Link } from 'react-router-dom'
 
 export default function ImplantDentistry() {
   const structuredData = {
@@ -29,7 +30,7 @@ export default function ImplantDentistry() {
   return (
     <>
       <SEO
-        title="Dental Implants - Permanent Tooth Replacement | DentEssencePro Bangalore"
+        title="Best clinic for Dental Implants in Bangalore | DentEssencePro"
         description="Expert dental implant services in Bangalore including single tooth implants, full arch replacements, All-on-4 implants, and bone grafting. Advanced 3D imaging and computer-guided placement."
         keywords="dental implants bangalore, tooth replacement, single tooth implants, full arch replacement, all-on-4 implants, implant dentistry, bone grafting, permanent teeth, DentEssencePro"
         canonical="/implant-dentistry"
@@ -109,41 +110,41 @@ export default function ImplantDentistry() {
                   From single tooth replacement to full arch restoration, we offer complete implant dentistry services:
                 </p>
                 <div className="procedures-grid">
-                  <div className="procedure-card">
+                  <Link to="/blog/category/dental-implants" className="procedure-card">
                     <span className="procedure-check">✓</span>
                     <div className="procedure-info">
                       <h4>Single Tooth Implants</h4>
                       <p>Replace individual missing teeth without affecting adjacent healthy teeth</p>
                     </div>
-                  </div>
-                  <div className="procedure-card">
+                  </Link>
+                  <Link to="/blog/category/dental-implants" className="procedure-card">
                     <span className="procedure-check">✓</span>
                     <div className="procedure-info">
                       <h4>Full Arch Replacements</h4>
                       <p>Complete restoration of upper or lower arch with implant-supported prosthetics</p>
                     </div>
-                  </div>
-                  <div className="procedure-card">
+                  </Link>
+                  <Link to="/blog/category/dental-implants" className="procedure-card">
                     <span className="procedure-check">✓</span>
                     <div className="procedure-info">
                       <h4>Implant-Supported Bridges</h4>
                       <p>Replace multiple consecutive missing teeth with stable, fixed bridges</p>
                     </div>
-                  </div>
-                  <div className="procedure-card">
+                  </Link>
+                  <Link to="/blog/category/dental-implants" className="procedure-card">
                     <span className="procedure-check">✓</span>
                     <div className="procedure-info">
                       <h4>All-on-4 Dental Implants</h4>
                       <p>Revolutionary technique to restore a full arch with just four strategically placed implants</p>
                     </div>
-                  </div>
-                  <div className="procedure-card">
+                  </Link>
+                  <Link to="/blog/category/dentures-prosthodontics" className="procedure-card">
                     <span className="procedure-check">✓</span>
                     <div className="procedure-info">
                       <h4>Bone Grafting</h4>
                       <p>Rebuild bone volume to create a solid foundation for successful implant placement</p>
                     </div>
-                  </div>
+                  </Link>
                 </div>
               </div>
 
@@ -216,6 +217,24 @@ export default function ImplantDentistry() {
                   Even if you've been told you're not a candidate for implants in the past, advances in technology
                   and techniques may now make treatment possible. Schedule a consultation to explore your options.
                 </p>
+              </div>
+
+              <div className="service-related-blogs">
+                <h3>Read Blogs from Related Topics</h3>
+                <div className="related-blog-tags">
+                  <Link to="/blog/category/dental-implants" className="blog-tag">
+                    Dental Implants
+                  </Link>
+                  <Link to="/blog/category/dentures-prosthodontics" className="blog-tag">
+                    Dentures & Prosthodontics
+                  </Link>
+                  <Link to="/blog/category/cosmetic-dentistry" className="blog-tag">
+                    Cosmetic Dentistry
+                  </Link>
+                  <Link to="/blog/category/dental-care-tips" className="blog-tag">
+                    Dental Care Tips
+                  </Link>
+                </div>
               </div>
             </div>
           </div>

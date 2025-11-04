@@ -2,6 +2,7 @@ import Section from '../components/Section'
 import VideoHero from '../components/VideoHero'
 import SEO from '../components/SEO'
 import generalDentistryDetail from '../assets/images/General-Dentistry_1.jpg'
+import { Link } from 'react-router-dom'
 
 export default function GeneralDentistry() {
   const structuredData = {
@@ -29,7 +30,7 @@ export default function GeneralDentistry() {
   return (
     <>
       <SEO
-        title="General Dentistry Services - Comprehensive Family Dental Care | DentEssencePro Bangalore"
+        title="General Dental Care in Bangalore | DentEssencePro"
         description="Expert general dentistry services in Bangalore including dental cleanings, cavity fillings, root canal therapy, gum disease treatment, and emergency dental care. Comprehensive care for your entire family."
         keywords="general dentistry bangalore, dental cleanings, cavity fillings, root canal therapy, gum disease treatment, emergency dental care, family dentist bangalore, preventive dental care, DentEssencePro"
         canonical="/general-dentistry"
@@ -106,41 +107,41 @@ export default function GeneralDentistry() {
                   Our comprehensive general dentistry services cover all aspects of oral health care:
                 </p>
                 <div className="procedures-grid">
-                  <div className="procedure-card">
+                  <Link to="/blog/category/teeth-cleaning-scaling" className="procedure-card">
                     <span className="procedure-check">✓</span>
                     <div className="procedure-info">
                       <h4>Dental Cleanings</h4>
                       <p>Professional teeth cleaning and polishing to remove plaque, tartar, and surface stains</p>
                     </div>
-                  </div>
-                  <div className="procedure-card">
+                  </Link>
+                  <Link to="/blog/category/cavities-fillings" className="procedure-card">
                     <span className="procedure-check">✓</span>
                     <div className="procedure-info">
                       <h4>Cavity Fillings</h4>
                       <p>Tooth-colored composite fillings that blend naturally with your teeth</p>
                     </div>
-                  </div>
-                  <div className="procedure-card">
+                  </Link>
+                  <Link to="/blog/category/root-canal-treatment" className="procedure-card">
                     <span className="procedure-check">✓</span>
                     <div className="procedure-info">
                       <h4>Root Canal Therapy</h4>
                       <p>Pain-free endodontic treatment to save infected or damaged teeth</p>
                     </div>
-                  </div>
-                  <div className="procedure-card">
+                  </Link>
+                  <Link to="/blog/category/periodontics-gum-health" className="procedure-card">
                     <span className="procedure-check">✓</span>
                     <div className="procedure-info">
                       <h4>Gum Disease Treatment</h4>
                       <p>Comprehensive periodontal care to treat and prevent gum disease</p>
                     </div>
-                  </div>
-                  <div className="procedure-card">
+                  </Link>
+                  <Link to="/blog/category/dental-care-tips" className="procedure-card">
                     <span className="procedure-check">✓</span>
                     <div className="procedure-info">
                       <h4>Emergency Dental Care</h4>
                       <p>Prompt treatment for dental emergencies including toothaches, broken teeth, and trauma</p>
                     </div>
-                  </div>
+                  </Link>
                 </div>
               </div>
 
@@ -153,6 +154,36 @@ export default function GeneralDentistry() {
                   <li><strong>Personalized Care:</strong> Every treatment plan is tailored to your unique needs and goals</li>
                   <li><strong>Family-Friendly:</strong> We provide care for patients of all ages, from children to seniors</li>
                 </ul>
+              </div>
+
+              <div className="service-related-blogs">
+                <h3>Read Blogs from Related Topics</h3>
+                <div className="related-blog-tags">
+                  <Link to="/blog/category/root-canal-treatment" className="blog-tag">
+                    Root Canal Treatment
+                  </Link>
+                  <Link to="/blog/category/cavities-fillings" className="blog-tag">
+                    Cavities & Fillings
+                  </Link>
+                  <Link to="/blog/category/teeth-cleaning-scaling" className="blog-tag">
+                    Teeth Cleaning & Scaling
+                  </Link>
+                  <Link to="/blog/category/periodontics-gum-health" className="blog-tag">
+                    Periodontics & Gum Health
+                  </Link>
+                  <Link to="/blog/category/tooth-pain-sensitivity" className="blog-tag">
+                    Tooth Pain & Sensitivity
+                  </Link>
+                  <Link to="/blog/category/wisdom-teeth" className="blog-tag">
+                    Wisdom Teeth
+                  </Link>
+                  <Link to="/blog/category/dental-care-tips" className="blog-tag">
+                    Dental Care Tips
+                  </Link>
+                  <Link to="/blog/category/oral-hygiene-care" className="blog-tag">
+                    Oral Hygiene Care
+                  </Link>
+                </div>
               </div>
             </div>
           </div>
