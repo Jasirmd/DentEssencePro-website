@@ -8,6 +8,8 @@ import blog7 from '../../assets/images/Blogs/Teeth cleaning and scaling/blog7.jp
 import blog8 from '../../assets/images/Blogs/Teeth cleaning and scaling/blog8.jpg'
 import blog9 from '../../assets/images/Blogs/Teeth cleaning and scaling/blog9.jpg'
 import blog10 from '../../assets/images/Blogs/Teeth cleaning and scaling/blog10.jpeg'
+import blog11 from '../../assets/images/Blogs/Teeth cleaning and scaling/blog11.jpeg'
+import blog12 from '../../assets/images/Blogs/Teeth cleaning and scaling/blog12.jpeg'
 import fallback from '../../assets/images/Blogs/Fallback.png'
 
 export const teethCleaningBlogs = [
@@ -390,6 +392,90 @@ Full-Mouth Cleaning (with gum care) | ₹2,000 – ₹2,500
 
 📍 For quality dental cleaning at a fair cost, visit:
 DentEssencePRO Dental Clinic, Tatanagar, Bangalore
+📞 9742503814 | 🌐 www.drmakamgangaiah.com`
+  },
+  {
+    slug: 'what-is-scaling-teeth-cleaning',
+    title: 'What Is Scaling (Teeth Cleaning)?',
+    category: 'Teeth Cleaning & Scaling',
+    categorySlug: 'teeth-cleaning-scaling',
+    cover: blog11,
+    excerpt: 'Scaling is a professional dental cleaning procedure that removes plaque, tartar, and bacteria that build up on the teeth.',
+    content: `||What Is Scaling (Teeth Cleaning)?||
+
+Scaling is a professional dental cleaning procedure that removes plaque, tartar (calculus), and bacteria that build up on the teeth - especially in areas a regular toothbrush cannot reach.
+
+It is done using ultrasonic scalers or specialized instruments to gently clean around the teeth and gum line.
+
+//Why Is Scaling Important?//
+
+✅ Prevents Gum Disease
+
+Tartar buildup irritates the gums, causing bleeding, swelling, and gum infections (gingivitis).
+
+✅ Fresh Breath
+
+Bacteria trapped under tartar release foul-smelling toxins - scaling removes the source.
+
+✅ Stops Bone Loss
+
+If ignored, tartar can lead to periodontal disease, causing gum recession and bone loss around teeth.
+
+✅ Prevents Cavities
+
+Plaque contains acid-producing bacteria that weaken enamel and cause tooth decay.
+
+✅ Improves Overall Health
+
+Healthy gums reduce the risk of systemic conditions like heart disease, diabetes complications, and respiratory infections.
+
+✅ Keeps Your Smile Bright
+
+Scaling removes stains, giving cleaner and healthier-looking teeth.
+
+//Recommended Frequency//
+
+➡️ Every 6 months for most people
+➡️ Every 3 to 4 months for people with gum disease, diabetes, braces, or heavy plaque buildup
+
+At DentEssencePRO Dental Clinic, Bangalore, we use advanced ultrasonic scaling technology to provide thorough, gentle, and effective cleaning. Our experienced team ensures your teeth and gums stay healthy.
+
+📍 DentEssencePRO Dental Clinic, Tatanagar, Bangalore
+📞 9742503814 | 🌐 www.drmakamgangaiah.com`
+  },
+  {
+    slug: 'how-often-should-you-get-teeth-cleaned',
+    title: 'How Often Should You Get Your Teeth Cleaned?',
+    category: 'Teeth Cleaning & Scaling',
+    categorySlug: 'teeth-cleaning-scaling',
+    cover: blog12,
+    excerpt: 'For most people, scaling should be done every 6 months. Learn the recommended frequency based on your individual needs.',
+    content: `||How Often Should You Get Your Teeth Cleaned?||
+
+For most people, scaling should be done every 6 months.
+
+This helps prevent plaque and tartar from building up and keeps gums healthy.
+
+//Frequency Based on Individual Needs//
+
+Condition or Lifestyle | Recommended Interval
+Healthy gums and good oral hygiene | Every 6 months
+Bleeding gums or Gingivitis | Every 4 to 6 months
+Periodontitis (gum disease history) | Every 3 to 4 months
+Diabetes | Every 3 to 4 months
+Smokers or Tobacco users | Every 3 to 4 months
+Braces or Aligners | Every 3 to 4 months
+Pregnancy | Every 4 to 6 months
+Heavy plaque or tartar buildup or coffee or tea staining | Every 4 to 6 months
+
+//Why Regular Cleaning Matters//
+
+⭐ Plaque rebuilds every day, and tartar forms even with brushing.
+⭐ Professional cleaning keeps gums healthy and prevents infection, recession, and tooth loss.
+
+At DentEssencePRO Dental Clinic, Bangalore, we recommend personalized cleaning schedules based on your oral health needs. Our team will assess your condition and suggest the ideal frequency for your preventive care.
+
+📍 DentEssencePRO Dental Clinic, Tatanagar, Bangalore
 📞 9742503814 | 🌐 www.drmakamgangaiah.com`
   }
 ]
