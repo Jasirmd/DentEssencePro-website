@@ -10,6 +10,11 @@ import blog9 from '../../assets/images/Blogs/Orthodontics & braces/blog9.jpg'
 import blog10 from '../../assets/images/Blogs/Orthodontics & braces/blog10.jpg'
 import blog11 from '../../assets/images/Blogs/Orthodontics & braces/blog11.jpeg'
 import blog12 from '../../assets/images/Blogs/Orthodontics & braces/blog12.jpg'
+import blog13 from '../../assets/images/Blogs/Orthodontics & braces/blog13.jpeg'
+import blog14 from '../../assets/images/Blogs/Orthodontics & braces/blog14.jpeg'
+import blog15 from '../../assets/images/Blogs/Orthodontics & braces/blog15.jpeg'
+import blog16 from '../../assets/images/Blogs/Orthodontics & braces/blog16.jpg'
+import blog17 from '../../assets/images/Blogs/Orthodontics & braces/blog17.jpeg'
 import fallback from '../../assets/images/Blogs/Fallback.png'
 
 export const orthodonticsBlogs = [
@@ -353,5 +358,196 @@ Contact Information:
 DentEssencePRO Dental Clinic, Tatanagar, Bangalore
 ☎️ 9742503814
 www.drmakamgangaiah.com`
+  },
+  {
+    slug: 'clear-aligner-treatment-guide',
+    title: 'Clear aligner treatment guide',
+    category: 'Orthodontics & Braces',
+    categorySlug: 'orthodontics-braces',
+    cover: blog13,
+    excerpt: 'Clear aligners are transparent trays that gently move teeth without brackets, offering a discreet and removable orthodontic option.',
+    content: `||What are clear aligners?||
+
+Clear aligners are transparent, removable trays that gently guide teeth into better alignment. Each set of trays is custom printed from a 3D scan of your mouth, so they fit snugly and move teeth in small, comfortable steps.
+
+//Why patients love clear aligners//
+
+✅ Nearly invisible - no brackets or wires
+✅ Removable for meals and brushing
+✅ Smooth plastic that does not irritate cheeks
+✅ Digital planning lets you preview results
+✅ Works for crowding, spacing, relapse cases, and mild bite issues
+
+//How the process works//
+
+1. Digital scan and smile simulation
+2. Custom treatment plan and series of trays
+3. Wear each set for 20 to 22 hours daily, switching every 1 to 2 weeks
+4. Periodic check-ups to track progress
+
+//Who is a good candidate?//
+
+⭐ Teens or adults with mild to moderate misalignment
+⭐ Patients who want a discreet option for work or social life
+⭐ People who can commit to wearing trays as instructed
+⭐ Ideal for finishing touches after braces
+
+//Treatment timeline//
+
+Most cases finish in 6 to 18 months, depending on starting alignment and compliance.
+
+At DentEssencePRO Dental Clinic, Bangalore, we use advanced scanners and experienced orthodontists to deliver predictable aligner outcomes. You get ongoing monitoring, refinements if needed, and guidance on retainers once treatment ends.
+
+📍 DentEssencePRO Dental Clinic, Tatanagar, Bangalore
+📞 9742503814 | 🌐 www.drmakamgangaiah.com`
+  },
+  {
+    slug: 'ceramic-braces-overview',
+    title: 'Ceramic braces overview',
+    category: 'Orthodontics & Braces',
+    categorySlug: 'orthodontics-braces',
+    cover: blog14,
+    excerpt: 'Ceramic braces use tooth-coloured brackets for a discreet fixed treatment that still delivers powerful orthodontic correction.',
+    content: `||What are ceramic braces?||
+
+Ceramic braces use tooth-coloured brackets that blend naturally with enamel, giving you a more aesthetic alternative to metal braces while maintaining excellent control over tooth movement.
+
+//Advantages//
+
+✅ Aesthetic and less noticeable
+✅ Effective tooth movement similar to metal braces
+✅ Smaller, smoother brackets improve comfort
+✅ Modern materials resist staining with proper care
+✅ Confidence friendly for professionals, teens, and public-facing roles
+
+//Indications//
+
+🎯 Crooked or misaligned teeth
+🎯 Spacing or gaps
+🎯 Mild to severe crowding
+🎯 Bite correction (overbite, crossbite, open bite, underbite)
+🎯 Rotated or tilted teeth
+🎯 Patients who want an aesthetic fixed solution
+
+//Treatment duration//
+
+Typical timelines range from 12 to 24 months, depending on complexity and patient cooperation.
+
+At DentEssencePRO Dental Clinic, Bangalore, ceramic braces are planned with digital diagnostics, comfortable archwires, and routine reviews. We coach you on cleaning, diet, and care so the brackets stay stain free and efficient throughout treatment.
+
+📍 DentEssencePRO Dental Clinic, Tatanagar, Bangalore
+📞 9742503814 | 🌐 www.drmakamgangaiah.com`
+  },
+  {
+    slug: 'traditional-braces-explained',
+    title: 'Traditional braces explained',
+    category: 'Orthodontics & Braces',
+    categorySlug: 'orthodontics-braces',
+    cover: blog15,
+    excerpt: 'Traditional braces use archwires, elastic modules, and brackets to correct even complex bite and alignment problems with precision.',
+    content: `||What are traditional braces?||
+
+Traditional braces use brackets bonded to each tooth, connected by archwires and elastic modules. This classic system gives orthodontists maximum control over tooth movement, making it reliable for simple and complex cases alike.
+
+//Why they remain the gold standard//
+
+✅ Strong stainless-steel hardware
+✅ Works for severe rotations, crowding, and bite issues
+✅ Predictable results with decades of clinical proof
+✅ Suitable for growing children, teens, and adults
+✅ Compatible with elastics, expanders, and other appliances
+
+//What to expect during treatment//
+
+🎯 Monthly adjustments keep teeth moving steadily
+🎯 You may feel mild soreness for 2 to 3 days after each visit
+🎯 Soft-food diet and wax help during the initial adjustment stage
+🎯 Brushing and flossing take a little longer but become routine
+
+//Treatment timeline//
+
+Average duration is 12 to 24 months, though complex corrections can extend up to 30 months.
+
+At DentEssencePRO Dental Clinic, Bangalore, we pair proven mechanics with digital planning and high-quality wires to make treatment efficient. You receive detailed hygiene coaching, emergency support, and retainers after braces to protect your new smile.
+
+📍 DentEssencePRO Dental Clinic, Tatanagar, Bangalore
+📞 9742503814 | 🌐 www.drmakamgangaiah.com`
+  },
+  {
+    slug: 'metal-braces-benefits',
+    title: 'Metal braces benefits',
+    category: 'Orthodontics & Braces',
+    categorySlug: 'orthodontics-braces',
+    cover: blog16,
+    excerpt: 'Metal braces remain the most durable and versatile orthodontic system for correcting crowding, spacing, and bite issues of all severities.',
+    content: `||What are metal braces?||
+
+Metal braces are strong stainless-steel brackets and archwires used to straighten teeth and correct bite alignment. They are the most reliable and widely used orthodontic system.
+
+//Indications//
+
+✅ Crooked or misaligned teeth
+✅ Moderate to severe crowding
+✅ Spacing or gaps between teeth
+✅ Deep bite, open bite, crossbite, underbite, overbite
+✅ Rotated or tilted teeth
+✅ Complex cases needing maximum control
+✅ Growth modification therapy in children and teens
+
+//Treatment duration//
+
+Most treatments finish in 12 to 24 months, though certain complex corrections can extend to 30 months. Consistent check-ups and good hygiene help you stay on schedule.
+
+//Why patients choose metal braces//
+
+⭐ Most durable option for active lifestyles
+⭐ Efficient movement with modern low-profile brackets
+⭐ Budget friendly compared to aesthetic systems
+⭐ Colorful modules let kids and teens personalize their smile journey
+
+At DentEssencePRO Dental Clinic, Bangalore, we use advanced archwires, precision bonding, and comfortable appointment protocols to make metal braces efficient and manageable. Our team guides you on diet, cleaning, and brace-friendly habits at every visit.
+
+📍 DentEssencePRO Dental Clinic, Tatanagar, Bangalore
+📞 9742503814 | 🌐 www.drmakamgangaiah.com`
+  },
+  {
+    slug: 'orthodontic-retainers-guide',
+    title: 'Orthodontic retainers guide',
+    category: 'Orthodontics & Braces',
+    categorySlug: 'orthodontics-braces',
+    cover: blog17,
+    excerpt: 'Retainers are custom appliances that hold teeth in their new positions after braces or aligner treatment to prevent relapse.',
+    content: `||What are orthodontic retainers?||
+
+Orthodontic retainers are custom-made appliances that maintain tooth position after braces or aligners. They prevent teeth from shifting back to their original alignment and protect the investment you made in treatment.
+
+//When are retainers used?//
+
+🕒 Immediately after braces or aligners come off
+🕒 During the stabilization phase after major tooth movement
+🕒 Long-term to ensure bite correction stays stable
+
+//How long should retainers be worn?//
+
+✅ Full-time for the first 3 to 6 months or as prescribed
+✅ Night-time wear long term for best stability
+✅ Teeth naturally drift with age, so most patients benefit from lifelong night wear
+
+//Why they matter//
+
+⭐ Keep teeth aligned and bite balanced
+⭐ Prevent relapse and unwanted shifting
+⭐ Preserve the time and money invested in treatment
+
+//Types of retainers//
+
+1️⃣ Essix clear retainers - transparent, nearly invisible, comfortable
+2️⃣ Hawley retainers - acrylic base with metal wire, adjustable and durable
+3️⃣ Fixed (bonded) retainers - thin wire glued behind teeth, no removal needed
+
+At DentEssencePRO Dental Clinic, Bangalore, we fabricate retainers in-house for precise fit, review wear schedules, and monitor tooth stability over time. If retainers loosen or break, we provide quick replacements to keep your smile safe.
+
+📍 DentEssencePRO Dental Clinic, Tatanagar, Bangalore
+📞 9742503814 | 🌐 www.drmakamgangaiah.com`
   }
 ]

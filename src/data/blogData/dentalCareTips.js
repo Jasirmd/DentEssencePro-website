@@ -1,6 +1,7 @@
 import blog1 from '../../assets/images/Blogs/Dental Care Tips/blog1.jpg'
 import blog2 from '../../assets/images/Blogs/Dental Care Tips/blog2.jpg'
 import blog3 from '../../assets/images/Blogs/Dental Care Tips/blog3.png'
+import blog4 from '../../assets/images/Blogs/Dental Care Tips/blog4.jpeg'
 import fallback from '../../assets/images/Blogs/Fallback.png'
 
 export const dentalCareTipsBlogs = [
@@ -134,5 +135,57 @@ At DentEssencePRO Dental Clinic, Tatanagar, Bangalore, we understand that dental
 
 Visit us at DentEssencePRO Dental Clinic, Tatanagar, Bangalore
 Call: 9742503814 | www.dentessencepro.com`
+  },
+  {
+    slug: 'tooth-avulsion-what-to-do',
+    title: 'Tooth avulsion - what you should know',
+    category: 'Dental Care Tips',
+    categorySlug: 'dental-care-tips',
+    cover: blog4,
+    excerpt: 'A tooth avulsion is when a tooth is completely knocked out. Quick action within 30 to 60 minutes can often save it.',
+    content: `||Tooth avulsion - what you should know||
+
+A tooth avulsion is when a tooth is completely knocked out of its socket due to trauma from sports injuries, falls, or accidents. This is a dental emergency, and acting quickly can often save the tooth.
+
+//Time matters//
+
+⏳ The tooth has the best chance of survival if treated within 30 to 60 minutes.
+
+//What to do immediately//
+
+✅ Pick up the tooth by the crown (white part) - avoid touching the root
+✅ If dirty, rinse gently with water or saline for only a few seconds - do not scrub
+✅ Keep the tooth moist at all times
+
+Best storage options:
+
+⭐ Place it back in the socket if possible
+⭐ Store in milk
+⭐ Keep in saline
+⭐ Hold inside the cheek (only if the patient is conscious and old enough)
+
+❌ Never let the tooth dry out.
+
+//When you reach the dentist//
+
+The dentist may:
+
+1. Reimplant the tooth
+2. Splint it to nearby teeth
+3. Prescribe antibiotics or mouth rinse
+4. Monitor healing over the next few weeks
+
+//Children and baby teeth//
+
+🧒 If a knocked-out tooth is a baby tooth, do not reinsert it, but still visit a dentist to check for damage to permanent teeth buds.
+
+//Quick reminder//
+
+⚡ A knocked-out tooth can often be saved if you act fast and keep it moist.
+
+At DentEssencePRO Dental Clinic, Bangalore, we provide emergency dental care with on-call support, digital X-rays, and splinting for avulsed teeth. Save our number so you can reach us whenever unexpected dental injuries happen.
+
+📍 DentEssencePRO Dental Clinic, Tatanagar, Bangalore
+📞 9742503814 | 🌐 www.drmakamgangaiah.com`
   }
 ]
